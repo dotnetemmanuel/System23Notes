@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "429be6cf863a75f3",
+            "id": "de51d1d1be2d1d83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Systemutvecklingens grunder och Agil utveckling/12 regler.md",
+                "file": "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
-    "collapsed": true
+    "width": 235.5
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Systemutvecklingens grunder och Agil utveckling/12 regler.md",
+                "file": "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Systemutvecklingens grunder och Agil utveckling/12 regler.md",
+                "file": "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Systemutvecklingens grunder och Agil utveckling/12 regler.md"
+                "file": "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md"
               }
             }
           }
@@ -147,15 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "429be6cf863a75f3",
+  "active": "f163eba3265102a3",
   "lastOpenFiles": [
+    "Systemutvecklingens grunder och Agil utveckling/12 regler.md",
+    "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
+    "SysAgil_01-Introduktion.pdf",
     "SysAgil_02-12Regler.pdf",
     "Systemutvecklingens grunder och Agil utveckling/Gruppdiskussioner.txt",
-    "Systemutvecklingens grunder och Agil utveckling/12 regler.md",
     "SysAgil_03-SysutvecklingensGrunder.pdf",
     "Ej bekräftad 327636.crdownload",
     "Ej bekräftad 35896.crdownload",
-    "SysAgil_01-Introduktion.pdf",
     "Ej bekräftad 355390.crdownload",
     "Systemutvecklingens grunder och Agil utveckling"
   ]
