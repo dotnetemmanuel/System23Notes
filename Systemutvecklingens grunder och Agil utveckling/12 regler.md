@@ -38,3 +38,25 @@ Det är inte dåligt att googla eller gå in på StackOverflow. Det är mer illa
 	- sök felmeddelandet eller det du försöker göra.
 - Gå in på StackOverflow
 - Fråga kollega, lärare, klasskamrat
+
+# 6. Var en copycat
+
+Bygg något själv. Saknar du idéer, var en copycat. Gör egna Notepad, MSPaint, Tetris, osv. Även lättare att hitta hjälp på nätet.
+
+# 7. Var ansvarig
+
+Var ansvarig gentemot någon annan, visa ditt arbete. Skaffa en "kodarkompis".
+
+# 8. Fortsätt lära dig
+
+Uppfinn dig själv på nytt för att fortsätta vara relevant. 
+Nya trender, teknologier, ramverk, språk.
+https://learnxinyminutes.com
+
+# 9. Spela Foosball
+
+I verkligheten stirrar en programmerare mest på skärmen och skriver inte rad på rad kod som i filmer.
+Det finns alltid en bug eller något som fungerar men inte borde.
+## Problem? 
+Gå ifrån koden, sov på saken, spela spel, ta en promenad, osv. I 9 fall av 10 kommer lösningen av sig. koda mindre, tänk mer.
+
