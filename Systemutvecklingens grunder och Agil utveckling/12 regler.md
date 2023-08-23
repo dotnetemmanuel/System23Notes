@@ -77,4 +77,4 @@ Bryt ner appen i små hanterbara enheter och bitar.
 - Ta bort rader och se vad som händer
 - Byt plats på rader, osv.
 
-Reverse Engineering: ladda ner någon app, se hur den fungerar och bygg den igen själv från början. Jämför koden när du är klar.
+Reverse Engineering: ladda ner någon app, se hur den fungerar och bygg den igen själv från början. Jämför kode
