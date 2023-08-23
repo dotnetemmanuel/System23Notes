@@ -1,3 +1,5 @@
+12 REGLER
+
 1.
 *Personlig utveckling, nyttan av struktur
 *Utifrån situationen man är i kan det vara skönt att kunna bryta var 20:e minut eller fortsätta sålänge man har bra flow.
@@ -41,5 +43,5 @@ Promenera, spela, stirra blankt i väggen.
 12.
 *Reverse engineering verkar vara ett bra sätt att bryta ner kodning. Att sedan jämför båda kodbaser för att hitta smarta lösningar är mycket nyttigt. Men det finns lika många sätta att lära sig som människor som lär sig.
 
-
+HÅRDVARA - MJUKVARA - YRKESROLL
 
