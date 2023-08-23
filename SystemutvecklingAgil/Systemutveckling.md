@@ -33,3 +33,21 @@ Skiftlägeskänsligt - stora och små bokstäver är olika
 	- \ / : * ? "< > | ej tillåtet
 	- vissa filnamn inte tillåtna (con, nul, prn)
 	- Filnamnstillägg ger ledtrådar till innehållet
+
+# Säkerhet för kunden
+Det innebär at skydda information/data.
+Systemets/kundens data är heligt.
+
+# Molnet
+Vi utvecklare kommer att ägna allt mer tid år att driftsätta våra applikationer i molnet.
+
+## För- och nackdelar
+Molnet:
+- billigt
+- enkelt
+- förutsägbara kostnader
+
+Egna servrar:
+- kan vara billigt om väl optimerat
+- kontroll över hårdvara
+
