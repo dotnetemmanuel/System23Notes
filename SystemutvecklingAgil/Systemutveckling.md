@@ -1,3 +1,6 @@
+---
+sticker: lucide//laptop
+---
 
 # Hårdvaran
 Hårdvaran delas typiskt i fyra olika kategorier
@@ -191,3 +194,4 @@ SCRUM-möte 15 minuter varje dag. Sprinter som är kortare delprojekt där teame
 # Kanban
 Målet är att effektivisera produktionen.
 Visuell tavla där arbetsflödet och processer ska synas och vara tillgängliga för alla (olika faser i utvecklingen).
+

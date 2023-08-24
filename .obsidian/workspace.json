@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
-    "collapsed": true
+    "width": 235.5
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -158,6 +157,7 @@
   },
   "active": "de51d1d1be2d1d83",
   "lastOpenFiles": [
+    "Context/spacesLastSync-Emmanuel_dator.log",
     "Pasted image 20230824144423.png",
     "Pasted image 20230824144229.png",
     "Pasted image 20230824135829.png",

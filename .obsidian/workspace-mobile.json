@@ -67,9 +67,17 @@
           "type": "bookmarks",
           "state": {}
         }
+      },
+      {
+        "id": "b754dec1a82e60d0",
+        "type": "leaf",
+        "state": {
+          "type": "mk-file-view",
+          "state": {}
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 4
   },
   "right": {
     "id": "39c580c56079b50d",
@@ -124,5 +132,22 @@
     }
   },
   "active": "70472868d3cee963",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
+    "SystemutvecklingAgil/Systemutveckling.md",
+    "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
+    "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
+    "SystemutvecklingAgil/SysAgil_02-12Regler.pdf",
+    "SystemutvecklingAgil/SysAgil_01-Introduktion.pdf",
+    "SystemutvecklingAgil/Kurshandledning_SysUtvAgil.pdf",
+    "SystemutvecklingAgil/Gruppdiskussioner.txt",
+    "SystemutvecklingAgil/12regler.md",
+    "SystemutvecklingAgil",
+    "Pasted image 20230824144423.png",
+    "Pasted image 20230824144229.png",
+    "Pasted image 20230824135829.png",
+    "Pasted image 20230824135648.png",
+    "Context/spacesLastSync.log",
+    "Context"
+  ]
 }
