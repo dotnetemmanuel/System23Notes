@@ -11,9 +11,11 @@
             "id": "de51d1d1be2d1d83",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf"
+                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -62,12 +64,22 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "c2b0c4fa22f6068a",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 235.5,
+    "collapsed": true
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -83,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
+                "file": "SystemutvecklingAgil/Systemutveckling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
+                "file": "SystemutvecklingAgil/Systemutveckling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf"
+                "file": "SystemutvecklingAgil/Systemutveckling.md"
               }
             }
           }
@@ -146,20 +158,20 @@
   },
   "active": "de51d1d1be2d1d83",
   "lastOpenFiles": [
+    "Agil utveckling, Scrum, Kanban.md",
+    "SystemutvecklingAgil/Systemutveckling.md",
+    "SystemutvecklingAgil/12regler.md",
+    "Context/spacesLastSync.log",
+    "Context",
+    "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
     "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
     "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
     "SystemutvecklingAgil/Ej bekräftad 582586.crdownload",
     "SystemutvecklingAgil/Kurshandledning_SysUtvAgil.pdf",
     "SystemutvecklingAgil/Ej bekräftad 468256.crdownload",
-    "SystemutvecklingAgil/Systemutveckling.md",
-    "SystemutvecklingAgil/12regler.md",
     "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
     "SystemutvecklingAgil/SysAgil_02-12Regler.pdf",
     "SystemutvecklingAgil/SysAgil_01-Introduktion.pdf",
-    "SystemutvecklingAgil/Gruppdiskussioner.txt",
-    "SystemutvecklingAgil",
-    "Systemutvecklingens grunder och Agil utveckling/SysAgil_03-SysutvecklingensGrunder.pdf",
-    "Systemutvecklingens grunder och Agil utveckling/SysAgil_02-12Regler.pdf",
     "Systemutvecklingens grunder och Agil utveckling/12 regler.md"
   ]
 }

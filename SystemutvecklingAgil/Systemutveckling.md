@@ -91,9 +91,43 @@ Olika metoder:
 I Metoden rör sig förbättringar linjärt framåt  i en riktning utan att stanna upp. Full fart framåt. Man ser på resultatet på slutet.
 Dokumentation mycket viktig och kräver att nya medarbetare läser sig till en väldigt omfattande dokumentation.
 
-# Agil projektledning
-Improvisera och anpassa arbetet efter nya förutsättningar. Skapades ursprungligen för utvecklare av mjukvara, handlar om att dela upp projektet i flera delmoment i stället för en stor slutleverans. Målet är att arbeta snabbt och flexibelt genom att testa sig fram och tillsammans i projektteamet skapa både problemformuleringar och lösningar.
+Det är en sekventiell systemutvecklingsprocess där man ser framstegen som ett flöde nedåt genom olika faser:
+förberedelse => etablering =>analys => design => konstruktion => test => produktionssättning => underhåll
 
+Den har sina rätter i tillverknings - och byggindustrin där det är mycket kostsamt att införa ändringar sent i processen. Den kan jämföras med processen att bygga ett hus. 
+
+### Fördelar
+- __Kostnadskontroll__: beställaren kan besluta i varje steg huruvida projektet ska startas, fortsätta, pausas eller avslutas. Återupptagningen underlättas av all dokumentation som redan gjorts.
+- __Resursplanering eller upphandling kan göras mellan stegen__: om förarbetet är tillräckligt bra ska vem som helst kunna implementera systemet.
+- Slutprodukten är __testad och kvalitetssäkrad__.
+- Processen är __relativt överskådlig och lätt att förstå__, vilket sparar tid för en projektgrupp  då modellen inte behöver förklaras lika ingående i processens start.
+
+### Nackdelar
+- __Skjuter kvalitetsproblemen framför sig__ vilket kan resultera i försenad leverans och därmed en __ökad kostnad__.
+- __Hanterar egentligen inte förändringar__. En förändringsförslag måste gå igenom flera steg för att genomföras.
+- __Många dokument__.
+- __Datasystem är mycket mer komplexa__ än vad ett hus är att bygga så modellen kan endast användas till en viss del i projekt för datasystem.
+- Man ser inte kundnyttan förrän i slutet av projektet.
+- Mer riskabelt, dyrare, mindre effektivt och vanligen försenat.
+# Agil utveckling
+Improvisera och anpassa arbetet efter nya förutsättningar. Skapades ursprungligen för utvecklare av mjukvara, handlar om att dela upp projektet i flera delmoment i stället för en stor slutleverans. Målet är att arbeta snabbt och flexibelt genom att testa sig fram och tillsammans i projektteamet skapa både problemformuleringar och lösningar.
+Agil är ett samlingsnamn för ett antal systemutvecklingsmetoder som kan användas vid programvaruutveckling.
+Det är inte en process utan mer en __filosofi__ eller __värderingar__.
+Metoderna följer den filosofi och de principer som formulerades i __Manifestet för Agil systemutveckling__ 2001 av en grupp programmerare.
+De hade reagerat på konsekvenserna at vattenfallsmetoden (detaljerade kravspecifikationer, omfattande dokumentation och byråkratiserande metoder och processer.)
+
+## Manifestet
+- Individer och interaktioner framför processer och verktyg.
+- Fungerande programvara framför omfattande dokumentation.
+- Kundsamarbete framför kontraktsförhandling.
+- Anpassning till förändring framför att följa en plan.
+
+Medan det finns värde i punkterna till höger, värdesätter vi punkterna till vänster mer. 
+
+- Individuals and interactions over processes and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
 ## SCRUM
 Samarbete, ansvarsskyldighet och iterativa framsteg.
 Roller:

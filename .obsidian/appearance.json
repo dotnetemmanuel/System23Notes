@@ -1,9 +1,9 @@
 {
-  "accentColor": "#47a999",
-  "cssTheme": "Obsidianite",
-  "textFontFamily": "Bookerly",
+  "accentColor": "",
+  "cssTheme": "Dekurai",
+  "textFontFamily": "Inter",
   "interfaceFontFamily": "Inter",
   "monospaceFontFamily": "Cascadia Code",
   "theme": "obsidian",
-  "baseFontSize": 15
+  "baseFontSize": 16
 }
