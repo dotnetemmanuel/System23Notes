@@ -11,11 +11,9 @@
             "id": "de51d1d1be2d1d83",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
-                "mode": "source",
-                "source": false
+                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md"
+                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf"
               }
             }
           }
@@ -148,19 +146,20 @@
   },
   "active": "de51d1d1be2d1d83",
   "lastOpenFiles": [
+    "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
+    "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
+    "SystemutvecklingAgil/Ej bekräftad 582586.crdownload",
+    "SystemutvecklingAgil/Kurshandledning_SysUtvAgil.pdf",
+    "SystemutvecklingAgil/Ej bekräftad 468256.crdownload",
+    "SystemutvecklingAgil/Systemutveckling.md",
     "SystemutvecklingAgil/12regler.md",
     "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
-    "SystemutvecklingAgil/Systemutveckling.md",
-    "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
     "SystemutvecklingAgil/SysAgil_02-12Regler.pdf",
     "SystemutvecklingAgil/SysAgil_01-Introduktion.pdf",
     "SystemutvecklingAgil/Gruppdiskussioner.txt",
     "SystemutvecklingAgil",
     "Systemutvecklingens grunder och Agil utveckling/SysAgil_03-SysutvecklingensGrunder.pdf",
     "Systemutvecklingens grunder och Agil utveckling/SysAgil_02-12Regler.pdf",
-    "Systemutvecklingens grunder och Agil utveckling/SysAgil_01-Introduktion.pdf",
-    "Systemutvecklingens grunder och Agil utveckling/12 regler.md",
-    "SysAgil_01-Introduktion.pdf",
-    "SysAgil_02-12Regler.pdf"
+    "Systemutvecklingens grunder och Agil utveckling/12 regler.md"
   ]
 }
