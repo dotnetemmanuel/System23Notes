@@ -177,14 +177,14 @@ Det är en __användarcentrerad__ systemutvecklingsprocess med __fokus på nytta
 ![[Pasted image 20230824144423.png]]
 
 ### Projektets roller
-#### Produktägare
+#### 👩‍💼Produktägare
 - Har ansvar för en optimal ordning av elementen i backloggen.
 - Ser till att varje element i backloggen beskrivs tydligt och begripligt för hela teamet.
 - Optimerar värdet av arbetet som utförs av det team med ansvar för utvecklingen.
 - Garanterar att backloggen skapas på ett tydligt och transparent sätt. Anger vad SCRUM-teamet har att göra i nästa steg.
 - Ser till att utvecklingsteamet förstår samtliga element i backloggen så det blir möjligt att arbeta.
 
-#### SCRUM-master
+#### 🧑‍🏫SCRUM-master
 Personen i teamet som ser till att agila principer och värderingar följs samt att processer och metoder som teamet kom överens om används.
 
 Ansvaret för rollen omfattar:
@@ -194,7 +194,7 @@ Ansvaret för rollen omfattar:
 - Säkerställa en god relation mellan teamet och produktägare och andra utanför teamet
 - Skydda teamet från avbrott utifrån och distraktioner
 
-#### Utvecklare 
+#### 👨‍💻Utvecklare 
 - Ansvar för att tidsuppskatta, planera och hantera egna uppgifter och rapportera om framsteg
 - Samarbeta nära alla medlemmar i teamet och dela ansvar för övergripande insatser inom teamet
 - Ta ansvar för kvalitéten på programvaran
@@ -305,3 +305,16 @@ Kvinna i 35-årsåldern som bor i Stockholm, har en akademisk bakgrund med en in
 - Som hamnägaren Sofia vill jag berätta om vilka fina faciliteter jag kan erbjuda, så mina kunder väljer min hamn. 
 	- Som hamnägare vill jag berätta om hur många duschar jag kan erbjuda, så mina kunder väljer att ta en dusch I min hamn
 
+## Slutsatser
+Agila metoder: 
+- Ska hjälpa till
+- Skapade FÖR utvecklare AV utvecklare
+- Ger överblick för alla
+- Löser inte problem, utan synliggör dem
+- Förutsätter att alla är med
+- Fasta punkter
+	- Sprintstart
+	- Dagliga standup-möten, max 15 min.
+	- Sprint review 
+	- Sprint retrospect
+	- Övrig tid: programmering I lugn och ro.
