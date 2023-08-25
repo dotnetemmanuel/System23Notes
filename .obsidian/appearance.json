@@ -1,9 +1,4 @@
 {
-  "accentColor": "",
   "cssTheme": "monokai",
-  "textFontFamily": "Inter",
-  "interfaceFontFamily": "Inter",
-  "monospaceFontFamily": "Cascadia Code",
-  "theme": "obsidian",
-  "baseFontSize": 16
+  "accentColor": ""
 }

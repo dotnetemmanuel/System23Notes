@@ -11,8 +11,12 @@
             "id": "70472868d3cee963",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "SystemutvecklingAgil/Systemutveckling.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "SystemutvecklingAgil/Systemutveckling.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +121,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "SystemutvecklingAgil/Systemutveckling.md"
+          }
         }
       }
     ],
@@ -133,9 +141,12 @@
   },
   "active": "70472868d3cee963",
   "lastOpenFiles": [
-    "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
-    "SystemutvecklingAgil/Systemutveckling.md",
+    "Context/spacesLastSync-Emmanuel_dator.log",
+    "Context/spacesLastSync.log",
+    "Context/spacesLastSync (conflict 2023-08-24-20-25-09).log",
     "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
+    "SystemutvecklingAgil/Systemutveckling.md",
+    "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
     "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
     "SystemutvecklingAgil/SysAgil_02-12Regler.pdf",
     "SystemutvecklingAgil/SysAgil_01-Introduktion.pdf",
@@ -146,8 +157,6 @@
     "Pasted image 20230824144423.png",
     "Pasted image 20230824144229.png",
     "Pasted image 20230824135829.png",
-    "Pasted image 20230824135648.png",
-    "Context/spacesLastSync.log",
-    "Context"
+    "Pasted image 20230824135648.png"
   ]
 }
