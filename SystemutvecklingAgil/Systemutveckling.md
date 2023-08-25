@@ -277,11 +277,11 @@ Passar bra i SCRUM och Kanban. Kanban teamet använder till exempel user stories
 - Skapar drivkraft
 
 ### Att skriva user stories
-"Som {persona}, {vill jag}, {så att}."
+"Som [persona], [vill jag], [så att]."
 
-- __Persona__: vem bygger vi detta för? T.ex: Max. Teamet behöver ha en förståelse för vem Max är.
-- Vill jag
-- Så att
+- __[Persona]__: vem bygger vi detta för? T.ex: Max. Teamet behöver ha en förståelse för vem Max är. Vi förstår hur den personen fungerar, hur de tänker och vad de känner. Vi har empati för Max.
+- __[Vill jag]__: Här beskriver vi deras avsikt – inte de funktioner som de använder. Vad är det de faktiskt försöker uppnå? Den här satsen ska vara fri från tekniska begrepp – om du beskriver någon del av användargränssnittet och inte vad användarmålet är, har du missat poängen.
+- __[Så att]__: hur deras omedelbara önskan att göra något som passar in i deras behov? Vad är fördelen de försöker uppnå? Vad är det stora problemet som behöver lösas?
 
 ### Persona
 En fiktiv representation av din ideala målgrupp.
