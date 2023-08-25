@@ -260,3 +260,48 @@ Därefter börjar man om!
 Målet är att effektivisera produktionen.
 Visuell tavla där arbetsflödet och processer ska synas och vara tillgängliga för alla (olika faser i utvecklingen).
 
+## User story
+Kanban tavlan fyller man med ___user stories___.
+
+- En användarberättelse, den minsta enheten för agilt arbete.
+- Skriven __ur slutanvändarens perspektiv__. Syfte: artikulera en funktion som __ger värde till kunden__.
+- Är __EJ__ systemkrav.
+- Använder icke-tekniskt språk.
+
+Passar bra i SCRUM och Kanban. Kanban teamet använder till exempel user stories från backloggen och kör dem igenom sitt arbetsflöde. En user story bör vara möjlig att utföra under en sprint.
+
+### Fördelar
+- Hålla fokus på användaren
+- Möjliggör samarbete
+- Driver kreativa lösningar
+- Skapar drivkraft
+
+### Att skriva user stories
+"Som {persona}, {vill jag}, {så att}."
+
+- __Persona__: vem bygger vi detta för? T.ex: Max. Teamet behöver ha en förståelse för vem Max är.
+- Vill jag
+- Så att
+
+### Persona
+En fiktiv representation av din ideala målgrupp.
+Utgå från målgruppsparametrarna och lägg till följande frågor:
+- Personens utmaningar
+- Personens tankar
+- Personens agerande
+- Personens orosmoment
+
+Exempel:
+Kvinna i 35-årsåldern som bor i Stockholm, har en akademisk bakgrund med en inkomst över genomsnittet. Hon jobbar inom IT, är småbarnsförälder samt använder Facebook 3 timmar per dag. Ser ofta på TV och tränar sällan.
+
+	Vad heter hen?
+	Vilka utmaningar, tankar, agerande och orosmoment har hen?
+	Vad fyller hennes behov med den app vi bygger?
+
+### Exempel på user stories:
+- Som Max vill jag kunna bjuda in mina vänner, så vi kan njuta av den här tjänsten tillsammans.
+- Som Anna vill jag organisera mitt arbete, så att jag kan känna mer kontroll. 
+- Som chefen Bertil vill jag kunna förstå mina kollegors framsteg, så jag kan bättre rapportera våra framgångar och misslyckanden.
+- Som hamnägaren Sofia vill jag berätta om vilka fina faciliteter jag kan erbjuda, så mina kunder väljer min hamn. 
+	- Som hamnägare vill jag berätta om hur många duschar jag kan erbjuda, så mina kunder väljer att ta en dusch I min hamn
+
