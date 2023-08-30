@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
-    "collapsed": true
+    "width": 235.5
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
+                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md"
+                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md"
               }
             }
           }
@@ -158,28 +157,31 @@
   },
   "active": "de51d1d1be2d1d83",
   "lastOpenFiles": [
-    "Webshop.docx",
-    "Ny(tt) Microsoft Word-dokument.docx",
-    "Pasted image 20230825112741.png",
-    "Pasted image 20230825110528.png",
-    "Pasted image 20230825091652.png",
-    "Pasted image 20230825091510.png",
-    "Context/spacesLastSync-Emmanuel_dator.log",
-    "Pasted image 20230824144423.png",
-    "Pasted image 20230824144229.png",
-    "Pasted image 20230824135829.png",
-    "Pasted image 20230824135648.png",
-    "Agil utveckling, Scrum, Kanban.md",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135648.png",
+    "SystemutvecklingAgil/Anteckningar/12regler.md",
+    "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825112741.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825110528.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825091652.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825091510.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824144423.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824144229.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135829.png",
     "SystemutvecklingAgil/Systemutveckling.md",
+    "SystemutvecklingAgil/Anteckningar",
+    "SystemutvecklingAgil/Ny mapp",
+    "SystemutvecklingAgil/Kursmaterial/Kurshandledning_SysUtvAgil.pdf",
+    "SystemutvecklingAgil/Kursmaterial/Webshop.docx",
+    "SystemutvecklingAgil/Kursmaterial/Sprint_Review_01.pptx",
+    "SystemutvecklingAgil/Kursmaterial/Gruppdiskussioner.txt",
+    "SystemutvecklingAgil/Grupparbete",
+    "SystemutvecklingAgil/Kursmaterial/Systemutvecklingens grunder och agil utveckling v.1.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_05-AgilScrumKanban2V2.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_04-AgilScrumKanban.pdf",
     "SystemutvecklingAgil/12regler.md",
-    "Context/spacesLastSync.log",
-    "Context",
-    "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
-    "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
-    "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
-    "SystemutvecklingAgil/Ej bekräftad 582586.crdownload",
-    "SystemutvecklingAgil/Kurshandledning_SysUtvAgil.pdf",
-    "SystemutvecklingAgil/Ej bekräftad 468256.crdownload",
+    "Pasted image 20230824135829.png",
+    "SystemutvecklingAgil/Pasted image 20230825110528.png",
+    "Agil utveckling, Scrum, Kanban.md",
     "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
     "Systemutvecklingens grunder och Agil utveckling/12 regler.md"
   ]
