@@ -42,8 +42,8 @@
   "expandedSpaces": [
     "/",
     null,
-    "System23Notes",
-    null
+    null,
+    "System23Notes"
   ],
   "expandFolderOnClick": true,
   "openFolders": [],
@@ -74,7 +74,7 @@
   "spacesSyncTimeoutSeconds": 10,
   "spacesAutoBackup": true,
   "spacesAutoBackupInterval": 10,
-  "spacesAutoBackupLast": 1693392899898,
+  "spacesAutoBackupLast": 1693403888815,
   "spacesUseAlias": false,
   "precreateVaultSpace": true,
   "fmKeyAlias": "aliases",

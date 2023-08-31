@@ -11,11 +11,9 @@
             "id": "70472868d3cee963",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "SystemutvecklingAgil/Systemutveckling.md",
-                "mode": "source",
-                "source": false
+                "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf"
               }
             }
           }
@@ -93,7 +91,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "SystemutvecklingAgil/Systemutveckling.md",
+            "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -110,7 +108,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "SystemutvecklingAgil/Systemutveckling.md",
+            "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -122,7 +120,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "SystemutvecklingAgil/Systemutveckling.md"
+            "file": "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf"
           }
         }
       }
@@ -141,22 +139,30 @@
   },
   "active": "70472868d3cee963",
   "lastOpenFiles": [
-    "Context/spacesLastSync-Emmanuel_dator.log",
-    "Context/spacesLastSync.log",
-    "Context/spacesLastSync (conflict 2023-08-24-20-25-09).log",
-    "SystemutvecklingAgil/SysAgil_04-AgilScrumKanban.pdf",
+    "SystemutvecklingAgil/Kursmaterial/Systemutvecklingens grunder och agil utveckling v.1.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_05-AgilScrumKanban2V2.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_04-AgilScrumKanban.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_03-SysutvecklingensGrunder.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_02-12Regler.pdf",
+    "SystemutvecklingAgil/Kursmaterial/SysAgil_01-Introduktion.pdf",
+    "SystemutvecklingAgil/Kursmaterial/Kurshandledning_SysUtvAgil.pdf",
+    "SystemutvecklingAgil/Kursmaterial",
+    "SystemutvecklingAgil/Grupparbete/Webshop.docx",
+    "SystemutvecklingAgil/Grupparbete/Sprint_Review_01.pptx",
+    "SystemutvecklingAgil/Grupparbete/Gruppdiskussioner.txt",
+    "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825112741.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825110528.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825091652.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825091510.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824144423.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824144229.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135829.png",
+    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135648.png",
+    "SystemutvecklingAgil/Anteckningar/12regler.md",
     "SystemutvecklingAgil/Systemutveckling.md",
-    "SystemutvecklingAgil/Systemutvecklingens grunder och agil utveckling v.1.pdf",
-    "SystemutvecklingAgil/SysAgil_03-SysutvecklingensGrunder.pdf",
-    "SystemutvecklingAgil/SysAgil_02-12Regler.pdf",
-    "SystemutvecklingAgil/SysAgil_01-Introduktion.pdf",
-    "SystemutvecklingAgil/Kurshandledning_SysUtvAgil.pdf",
-    "SystemutvecklingAgil/Gruppdiskussioner.txt",
     "SystemutvecklingAgil/12regler.md",
-    "SystemutvecklingAgil",
     "Pasted image 20230824144423.png",
-    "Pasted image 20230824144229.png",
-    "Pasted image 20230824135829.png",
-    "Pasted image 20230824135648.png"
+    "Pasted image 20230824144229.png"
   ]
 }
