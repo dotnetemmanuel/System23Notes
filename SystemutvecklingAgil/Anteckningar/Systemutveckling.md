@@ -483,3 +483,4 @@ Vad vill man uppnå? Att förstå varandras __personligheter__ och __egenskaper_
 Det finns företag som är __experter i team-building__ som man kan hyra.
 
 Stärka gruppens samhörighet och sammarbetsförmåga. Gruppen måste förstå varandras sätt att se på saker och ting. team-building kan bestå av en mer __lättsam träff__ eller __uppstyrda övningar__.
+
