@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 235.5,
+    "collapsed": true
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -157,6 +158,12 @@
   },
   "active": "de51d1d1be2d1d83",
   "lastOpenFiles": [
+    "SystemutvecklingAgil/Grupparbete/GruppA_Sprint_Retrospect.docx.docx",
+    "SystemutvecklingAgil/Grupparbete/GruppA_Sprint_Retrospect.docx",
+    "SystemutvecklingAgil/Grupparbete/Ny(tt) Microsoft Word-dokument.docx",
+    "SystemutvecklingAgil/Grupparbete/Emmanuel_Duchene_VG_Uppgiften.docx",
+    "SystemutvecklingAgil/Grupparbete/EmmanuelDuchene_VGUppgiften.docx",
+    "SystemutvecklingAgil/Grupparbete/~$Sprint_Review_01.tmp",
     "Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
     "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135648.png",
@@ -174,14 +181,8 @@
     "SystemutvecklingAgil/Kursmaterial/Kurshandledning_SysUtvAgil.pdf",
     "SystemutvecklingAgil/Kursmaterial/Webshop.docx",
     "SystemutvecklingAgil/Kursmaterial/Sprint_Review_01.pptx",
-    "SystemutvecklingAgil/Kursmaterial/Gruppdiskussioner.txt",
-    "SystemutvecklingAgil/Grupparbete",
-    "SystemutvecklingAgil/Kursmaterial/Systemutvecklingens grunder och agil utveckling v.1.pdf",
-    "SystemutvecklingAgil/Kursmaterial/SysAgil_05-AgilScrumKanban2V2.pdf",
-    "SystemutvecklingAgil/Kursmaterial/SysAgil_04-AgilScrumKanban.pdf",
     "SystemutvecklingAgil/12regler.md",
     "Pasted image 20230824135829.png",
-    "SystemutvecklingAgil/Pasted image 20230825110528.png",
     "Agil utveckling, Scrum, Kanban.md",
     "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
     "Systemutvecklingens grunder och Agil utveckling/12 regler.md"
