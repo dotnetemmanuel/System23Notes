@@ -672,3 +672,65 @@ Vid nyrekrytering eller förändring i gruppen hamnar gruppen återigen i tillh�
 	- ev. förhinder eller problem kommuniceras
 	- vid oklarheter eller om ni inte är överens, red ut det direkt
 	- det som utlovas ska hållas
+
+## Kunden - det femte hjulet?
+Den som beställt applikationen och betalar för den
+
+### Aktörer
+- Slutanvändare - konsumenten
+- Företaget som tillhandahåller applikationen - __kunden__
+- Anställda eller konsulter (via konsultbolag) - utföraren
+
+#### Slutanvändaren - __konsumenten__
+- Slutanvändaren - den som använder och betalar för applikationens funktionalitet
+	- Vem betalar?
+		- slutanvändaren (abonnemang, osv.)
+		- Annonsörer
+		- Intresseorganisationer
+		- Skattebetalarna
+
+- Slutanvändarens drivkrafter
+	- Nytta med appen
+	- Nöje
+	- Vinna något, pengar?
+		- Applikationer för arbetet
+		- Söka job, LinkedIn
+		- Spelsajter
+
+#### Företaget som tillhandahåller applikationen - __kunden__ 
+- Det här vår kund befinner sig
+- Drivkraft:
+	- Vinst
+	- Ev. ideella syften
+- Anställer eller hyr konsulter
+- Vill få en bra produkt som snabbt kommer ut på marknaden, så billigt som möjligt
+- Kunden kan i sin tur ha en rad intressenter som har sina krav:
+	- Slutanvändaren 
+	- Aktieägare
+	- Beställare
+	- Samhället
+
+#### Konsult eller anställd - __utföraren__
+- Det är vi utvecklare
+- Våra drivkrafter:
+	- Lön
+	- Roligt och stimulerande arbetsliv
+	- Karriär
+	- Framtidsyrke
+
+#### Fler aktörer
+- Designers
+- Säljare
+- Chefer
+- SCRUM-masters
+- Städare
+- Ekonomer
+- Osv.
+
+#### Kunden
+Den vi arbetar för.
+- Vi bygger kundens applikation
+- Vi skapar vinst för kunden
+- Vi har som mål att förstå kunden och göra kunden nöjd - __kundnöjdhet__
+
+### Kundnöjdhet
