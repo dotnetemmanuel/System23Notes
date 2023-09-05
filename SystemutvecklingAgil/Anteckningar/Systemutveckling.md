@@ -484,3 +484,191 @@ Det finns företag som är __experter i team-building__ som man kan hyra.
 
 Stärka gruppens samhörighet och sammarbetsförmåga. Gruppen måste förstå varandras sätt att se på saker och ting. team-building kan bestå av en mer __lättsam träff__ eller __uppstyrda övningar__.
 
+## DISC-analys
+Många företag använder det vid anställning av nya medarbetare.
+En teori om mänskligt beteende som hjälper individer att bli mer framgångsrika. Den identifierar flera beteendestilar som styr hur olika personer fattar beslut och beter sig:
+- Dominance - Dominant - Röd
+- Influence - Influerande - Gul
+- Steadiness - Stabil - Grön
+- Conscientiousness - Analytisk - Blå
+
+Ibland kan en DISC-analys vara en del av team-building. Kan användas med fördel för __grupputveckling__ och __gruppdynamik__. __Utökar sin egen självkännedom samt ökar förståelsen för andra människors personligheter.__
+
+Finns dock en del kritik mot det då människor är lite mer komplexa än det. Egenskaper från olika "färger" kan genomsyras i varje individ. Man kan även vara olika i olika sammanhang (arbete, hemma, osv.). Fördelen med det är att identifiera olika personligheter, vilket kan göra det __lättare att samarbeta__ på arbetsplatsen . Ökar även förståelse för hur andra fungerar.
+
+### Fördelar
+* Engagerade medarbetare
+	* matching av rätt arbetsuppgift leder till nöjda, produktiva och kreativa medarbetare)
+* Ledarskapet
+	* Lär dig att inspirera, motivera och uppmuntra individer genom att förstå deras beteendeprofil
+* Fler affärer
+	* förstå och anpassa sig till hur kunderna fungerar och beter sig
+* Ge konstruktiv feedback
+	* förmågan att anpassa ditt beteende och möta mottagaren i dennes beteendestil
+* Konflikthantering
+	* när vi förstår avsikten bakom beteende minskar konflikter och motsättningar
+* Karriärplanering
+	* skapar effektiv karriärplanering genom att hjälpa till att matcha människor med positioner
+* Produktiva team
+	* möjliggör förståelse om varför andra beter sig på ett visst sätt
+* Behåll bra medarbetare
+	* avgörande för att behålla medarbetare är att förstå vad som motiverar denne
+* Förbättra kommunikation
+	* genom förmågan att anpassa sig till mottagaren
+
+### 🔴 DISC - röd 
+* Dominant och handlingskraftig. 
+* Resultatssökande
+* Ser det stora sammanhanget
+* Beslutsfattande
+* Gillar utmaningar
+* Rak på sak
+* Vill ha rak och tydlig kommunikation (drivs av resultat, kontroll, effektivitet och makt)
+* Vill ej bli bemött av för mycket känslor, utan med rakhet och tydlighet
+* Vanligt yrke: ledare/chef, försäljare, politiker, osv.
+
+### 🟡 DISC - gul 
+* Inflytande, vill påverka andra
+* Utåtriktad
+* Gillar att ha kul
+* Gillar att samarbeta
+* Ogillar ensamhet
+* Entusiastisk
+* Drivs av bekräftelse och beröm, gillar att bli bemött av känslor och kommunikation
+* Ogillar för hårda regler eller att bli avvisad
+* Vanliga yrken: säljare, kundservice, eller andra mer kreativa yrken
+
+### 🟢 DISC - grön
+- Stabil, tonvikt på samarbete
+- Omtänksam
+- Lugnt tillvägagångssätt
+- God lyssnare
+- Pålitlig
+- Lagspelare, tålmodig
+- Gillar säkerhet och stabilitet och tycker inte om allt för snabba förändringar eller otrygghet
+- Vill bli bemött med lugn och tålamod
+- Vanliga yrken: vårdpersonal, polis, eller HR och ekonomi
+
+### 🔵 DISC - blå
+- Analytisk, tonvikt på kvalitet och noggrannhet
+- Söker fakta
+- Resonera i sannolikhet
+- Vill ha detaljerna
+- Kvalitetsmedveten
+- Plikttrogen, noggrann, konservativ och kritisk'
+- Gillar struktur, saklighet och korrekthet
+- Ogillar irrationella människor eller pressade situationer
+- Vill bli bemött med respekt och ärlighet, bra argument och korrekt fakta
+- Vanliga yrken: psykolog, militär eller forskare osv.
+
+Att notera, ingen specifik personlighetstyp för just programmerare. En blandning är alltid positiv i yrket.
+
+![[Pasted image 20230905100533.png]]
+
+## Feedback
+
+### Feedbacktrappan
+
+![[Pasted image 20230905102808.png]]
+
+#### Steg 1 - Förkasta
+- Slår ifrån sig feedbacken
+- Förnekande
+- Attityd: detta berör inte mig
+- Reaktion: nej, så kan det inte vara
+
+#### Steg 2 - Försvara
+- Slår fortfarande i från sig feedbacken
+- Försvarar sig
+- Attityd: Jag tar inget ansvar för att...
+- Reaktion: det berodde inte på mig utan på...
+
+#### Steg 3- Förklara
+- Slår fortfarande ifrån sig feedbacken
+- Accepterar sakförhållandet
+- Attityd: det är sant, men
+- gömmer sig bakom fakta
+
+
+#### Steg 4 - Förstå
+- Tar till sig informationen
+- Accepterar sakförhållandet
+- Attityd: Kan du förklara en gång till vad som kan förbättras?
+- Reaktion: Ställer frågor eller lyssnar under tystnad
+
+#### Steg 5 - Förändra
+- Tar till sig informationen
+- Är villig att göra förändringar 
+- Attityd: jag kommer att förändra
+- Reaktion: handling
+
+### Att ge feedback
+- Ge feedback i en tillitsfull situation
+- Var positiv och ärlig
+- Var direkt, konkret och specifik
+- Välj rätt tillfälle
+- Var konstruktiv
+- Följ upp
+
+## Teamets olika faser
+Storleken på teamet varierar beroende på sammanhang och tillfälle. 
+
+### FIRO-metoden
+
+
+![[Pasted image 20230905104212.png]]
+
+När vi jobbar i team byter man ibland konstellation. Då repeteras cykeln i FIRO-metoden. 
+
+__Fundamental Interpersonal Relations Orientation__
+
+- __Synliggör samspelet i en grupp__ och hur en __grupps utveckling__ vanligtvis ser ut.
+- metoden skapades för att studera varför __vissa grupper presterade bättre än andra__ under Koreakriget.
+- En grupp genomgår __tre olika faser__
+
+#### FIRO - fas 1: Tillhöra-fasen
+- I början känner medlemmar av läget
+- Gruppen lär känna varandra__, man går __ej in i konflikt__
+- Gruppen är inte speciellt effektiv, tiden går åt till att skapa sig en bild av situationen
+- Inga svåra uppgifter, måste ha hittat sin plats i gruppen.
+
+#### FIRO - fas 2: Idyllfasen
+- Alla pustar ut
+- Produktiviteten stannar upp
+- Grupper är nöjd och lever i nuet men inte mycket faktiskt arbete utförs
+
+#### FIRO - fas 3: Rollsökning
+- När man är accepterad i gruppen är nästa steg att hitta sin roll
+- Maktförhållanden sätts på spel
+- Ansvarsfördelning, specialområden
+- gruppen mäter sina krafter med varandra för att se vem som ska ta vilken roll
+- Kan uppstå konflikter
+- ganska låg produktivitet då energin går åt interna konflikter och stridigheter
+
+#### FIRO - fas 4: Gemytfasen
+- Ytterligare en "hämta-andan-fas"
+
+#### FIRO - fas 5: Samhörighetsfasen
+- Dit man stävar
+- Växlande roll beroende på behov
+- Man kan kanske byta stol vid varje möte
+- Låta andra ta ledningen över ett möte när ämnet för dagen är något som en annan person har Kunskap kring och förmåga att leda
+- Om jag är trygg i min roll kan jag lätt underordna mig on det gagnar arbetet
+- Man är så trygg i sin roll att man kan överlåta den till någon annan som är bättre lämpad för arbetsuppgiften just då
+- Verkligt hög produktivitet
+
+Vid nyrekrytering eller förändring i gruppen hamnar gruppen återigen i tillhörighetsfasen.
+
+### Viktigt att bestämma
+- Bestäm vilka arbetstider som gäller
+	- avstämningar
+	- ses IRL?
+	- Kamera av/på
+	- Kallpratsnivå
+- Dela upp arbetet
+	- vissa delar bör ske tillsammans
+	- andra delar delegeras till en/flera personer
+- Ansvar mot teamet
+	- ev. förhinder eller problem kommuniceras
+	- vid oklarheter eller om ni inte är överens, red ut det direkt
+	- det som utlovas ska hållas
