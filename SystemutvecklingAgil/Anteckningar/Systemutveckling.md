@@ -589,7 +589,6 @@ Att notera, ingen specifik personlighetstyp för just programmerare. En blandnin
 - Attityd: det är sant, men
 - gömmer sig bakom fakta
 
-
 #### Steg 4 - Förstå
 - Tar till sig informationen
 - Accepterar sakförhållandet
@@ -711,7 +710,7 @@ Den som beställt applikationen och betalar för den
 	- Samhället
 
 #### Konsult eller anställd - __utföraren__
-- Det är vi utvecklare
+Det är vi utvecklare
 - Våra drivkrafter:
 	- Lön
 	- Roligt och stimulerande arbetsliv
@@ -728,9 +727,103 @@ Den som beställt applikationen och betalar för den
 - Osv.
 
 #### Kunden
-Den vi arbetar för.
+Den vi arbetar för
 - Vi bygger kundens applikation
 - Vi skapar vinst för kunden
 - Vi har som mål att förstå kunden och göra kunden nöjd - __kundnöjdhet__
 
 ### Kundnöjdhet
+#### En nöjd kund
+- Förblir kund
+- Enklare att samarbeta med
+- Ger tillbaka kunskap till organisationen
+- Utvecklarna
+- Enklare att utveckla nya tjänster/produkter
+- Stimulerande att arbeta med
+- Köper mer
+- Generar nya kunder
+
+#### En missnöjd kund
+- Slutar köpa/anlita eller går till konkurrent
+- Svårare att samarbeta med
+- Är svår att utveckla nya tjänster/produkter med
+- Är påfrestande att arbeta med
+- Köper mindre
+- Avskräcker nya kunder
+
+#### Hur blir en kund nöjd?
+- Kunder ä också människor därför gör olika saker kunder nöjda.
+- Vissa saker är viktigare än andra
+
+De viktigaste faktorerna:
+- Rätt förväntan hos kunden
+	- Rätt leverans i rätt tid till rätt kostnad
+- Bra kommunikation
+	- tydlighet, ärlighet, saklighet
+- Konsultmässighet
+- Kompetens och kvalitet
+- Hålla vad man lovar
+- Kunna ta kritik
+
+##### 1 Rätt förväntan hos kunden
+- Det är viktigt att vara överens med kunder om vad som ska levereras
+	- Projektbeskrivning
+	- Ärlig CV (ibland på teamnivå)
+	- Gemensamma mål
+
+- Kundens krav
+	- Rätt leverans i rätt tid till rätt kostnad (billigt, bra och snabbt)
+
+Vår uppgift är att förklara att det bara går att uppfylla två av de tre kraven
+Billigt, bra och snabbt - välj två!
+
+###### Billigt och bra - inte snabbt
+Om kunden vill få det billigt och bra blir det svårt att leverera snabbt. Ett sätt att få en applikation bra och billig är att låta utvecklingsteamet arbeta med den d
+de har tid, vid eventuella lugnare perioder.
+
+###### Billigt och snabbt - inte bra
+Svårt att leverera bra. En snabb leverans med begränsad ekonomi borgar för att man behöver sänka ambitionsnivån, fulkoda och inte hinner tänka klart.
+
+###### Bra och snabb - inte billigt
+Svårt att leverera billigt då fler personal, konsulter, expertis måste tas in för att jobba med projektet, vilket ökar kostnaderna.
+
+##### 2 Bra kommunikation
+De flesta kunder vill ha en löpande kommunikation
+- Kommunikation innan uppdraget
+	- Tydlighet om uppdraget
+	- Tydlighet om kompetens
+- Kommunikation under uppdraget
+	- Projektverktygen, Kanban, Jira, mm
+	- Dagliga avstämningar - daily SCRUM
+	- SCRUM: sprint planering, reviews, retrospect
+	- Löpande information om hinder och problem
+	- Rapporter
+	- Använda rätt begrepp
+- Kommunikation efter uppdraget
+	- Överlämning
+	- Slutrapport
+	- Utvärdering
+
+##### 3 Konsultmässighet
+Krav
+- Kort uppstartsträcka
+- Trevlig
+- Inspirera på arbetsplatsen
+- Tillmötesgående
+- Dela med dig av kunskap
+- Vara självgående och kunna jobba i grupp
+- Flexibel
+- Representabel
+- God ambassadör för sitt företag
+- Inte sticka ut
+
+##### 4 Kompetens och kvalitet
+- En självklar egenskap för att kunden ska vara nöjd är att vi levererar lösningar på ett kompetent sätt och med hög kvalitet
+- En kund blir väldigt missnöjd om vår kod är dålig:
+	- Fulkodad
+	- Otidsenlig
+	- Inte enligt företagets policy
+	- Buggig/inte fungerar
+	- Failar i test
+	- Dåligt dokumenterad (om krav finns på det)
+- Vår uppgift är att leverera bra kod och bra funktionalitet, enligt kravspecifikationer
