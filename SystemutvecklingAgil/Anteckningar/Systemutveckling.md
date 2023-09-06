@@ -827,3 +827,60 @@ Krav
 	- Failar i test
 	- Dåligt dokumenterad (om krav finns på det)
 - Vår uppgift är att leverera bra kod och bra funktionalitet, enligt kravspecifikationer
+
+##### 5 Hålla vad man lovar
+Om man är överens om förväntningarna, kommunikationen fungerar, du agera konsultmässigt med kompetens och kvalitet finns det dock en sak till som kan förstöra kundnöjdheten: att lova det som utlovats.
+
+Saker vi lovar kontinuerligt
+- Det vi bestämmer i sprintplaneringen - om det som bestämts inte hinns med och det sker upprepade gånger kan kunden bli missnöjd
+- Saker vi bestämt gällande arbetstider, vara på plats, vara tillgänglig, mm
+- Vad vi bestämt att applikationen ska göra och på vilket sätt
+- Kostnader (tid)
+
+##### 6 Kunna ta kritik
+- Kritik kommer ofta snabbt
+- se kritik som feedback för förändring
+- Ju snabbare du tar dig till __förstå__ och __förbättra__ ju nöjdare blir kunden och du får ett trevligare arbetsliv
+- Kunder/chefer är ibland inte bra på att ge kritik
+- Ge kritik:
+	- Ge feedback i en tillitsfull situation
+	- Var positiv och ärlig
+	- Var direkt, konkret och specifik
+	- Välj rätt tillfälle
+	- Var konstruktiv
+	- Följ upp
+
+#### Kundens upplevelse
+##### Kundens __upplevda__ totalvärde
+ - Det vi funktionsmässigt levererar
+ - Hur mycket värdet på kundens produkt ökar
+ - Vad kunden i slutändan kommer att tjäna
+ - Vad organisationen vinner i kompetens och produktivitet
+ - Att du syns
+	 - Berätta när det går bra: "Jag fixade den funktionen", "Jag löste det problemet"
+	 - Finns på plats, tillgänglig och "syns i korridorerna"
+	 - Lunchar med de andra
+	 - Hörs på möten
+	 - Delar med dig av kunskap
+
+##### Kundens upplevda totalkostnad
+Kostnaden för dig står i direkt relation till vilket värde du tillför
+Om du uppfattas att du levererar värde, så upplever kunden kostnaden rimlig
+
+Totalt levererat värde:
+- I slutändan handlar det om kronor och ören
+- Om du bidragit till en framgångsrik lansering och drift av en applikation som genererar vinst så anses det levererade värdet vara bra
+- Ibland kan du ha gjort allt du kan, på det bästa sätt möjligt, och projektet misslyckas ändå
+	- Detta kan vi inte styra över, och det viktigaste då är att lära sig av misstagen, gå vidare och värdesätta det du gjorde bra.
+
+#### Vara din egen kund
+- Vissa utav oss kanske väljer att själva skapa en egen produkt/tjänst/applikation
+- Som företagare, ensam eller tillsammans med andra bygger vi en applikation som vi tror på
+- Vi kanske också anlitar extern kompetens eller anställer
+- Det handlar lika mycket om kunden som konsulten/anställda för att alla ska bli nöjda
+- Fundera gärna på något som skulle kunna bli en affärsidé och en produkt
+
+https://www.reflect.se/kundnojdhetnki/
+https://discanalys.com/vad-ar-disc-analys/
+https://jobzone.se/om-oss/firo-teorin/
+
