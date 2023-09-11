@@ -35,29 +35,20 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedFolders": {
-    "System23Notes": [
-      "SystemutvecklingAgil/Anteckningar",
-      "ProgrammeringDotNetC#1",
-      "ProgrammeringDotNetC#1/Anteckningar",
-      "ProgrammeringDotNetC#1/Anteckningar",
-      "ProgrammeringDotNetC#1/Anteckningar",
-      "ProgrammeringDotNetC#1/Context",
-      "ProgrammeringDotNetC#1/Context",
-      "ProgrammeringDotNetC#1",
-      "ProgrammeringDotNetC#1"
+    "ProgrammeringDotNetC#1": [
+      "Anteckningar"
     ]
   },
   "expandedSpaces": [
     "/",
     null,
-    "System23Notes",
-    null
+    "ProgrammeringDotNetC#1"
   ],
   "expandFolderOnClick": true,
   "openFolders": [],
   "fileIcons": [],
   "cachedSpaces": [
-    "System23Notes"
+    "ProgrammeringDotNetC#1"
   ],
   "menuTriggerChar": "/",
   "inlineStickerMenu": true,
@@ -82,7 +73,7 @@
   "spacesSyncTimeoutSeconds": 10,
   "spacesAutoBackup": true,
   "spacesAutoBackupInterval": 10,
-  "spacesAutoBackupLast": 1694414875280,
+  "spacesAutoBackupLast": 1694414638552,
   "spacesUseAlias": false,
   "precreateVaultSpace": true,
   "fmKeyAlias": "aliases",

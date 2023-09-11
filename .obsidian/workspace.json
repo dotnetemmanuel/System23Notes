@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "bb8581a52408aef4",
+        "id": "dc92bb539e67d4de",
         "type": "tabs",
         "children": [
           {
-            "id": "de51d1d1be2d1d83",
+            "id": "0332c41bbc36dc1b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "3b68ebdbdd2e9569",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
+                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,8 +82,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
+                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
+                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SystemutvecklingAgil/Anteckningar/Systemutveckling.md"
+                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md"
               }
             }
           }
@@ -155,10 +163,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de51d1d1be2d1d83",
+  "active": "f163eba3265102a3",
   "lastOpenFiles": [
-    "TDD - T.md",
+    "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
+    "ProgrammeringDotNETCSharp1/.Net CSharp.md",
+    "ProgrammeringDotNETCSharp1",
+    "ProgrammeringDotNetC#1/ProgrammeringDotNetC#1.md",
+    "ProgrammeringDotNetC#1/Context/Context.md",
+    "ProgrammeringDotNetC#1/Anteckningar/Anteckningar.md",
+    "ProgrammeringDotNetC#1/Context/spacesLastSync.log",
+    "ProgrammeringDotNetC#1/Context",
+    "SystemutvecklingAgil/SystemutvecklingAgil.md",
+    "ProgrammeringDotNetC#1/Anteckningar",
+    "ProgrammeringDotNetC#1/Ny mapp",
+    "ProgrammeringDotNetC#1/.NET C#1.md",
+    "ProgrammeringDotNetC#1",
+    "Ny mapp",
+    "ProgrammeringDotNETC#1/ProgrammeringDotNETC#1.md",
+    "ProgrammeringDotNETC#1",
+    "ProgrammeringDotNETC#1/.NET C#1.md",
+    "ProgrammeringDotNETC#1/.NET C#1.md",
+    "ProgrammeringDotNETC#1/.NET.md",
     "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
+    "ProgrammeringDotNETC#1/.NET C#1.md",
+    "TDD - T.md",
     "SystemutvecklingAgil/Individuellt arbete/Emmanuel_Duchene_VG_Uppgiften.pdf",
     "Pasted image 20230905104212.png",
     "Pasted image 20230905102808.png",
@@ -166,14 +194,6 @@
     "Pasted image 20230905100530.png",
     "Pasted image 20230905100508.png",
     "SystemutvecklingAgil/Individuellt arbete/Emmanuel_Duchene_VG_Uppgiften.docx",
-    "SystemutvecklingAgil/Individuellt arbete",
-    "SystemutvecklingAgil/Ny mapp",
-    "SystemutvecklingAgil/Grupparbete/GruppA_Sprint_Retrospect.docx.docx",
-    "SystemutvecklingAgil/Grupparbete/GruppA_Sprint_Retrospect.docx",
-    "SystemutvecklingAgil/Grupparbete/Ny(tt) Microsoft Word-dokument.docx",
-    "SystemutvecklingAgil/Grupparbete/Emmanuel_Duchene_VG_Uppgiften.docx",
-    "SystemutvecklingAgil/Grupparbete/EmmanuelDuchene_VGUppgiften.docx",
-    "SystemutvecklingAgil/Grupparbete/~$Sprint_Review_01.tmp",
     "Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
