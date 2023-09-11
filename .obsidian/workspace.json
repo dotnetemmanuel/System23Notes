@@ -11,24 +11,15 @@
             "id": "0332c41bbc36dc1b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "3b68ebdbdd2e9569",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
+                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
+                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
+                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/DotNetCSharp1.md"
+                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md"
               }
             }
           }
@@ -163,37 +154,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f163eba3265102a3",
+  "active": "0332c41bbc36dc1b",
   "lastOpenFiles": [
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Övningar1.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Programmering i .NET C# 1 v.3.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_02-Grunderna.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_01-Introduktion.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Kurshandledning_Programmering i .NET 1.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial",
+    "ProgrammeringDotNETCSharp1/Ny mapp/Övningar1.pdf",
+    "ProgrammeringDotNETCSharp1/Ny mapp/Ej bekräftad 823105.crdownload",
+    "ProgrammeringDotNETCSharp1/Ny mapp/NET1_02-Grunderna.pdf",
+    "ProgrammeringDotNETCSharp1/Ny mapp/Ej bekräftad 595856.crdownload",
+    "ProgrammeringDotNETCSharp1/Ny mapp/NET1_01-Introduktion.pdf",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
+    "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
-    "ProgrammeringDotNETCSharp1",
     "ProgrammeringDotNetC#1/ProgrammeringDotNetC#1.md",
     "ProgrammeringDotNetC#1/Context/Context.md",
     "ProgrammeringDotNetC#1/Anteckningar/Anteckningar.md",
-    "ProgrammeringDotNetC#1/Context/spacesLastSync.log",
-    "ProgrammeringDotNetC#1/Context",
     "SystemutvecklingAgil/SystemutvecklingAgil.md",
-    "ProgrammeringDotNetC#1/Anteckningar",
-    "ProgrammeringDotNetC#1/Ny mapp",
     "ProgrammeringDotNetC#1/.NET C#1.md",
-    "ProgrammeringDotNetC#1",
-    "Ny mapp",
     "ProgrammeringDotNETC#1/ProgrammeringDotNETC#1.md",
-    "ProgrammeringDotNETC#1",
     "ProgrammeringDotNETC#1/.NET C#1.md",
     "ProgrammeringDotNETC#1/.NET C#1.md",
     "ProgrammeringDotNETC#1/.NET.md",
     "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
     "ProgrammeringDotNETC#1/.NET C#1.md",
     "TDD - T.md",
-    "SystemutvecklingAgil/Individuellt arbete/Emmanuel_Duchene_VG_Uppgiften.pdf",
     "Pasted image 20230905104212.png",
     "Pasted image 20230905102808.png",
     "Pasted image 20230905100533.png",
     "Pasted image 20230905100530.png",
     "Pasted image 20230905100508.png",
-    "SystemutvecklingAgil/Individuellt arbete/Emmanuel_Duchene_VG_Uppgiften.docx",
     "Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
