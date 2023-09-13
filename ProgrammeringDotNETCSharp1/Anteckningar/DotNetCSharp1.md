@@ -261,3 +261,126 @@ weeklyPay = hoursWorked * hourlyPayRate;
 	- 10 % 5 = 0
 	- 9 % 4 = 1
 
+## Bool och villkor
+### Parenteser
+- { och } - början och slutet på kodblock
+- \[ och ] - används för matriser och listor
+- ( och ) - anger grupper av termer eller tal
+
+### Datatypen bool
+- deklareras med nyckelordet bool
+- har två möjliga värden: true och false
+- användbart i logiska uttryck och villkor
+- Standardvärdet är false
+
+### Villkor
+#### Jämförelse operatorer
+```cs
+//Lika med
+a == b;
+a < b;
+a <= b;
+a > b;
+a >= b;
+a != b;
+
+bool result = 5 <= 6;
+Console.WriteLine(result); //True
+```
+Villkoret ska vara sant för att något ska händer
+
+#### if
+```cs
+if (villkor)
+{
+	Kod;
+}
+```
+
+#### Logiska operatorer
+- INTE - !
+- OCH - &&
+- ELLER - ||
+
+```cs
+//båda villkor måste vara sanna
+if (name == "micke" && timme > 18)
+{
+	Console.WriteLine("God kväll, herr Engström!")
+}
+
+//ett av vollkoren måste vara sant
+if( timme < 9 || timme > 18)
+{
+	Console.WriteLine("Butiken är stängd.")
+}
+```
+
+#### Fler villkor
+if - else if - else.
+```cs
+if(villkor)
+{
+	Kod;
+}
+else if
+{
+	Kod;
+}
+else
+{
+	Kod;
+}
+```
+
+## Loopar
+- while
+- do ... while
+- for
+
+### while
+```cs
+while(villkor)
+{
+	Kod;
+}
+
+int x = 0;
+while(x < 100)
+{
+	Console.WriteLine(x);
+	x++; //eller x = x + 1 eller x += 1
+}
+```
+Körs tills villkoret blir falskt. Testar tillståndet innan loopen utförs.
+
+### do ... while
+```cs
+do
+{
+	Kod;
+}
+while(villkor)
+
+int x = 0;
+do
+{
+	Console.WriteLine(x);
+	x++; //eller x = x + 1 eller x += 1
+}
+while(x < 100)
+```
+Testar tillståndet efter loopen utförs. Loopen körs alltid minst en gång.
+
+### for
+```cs
+for(int x = startvärde; villkor för x; inkrementering)
+{
+	Kod;
+}
+
+for(int i = 1; i <= 10; i++)
+{
+	Console.Write(x);
+}
+```
