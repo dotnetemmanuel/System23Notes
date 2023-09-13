@@ -73,11 +73,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 235.5,
+    "collapsed": true
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -156,6 +158,12 @@
   },
   "active": "0332c41bbc36dc1b",
   "lastOpenFiles": [
+    "Pasted image 20230913101828.png",
+    "Pasted image 20230913101518.png",
+    "Pasted image 20230913094717.png",
+    "Pasted image 20230913092820.png",
+    "Context/spacesLastSync.log",
+    "Context",
     "ProgrammeringDotNETCSharp1/Anteckningar/james-harrison-vpOeXr5wmR4-unsplash.jpg",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Övningar1.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Programmering i .NET C# 1 v.3.pdf",
@@ -165,8 +173,6 @@
     "ProgrammeringDotNETCSharp1/Kursmaterial",
     "ProgrammeringDotNETCSharp1/Ny mapp/Övningar1.pdf",
     "ProgrammeringDotNETCSharp1/Ny mapp/Ej bekräftad 823105.crdownload",
-    "ProgrammeringDotNETCSharp1/Ny mapp/NET1_02-Grunderna.pdf",
-    "ProgrammeringDotNETCSharp1/Ny mapp/Ej bekräftad 595856.crdownload",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
@@ -188,11 +194,7 @@
     "Pasted image 20230905100530.png",
     "Pasted image 20230905100508.png",
     "Pasted image 20230824135648.png",
-    "SystemutvecklingAgil/Anteckningar/Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
-    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825112741.png",
-    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825110528.png",
-    "SystemutvecklingAgil/Anteckningar/Pasted image 20230825091652.png",
     "SystemutvecklingAgil/Systemutveckling.md",
     "SystemutvecklingAgil/12regler.md",
     "Agil utveckling, Scrum, Kanban.md",

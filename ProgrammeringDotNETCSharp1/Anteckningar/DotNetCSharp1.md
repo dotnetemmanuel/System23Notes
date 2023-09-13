@@ -114,3 +114,150 @@ Kan användas för att bygga ett brett spektrum av applikationer. Webb till mobi
 	- Hantera filer i ett projekt
 	- Versionshantering
 
+# C\#
+## Kommentarer
+Viktigt att kommentera kod av olika anledningar. Kommentarer ska vara självförklarande men även ska användas med en viss måtta.
+
+```cs
+//Enradskommentar
+
+/*
+Blockkommentar
+*/
+```
+
+## Datatyper
+### Varför välja datatyp?
+- Minnesåtgång
+- Begriplighet
+- Framtida beräkningsbehov, t.ex medelvärde
+- Säkrare programmering. Konstiga värden kan inte ta sig in lika lätt
+
+### Primitiva datatyper
+![[Pasted image 20230913092820.png]]
+
+### Datatyper
+```cs
+int myNum = 5;
+double myDoubleNum = 5.99D;
+char myLetter = 'D';
+bool myBool = true;
+string myText = "Hello";
+```
+
+#### var
+- __var__ låter kompilatorn själv bedöma vilken datatyp som ska användas
+
+```cs
+var myText = "Hejsan";
+var myNumber = 123;
+```
+
+Lätt att använda men blir ibland fel.
+
+#### string
+Används för att lagra en sekvens av tecken (text). Omges av dubblat citattecken.
+
+Ibland vill man ha tecknet " inne i en sträng, använd då escape-tecknet \.
+
+#### int
+Kan lagra heltal från ca -2,2miljarder till 2,2 miljarder.
+När fungerar inte int?
+- större värden
+- tal med decimal noggranhet
+
+##### Andra heltalstyper
+- sbyte (-128 - 127)
+- byte (0 - 255)
+- short
+- ushort
+- __int__
+- uint
+- long
+- ulong
+
+#### long
+Används när int inte är tillräckligt stor för att lagra värdet. Värdet avslutas med "L".
+```cs
+long myLong = 1234567890L;
+```
+
+#### double
+Precision på 15 decimaler.
+
+#### decimal
+- Precision på 28-29 decimaler.
+- Används när man räknar med pengar
+- Inga avrundningsfel
+- Nästan ingen förlust av precision
+- Standardvärde = 0.0M (M är suffixet för sådana här decimaltal)
+
+#### bool
+Endast två värden: true eller false.
+
+#### char
+Används för att lagra enskilt tecken. Tecknet måste vara omgivet av ' '.
+```cs
+char myChar = 'D';
+```
+
+#### Exempel
+![[Pasted image 20230913094717.png]]
+
+### Konvertera mellan datatyper
+
+```cs
+//sting to int
+int numberInt = int.Parse(number)
+
+//int to float
+float numberFloat = numberInt;
+
+//Convert
+double doubleNum = Convert.ToDouble(numInt)
+
+//Casting
+int numInt = (int)numDouble;
+
+//Get variable type
+Type t = numInt.GetType();
+```
+
+## Variabelnamn
+- åäö ska ej användas som variabelnamn
+- engelska namn används på alla namn
+- två variabler kan inte heta samma sak
+- vissa namn är "låsta" då de är nyckelord i språket (int, double, string, osv.)
+- använder man stora och små bokstäver så måste detta följas senare. 
+```cs
+mittHELTAL != mittHeltal
+```
+- tydlighet är viktigt
+```cs
+//Korrekt men inte uppenbart
+a = b * c;
+
+//Att föredra
+weeklyPay = hoursWorked * hourlyPayRate;
+```
+- använd __lowerCamelCase__
+- använda variabelnamn som är beskrivande
+- anta och håll fast vid en stil för att namnge variabler
+- namnge inte variabler med bara versaler
+
+### Legality
+
+![[Pasted image 20230913101518.png]]
+
+### Rekommendationer för variabelnamn
+![[Pasted image 20230913101828.png]]
+
+## Operatorer
+- +
+- -
+- *
+- / 
+- % (modulus) - returnerar resten (återstoden) av en division
+	- 10 % 5 = 0
+	- 9 % 4 = 1
+
