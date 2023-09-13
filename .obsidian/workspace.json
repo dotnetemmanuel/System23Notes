@@ -138,6 +138,16 @@
                 "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md"
               }
             }
+          },
+          {
+            "id": "1460ee2a8de65f48",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ]
       }
@@ -158,6 +168,10 @@
   },
   "active": "0332c41bbc36dc1b",
   "lastOpenFiles": [
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Övningsuppgift-Labyrinten.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 309688.crdownload",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_03-C-Sharp1.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 835987.crdownload",
     "Pasted image 20230913101828.png",
     "Pasted image 20230913101518.png",
     "Pasted image 20230913094717.png",
@@ -170,9 +184,6 @@
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_02-Grunderna.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_01-Introduktion.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Kurshandledning_Programmering i .NET 1.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial",
-    "ProgrammeringDotNETCSharp1/Ny mapp/Övningar1.pdf",
-    "ProgrammeringDotNETCSharp1/Ny mapp/Ej bekräftad 823105.crdownload",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
@@ -193,7 +204,6 @@
     "Pasted image 20230905100533.png",
     "Pasted image 20230905100530.png",
     "Pasted image 20230905100508.png",
-    "Pasted image 20230824135648.png",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
     "SystemutvecklingAgil/Systemutveckling.md",
     "SystemutvecklingAgil/12regler.md",
