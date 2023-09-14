@@ -1,5 +1,5 @@
 ---
-banner: ProgrammeringDotNETCSharp1/Anteckningar/james-harrison-vpOeXr5wmR4-unsplash.jpg
+banner: https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80
 ---
 # .NET och programmeringens grunder
 ## Programmeringens faser
@@ -202,7 +202,16 @@ char myChar = 'D';
 ```
 
 #### Exempel
-![[Pasted image 20230913094717.png]]
+
+
+```cs 
+byte centuries = 20; // Usually a small number 
+ushort years = 2022; 
+uint days = 730480; 
+ulong hours = 17531520; // May be a very big number
+
+Console.WriteLine("{0} centuries is {1} years, or {2} days, or {3} hours.", centuries, years, days, hours);
+```
 
 ### Konvertera mellan datatyper
 
@@ -309,7 +318,7 @@ if (name == "micke" && timme > 18)
 	Console.WriteLine("God kväll, herr Engström!")
 }
 
-//ett av vollkoren måste vara sant
+//ett av villkoren måste vara sant
 if( timme < 9 || timme > 18)
 {
 	Console.WriteLine("Butiken är stängd.")
