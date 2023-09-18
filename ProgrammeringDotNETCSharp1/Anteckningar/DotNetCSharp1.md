@@ -393,3 +393,87 @@ for(int i = 1; i <= 10; i++)
 	Console.Write(x);
 }
 ```
+
+## switch
+Ett enkelt sätt att skapa ett antal villkor av liknande sort.
+
+```cs
+switch(uttryck)
+{
+	case x:
+		Kod (som körs om uttrycket = x)
+		break;
+	
+	case y:
+		Kod (som körs om uttrycket = y)
+		break;
+	
+	default:
+		Kod ( som körs om uttrycker är varken lika med x eller y)
+		break;
+}
+
+
+int caseSwitch = 1;
+
+switch (caseSwitch) 
+{ 
+	case 1: 
+		Console.WriteLine("Case 1"); 
+		break; // Avbryter switch-satsen 
+	case 2: 
+		Console.WriteLine("Case 2"); 
+		break; // Avbryter switch-satsen 
+	default: 
+		Console.WriteLine("Default case"); 
+		break; // Avbryter switch-satsen 
+}
+```
+
+Om _break;_ saknas från varje case kommer koden att generera kompilatorfel.
+Det är däremot inte obligatoriskt att ha en _default_ case.
+
+Det går även att ha flera villkor som stämmer överens och kör samma kod:
+```cs
+int caseSwitch = 1;
+
+switch (caseSwitch) 
+{ 
+	case 1: 
+		Console.WriteLine("Case 1"); 
+		break; // Avbryter switch-satsen 
+	case 2:
+	case 3: 
+		Console.WriteLine("Case 2 och Case 3"); 
+		break; // Avbryter switch-satsen 
+	default: 
+		Console.WriteLine("Default case"); 
+		break; // Avbryter switch-satsen 
+}
+```
+
+Exempel:
+```cs
+Console.Write("Ange namn: "); 
+string name = Console.ReadLine();
+
+switch(name) 
+{ 
+case "micke": case "håkan": 
+	Console.WriteLine("Lärare"); 
+	break; 
+case "christer": 
+	Console.WriteLine("Chefen"); 
+	break; 
+default: 
+	Console.WriteLine("Elev"); 
+	break; 
+}
+```
+
+- Det måste finnas ett separat för varje normal situation
+- Lägg det normala fallet först
+	- Lägg det mest använda fallet först, de sällan använda sist
+- Sortera fallen alfabetiskt, numeriskt eller vad som är lämpligt
+	- Tänk på att koden skall vara lätt att läsa för människor
+- Använd fallet default för att hantera sådana fall som inte skall kunna inträffa under normala omständigheter
