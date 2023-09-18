@@ -477,3 +477,132 @@ default:
 - Sortera fallen alfabetiskt, numeriskt eller vad som är lämpligt
 	- Tänk på att koden skall vara lätt att läsa för människor
 - Använd fallet default för att hantera sådana fall som inte skall kunna inträffa under normala omständigheter
+
+
+## Metoder
+- En metod är som ett byggblock som löser ett litet problem
+- Ett stycke kod som har ett namn och som kan anropas från en annan plats i programmet
+- Kan ta emot parametrar och returnera ett värde
+- Låter oss bygga stora program av små enkla bitar
+- Kallas också funktioner, procedurer och subrutiner i andra språk
+
+### Varför?
+- Mer hanterlig programmering
+	- dela upp stort problem i mindre bitar
+	- bättre organisation i programmet
+	- Förbättra läsbarhet
+	- underlätta förståelse
+- Undvika upprepningar
+- Återanvändbarhet
+	- använd en metod flera gånger
+- "Gömma undan" kod som man inte behöver känna till - Abstraktion
+
+### Enklaste metoden
+```cs
+static void Hello()
+{
+	Console.WriteLine("Hello;")
+}
+```
+
+### Deklarera metoder
+En metod är ett stycke kod med ett namn
+- __static__ (Åtkomsttyp)
+- __void__ (Returtyp. Vilken datatyp som ska returneras)
+- __Hello()__ (Namn på metoden)
+
+### Anropa metoden
+```cs
+static void Main(string[] args)
+{
+	Hello();
+}
+```
+
+### Metoder med inparametrar
+- För att skicka information till en metod används parametrar (kallas även argument)
+	- skicka noll eller flera värden
+	- skicka värden av olika typ
+	- varje parametrar har namn och typ
+	- parametrar får värden när metoden anropas
+	- parametrar kan ändra hur metoden fungerar beroende på deras värden
+
+```cs
+static void SayHello(string name)
+{
+	Console.WriteLine("Hej" + name)
+}
+```
+
+### Anropa metoden
+```cs
+static void Main (string[] args)
+{
+	SayHello("Micke");
+}
+```
+
+### Definiera och använd metodparametrar
+
+- Metodens beteende beror på parametrarna
+- Parametrar kan vara av godtycklig typ
+	- int, double, string, etc.
+	- Arrays (int[], double[], etc.)
+
+```cs
+static void PrintSign(int number) 
+{ 
+	if (number > 0) 
+		Console.WriteLine("Positive"); 
+	else if (number < 0) 
+		Console.WriteLine("Negative"); 
+	else 
+		Console.WriteLine("Zero"); }
+```
+
+### Anropa metoder med parametrar
+- För att anropa en metod och skicka värden till dess parametrar:
+	- använd metodens namn, följt av en lista av uttryck för parametrarna
+- Uttryck måste vara av samma datatyp som metodens parametrar (eller kompatibla)
+- Om metoden vill ha en float, kan du skicka en int istället 
+	- "Kan" betyder inte att det är bra idé!
+	- Använd samma ordningsföljd som i metodens deklaration 
+	- För metoder utan parametrar: glöm inte parenteserna! 
+		- SayHello()
+
+ - PrintPerson(82, “Micke”);
+ - PrintPerson (23 + 45, name);
+ - PrintPerson(GetWeight(), GetName())
+
+### Skicka tillbaka värden från metoder
+◦ Istället för void anger vi vilken typ av data som skall returneras 
+
+static int Multiply(int firstNum, int secondNum) 
+{
+return firstNum * secondNum; 
+}
+
+- Metoder kan returnera alla datatyper (int, string, array etc.) 
+- void-metoder returnerar ingenting
+- Kombinationen av metodens namn och dess parametrar kallas signatur
+- Använd nyckelordet __return__ för att skicka tillbaka resultatet
+
+```cs
+static void Main() 
+{ 
+Console.Write("Temperature in Fahrenheit: "); 
+double t = Double.Parse(Console.ReadLine()); 
+t = FahrenheitToCelsius(t); 
+Console.Write("Temperature in Celsius: {0}", t); 
+} 
+
+static double FahrenheitToCelsius(double fahrenheit) 
+{ 
+double celsius = (fahrenheit - 32) * 5 / 9; 
+return celsius; 
+}
+```
+
+![[Pasted image 20230918132942.png]]
+
+![[Pasted image 20230918133221.png]]
