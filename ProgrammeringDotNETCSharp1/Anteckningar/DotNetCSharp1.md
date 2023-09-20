@@ -557,7 +557,8 @@ static void PrintSign(int number)
 	else if (number < 0) 
 		Console.WriteLine("Negative"); 
 	else 
-		Console.WriteLine("Zero"); }
+		Console.WriteLine("Zero"); 
+}
 ```
 
 ### Anropa metoder med parametrar
@@ -590,19 +591,73 @@ return firstNum * secondNum;
 ```cs
 static void Main() 
 { 
-Console.Write("Temperature in Fahrenheit: "); 
-double t = Double.Parse(Console.ReadLine()); 
-t = FahrenheitToCelsius(t); 
-Console.Write("Temperature in Celsius: {0}", t); 
+	Console.Write("Temperature in Fahrenheit: "); 
+	double t = Double.Parse(Console.ReadLine()); 
+	t = FahrenheitToCelsius(t); 
+	Console.Write("Temperature in Celsius: {0}", t); 
 } 
 
 static double FahrenheitToCelsius(double fahrenheit) 
 { 
-double celsius = (fahrenheit - 32) * 5 / 9; 
-return celsius; 
+	double celsius = (fahrenheit - 32) * 5 / 9; 
+	return celsius; 
 }
 ```
 
 ![[Pasted image 20230918132942.png]]
 
 ![[Pasted image 20230918133221.png]]
+
+## Scope
+Begrepp som förklarar var vi har tillgång till vissa variabler.
+
+### Classe level scope
+- Att deklarera variablerna i en klass, men utanför en metod kan nås direkt var som helst i klassen.
+- Dessa variabler kalls också fält eller klassmedlemmar
+- Variabelns omfång på klassnivå kan nås av metoderna i den klass den deklareras.
+
+```cs
+using System;
+
+class Program
+{
+static int a = 0;
+
+==> Main method
+}
+```
+
+### Method level scope
+- Variabler som deklareras i en metod har omfång på metodnivå
+- Dessa är inte tillgängliga utanför metoden
+- Dessa variabler kan dock nås av koden inuti metoden
+- Dessa variabler kallas lokala variabler
+- Det uppstår kompileringsfel om dessa variabler deklareras två gånger med samma namn i samma omfång
+- Dessa variabler finns inte när metodens körning är över
+```cs
+public void Display()
+{
+	int m = 47;
+	Console.WriteLine(m);
+}
+
+public void Display2()
+{
+	Console.WriteLine(m);//Fungerar inte!
+}
+```
+### Block level scope
+- Dessa variabler deklareras i allmänhet inuti for eller while-loopar.
+- Dessa variabler kallas också loopvariabler eller satsvariabler eftersom de har begränsat sitt omfång till det block de befinner sig i.
+
+```cs
+static void Main(string[] args)
+{
+    int i = 0;
+    for (i = 0; i < 4; i++)
+    {
+        Console.WriteLine(i);//0, 1, 2, 3
+    }
+    Console.WriteLine(i);//4
+}
+```
