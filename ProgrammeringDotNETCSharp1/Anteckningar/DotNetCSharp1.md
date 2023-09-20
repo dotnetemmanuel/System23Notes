@@ -608,6 +608,18 @@ static double FahrenheitToCelsius(double fahrenheit)
 
 ![[Pasted image 20230918133221.png]]
 
+
+### Fyra typer av metoder
+- Metoder som inte tar in parametrar och inte returnerar något
+- Metoder som tar in parametrar med inte returnerar något
+- Metoder som inte tar in parametrar men returnerar något
+- Metoder som tar in parametrar och returnerar något
+
+### Hur kan vi anropa metoder?
+- Huvudprogrammet kan anropa metoder (Main() är faktiskt en metod också)
+- Metoder kan anropa metoder
+- Metoder kan anropa sig själv (rekursiva metoder)
+
 ## Scope
 Begrepp som förklarar var vi har tillgång till vissa variabler.
 
@@ -660,4 +672,10 @@ static void Main(string[] args)
     }
     Console.WriteLine(i);//4
 }
+```
+
+## Slump
+```cs
+Random rnd = new Random();
+
 ```
