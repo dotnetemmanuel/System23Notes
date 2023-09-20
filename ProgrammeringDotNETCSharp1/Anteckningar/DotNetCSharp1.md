@@ -677,5 +677,9 @@ static void Main(string[] args)
 ## Slump
 ```cs
 Random rnd = new Random();
+int random = rnd.Next(1, 3);
 
+//eller
+
+Random.Share.Next(1, 3);
 ```
