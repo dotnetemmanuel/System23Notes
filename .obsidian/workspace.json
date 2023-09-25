@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
-    "collapsed": true
+    "width": 235.5
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -168,13 +167,16 @@
   },
   "active": "0332c41bbc36dc1b",
   "lastOpenFiles": [
+    "Pasted image 20230925103031.png",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_06-C-Sharp4.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 796586.crdownload",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_05-C-Sharp3.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 941846.crdownload",
     "Pasted image 20230918133221.png",
     "Pasted image 20230918132942.png",
     "Pasted image 20230913094717.png.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Övningsuppgift-Labyrinten.pdf",
+    "ProgrammeringDotNETCSharp1/Övningsuppgift-Labyrinten.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 309688.crdownload",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_03-C-Sharp1.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 835987.crdownload",
@@ -185,9 +187,6 @@
     "Context/spacesLastSync.log",
     "Context",
     "ProgrammeringDotNETCSharp1/Anteckningar/james-harrison-vpOeXr5wmR4-unsplash.jpg",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Övningar1.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Programmering i .NET C# 1 v.3.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_02-Grunderna.pdf",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
     "ProgrammeringDotNetC#1/ProgrammeringDotNetC#1.md",

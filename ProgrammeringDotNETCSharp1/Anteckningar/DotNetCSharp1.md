@@ -394,7 +394,7 @@ for(int i = 1; i <= 10; i++)
 }
 ```
 
-## switch
+## Switch
 Ett enkelt sätt att skapa ett antal villkor av liknande sort.
 
 ```cs
@@ -681,5 +681,105 @@ int random = rnd.Next(1, 3);
 
 //eller
 
-Random.Share.Next(1, 3);
+Random.Shared.Next(1, 3);
+```
+## Arrayer
+- En vektor (array) är en sekvens av element av samma typ (string, bool, osv.)
+- Ordningsföljden är fast
+- Har en fast storlek (Array.Length)
+![[Pasted image 20230925103031.png]]
+
+Deklarationen talar om elementtypen. Hakparenteser \[ ] betyder array.
+
+```cs
+int[] myIntArray;
+myIntArray[] = new int[5]; //5 int element från 0-4.
+
+myIntArray[0] = 25;
+myIntArray[1] = 345;
+myIntArray[2] = 7;
+myIntArray[3] = 47;
+myIntArray[4] = 63;
+```
+
+Ett kortare sätt att skapa array:
+```cs
+int[] myIntArray = {23, 345, 7, 47, 63};
+```
+
+### Se värden i en array
+Åtkomst till array-element görs genom operatorn hakparentes \[ ].
+- kallas indexerare
+- Indexeraren tar elementets index som parameter
+- Det första elementet har index 0
+
+### Skriva ut ett värde
+```cs
+int[] myIntArray = {23, 345, 7, 47, 63}
+Console.WriteLine(myIntArray[2]) //Skriver ut "7";
+```
+
+### Skriva ut längden på array
+```cs
+Console.WriteLine(myIntArray.Length); //Skriver ut 5
+
+Console.WriteLine(myIntArray[myIntArray.Length - 1]); // Skriver ut 63;
+```
+
+### Skriva ut alla värden
+```cs
+for( int i = 0; i < myArray.Length; i++)
+{
+	Console.WriteLine(myIntArray[i]);
+}
+```
+
+### Ändra värde i en array
+```cs
+int[] myIntArray = {23, 345, 7, 47, 63}
+
+myIntArray[2] = 99;
+```
+
+### for eller foreach
+- En for-loop fungerar utmärkt för att lista innehållet
+- En enklare variant är foreach, som lista hela arrayen och inte håller reda på vilket index värden har
+```cs
+foreach(type value in array)
+{
+
+}
+```
+Används när ingen indexering behövs
+- alla element hanteras ett i taget
+- read-only
+```cs
+int[] myIntArray = {23, 345, 7, 47, 63}
+
+foreach(int num in myIntArray)
+{
+	Console.Write(num);
+}
+```
+
+#### Exempel:
+```cs
+string[] capitals = 
+{
+	"Stockholm",
+	"Washington",
+	"London",
+	"Paris"
+};
+
+foreach (string capital in capitals)
+{
+	Console.WriteLine(capital);
+}
+```
+
+### Sortera en array
+- Att sortera en array i bokstavsordning görs enkelt såhär:
+```cs
+Array.Sort(capitals);
 ```
