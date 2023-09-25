@@ -45,7 +45,8 @@
       "ProgrammeringDotNetC#1/Context",
       "ProgrammeringDotNetC#1",
       "ProgrammeringDotNetC#1",
-      "ProgrammeringDotNETCSharp1/Kursmaterial"
+      "ProgrammeringDotNETCSharp1/Kursmaterial",
+      "ProgrammeringDotNETCSharp1"
     ]
   },
   "expandedSpaces": [
@@ -83,7 +84,7 @@
   "spacesSyncTimeoutSeconds": 10,
   "spacesAutoBackup": true,
   "spacesAutoBackupInterval": 10,
-  "spacesAutoBackupLast": 1695630632395,
+  "spacesAutoBackupLast": 1695634962972,
   "spacesUseAlias": false,
   "precreateVaultSpace": true,
   "fmKeyAlias": "aliases",
