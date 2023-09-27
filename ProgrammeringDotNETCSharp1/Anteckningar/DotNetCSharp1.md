@@ -851,6 +851,35 @@ for (int i = 0; i < myTable.GetLength(0); i++)
 		Console.Write(myTable[i, j] + "\t");
 	}
 	Console.WriteLine();
+
+}
+```
+
+## List
+En __List__ är en enkel form av array. Det är möjligt att ändra storlek i en  __List__.
+- __List\<T\> - vektor som kan ändra sotrlek dynamiskt
+	- kan lägga till eller ta bort poster
+	- Har indexerare som vektorer
+```cs
+List<int> intList = new List<int>();
+
+for(int i = 0; i <5; i++)
+{
+	intList.Add(i);
+}
+```
+
+När man använder Listor behöver man inte veta i förväg hur många element som behövs.
+
+```Cs
+List<string> words = new List<string>()
+{
+	//Lägga till:
+	words.Add("Hejsan");
+	
+	//Lägga till fler
+	string[] words = { "Hej", “på", "dig"};
+	words.AddRange(words2.ToList());
 }
 ```
 ## Fler filer/klasser i ett projekt
