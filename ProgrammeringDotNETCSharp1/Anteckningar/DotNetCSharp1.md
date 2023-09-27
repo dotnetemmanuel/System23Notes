@@ -684,6 +684,7 @@ int random = rnd.Next(1, 3);
 Random.Shared.Next(1, 3);
 ```
 ## Arrayer
+### En-dimensionella arrayer
 - En vektor (array) är en sekvens av element av samma typ (string, bool, osv.)
 - Ordningsföljden är fast
 - Har en fast storlek (Array.Length)
@@ -707,26 +708,26 @@ Ett kortare sätt att skapa array:
 int[] myIntArray = {23, 345, 7, 47, 63};
 ```
 
-### Se värden i en array
+#### Se värden i en array
 Åtkomst till array-element görs genom operatorn hakparentes \[ ].
 - kallas indexerare
 - Indexeraren tar elementets index som parameter
 - Det första elementet har index 0
 
-### Skriva ut ett värde
+#### Skriva ut ett värde
 ```cs
 int[] myIntArray = {23, 345, 7, 47, 63}
 Console.WriteLine(myIntArray[2]) //Skriver ut "7";
 ```
 
-### Skriva ut längden på array
+#### Skriva ut längden på array
 ```cs
 Console.WriteLine(myIntArray.Length); //Skriver ut 5
 
 Console.WriteLine(myIntArray[myIntArray.Length - 1]); // Skriver ut 63;
 ```
 
-### Skriva ut alla värden
+#### Skriva ut alla värden
 ```cs
 for( int i = 0; i < myArray.Length; i++)
 {
@@ -734,14 +735,14 @@ for( int i = 0; i < myArray.Length; i++)
 }
 ```
 
-### Ändra värde i en array
+#### Ändra värde i en array
 ```cs
 int[] myIntArray = {23, 345, 7, 47, 63}
 
 myIntArray[2] = 99;
 ```
 
-### for eller foreach
+#### for eller foreach
 - En for-loop fungerar utmärkt för att lista innehållet
 - En enklare variant är foreach, som lista hela arrayen och inte håller reda på vilket index värden har
 ```cs
@@ -762,7 +763,7 @@ foreach(int num in myIntArray)
 }
 ```
 
-#### Exempel:
+##### Exempel:
 ```cs
 string[] capitals = 
 {
@@ -778,8 +779,88 @@ foreach (string capital in capitals)
 }
 ```
 
-### Sortera en array
+#### Sortera en array
 - Att sortera en array i bokstavsordning görs enkelt såhär:
 ```cs
 Array.Sort(capitals);
 ```
+
+### Matriser - flerdimensionella arrayer
+Vanliga arrayer består av en följd av data
+Matriser har mer än en dimension (2, 3 eller flera)
+- Den viktigaste och vanligaste är de med två dimensioner (kan också kallas tabell)
+	
+Exempel på en matris av heltal med två rader och 4 kolumner:
+![[Pasted image 20230927103947.png]]
+
+#### Deklarera och skapa matriser:
+```cs
+int[,] intMatrix = new int[3, 4];
+float[,] floatMatrix = new float[8, 2];
+string[,,] = strCube = new string[5, 5, 5];
+```
+
+##### Exempel:
+```cs
+int[,] myTable = new int[2, 2]
+myTable[0,0] = 25;
+myTable[0,1] = 19;
+myTable[1,0] = 5;
+//Osv.
+
+int[,] myMatrix = {
+{1, -1, 13, 47},
+{52, 60, -7, 888}
+//Matrixens storlek är 2 x 4 (2 rader, 4 kolumner)
+}
+
+//Ta fram på en utvald post i matrisen:
+Console.WriteLine(myMatrix[1,2]); //Kommer ge -7
+```
+
+#### Visa en matris
+```cs
+int[,] myMatrix = 
+{
+	{1, -1, 13, 47},
+	{52, 60, -7, 888}
+}
+
+for (int i = 0; i<2; i++)
+{
+	for(int j = 0; j < 4; j++)
+	{
+		Console.Write(myTable[i, j] + "\t");
+	}
+	Console.WriteLine();
+}
+```
+
+#### Antalet rader och kolumner?
+```cs
+int[,] myMatrix = 
+{
+	{1, -1, 13, 47},
+	{52, 60, -7, 888}
+}
+
+for (int i = 0; i < myTable.GetLength(0); i++)
+{
+	for(int j = 0; j < myTable.GetLength(1); j++)
+	{
+		Console.Write(myTable[i, j] + "\t");
+	}
+	Console.WriteLine();
+}
+```
+## Fler filer/klasser i ett projekt
+- Class
+	- En klass är en programkodmall för att skapa objekt, tillhandahålla initialvärden för tillstånd (medlemsvariabler) och implementeringar av beteende (medlemsfunktioner eller metoder)
+	- Ett sätt att dela upp kod
+	- Ett sätt att gruppera saker som hör ihop
+- Åtkomstmodifierare
+	- public
+		- all kod i hela programmet kommer åt klasser och metoder som är public
+	- internal
+		- ca samma sak som public men bara filerna i samma projekt kommer åt detta
+

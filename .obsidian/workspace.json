@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 235.5,
+    "collapsed": true
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -165,8 +166,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2b0c4fa22f6068a",
+  "active": "0332c41bbc36dc1b",
   "lastOpenFiles": [
+    "Pasted image 20230927103947.png",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_07-C-Sharp5.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 243309.crdownload",
     "ProgrammeringDotNETCSharp1/Pasted image 20230925103031.png",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_06-C-Sharp4.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 796586.crdownload",
@@ -184,8 +188,6 @@
     "Pasted image 20230913101518.png",
     "Pasted image 20230913094717.png",
     "Pasted image 20230913092820.png",
-    "Context/spacesLastSync.log",
-    "Context",
     "ProgrammeringDotNETCSharp1/Anteckningar/james-harrison-vpOeXr5wmR4-unsplash.jpg",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
@@ -203,7 +205,6 @@
     "TDD - T.md",
     "Pasted image 20230905104212.png",
     "Pasted image 20230905102808.png",
-    "Pasted image 20230905100533.png",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
     "SystemutvecklingAgil/Systemutveckling.md",
     "SystemutvecklingAgil/12regler.md",
