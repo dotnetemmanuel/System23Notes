@@ -893,3 +893,79 @@ List<string> words = new List<string>()
 	- internal
 		- ca samma sak som public men bara filerna i samma projekt kommer åt detta
 
+
+## null 
+- Null är ett nyckelord som betyder att INGET värde finns. 
+- Det är inte samma som 0 (Noll)
+- Det är inte samma som “” (en tom sträng)
+- Om man försöker göra vissa funktioner med en variabel som är null, så får man ett felmeddelande.
+
+```cs
+string enText = null;
+Console.WriteLine(enText.ToUpper());
+// Vi kommer få ett fel: System.NullReferenceException
+```
+
+## Ternary Operator ?
+- C# har en så kallad beslutsfattande operator, som är ett frågetecken “?”. 
+- Man kan se det som en kortform av if-else
+- Det används såhär:
+```cs
+condition ? statement1 : statement2
+```
+
+- Condition = villkor 
+- Om condition == true så körs statement1
+- Om condition == false så körs statement2
+- Ett annat sätt att säga det på:
+	- Villkor ? Detta händer om villkoret är sant : Detta händer om villkoret är falskt
+### Exempel 1 - Ternary Operator
+
+```cs
+int x = 10, y = 20;
+var result = x > y ? "x is greater than y" : "x is less than y"; Console.WriteLine(result);
+
+//Det är samma sak som:
+int x = 10, y = 20; 
+if (x > y) 
+	Console.WriteLine("x is greater than y"); 
+else 
+	Console.WriteLine("x is less than y");
+
+```
+
+### Exempel 1 - Kolla null
+
+```cs
+Console.WriteLine(minText == null ? "Inget värde på strängen" : minText.Length);
+```
+
+## Filer
+### Spara och läsa objektlistor från fil
+Vi kommer att prata om mer effektiva metoder om detta seanrie kursen, med JSON-serialisering.
+Men en enkel metod att spara och läsa data är med hjälp av ReadAllLines och WriteAllLines De metoderna jobbar med arrayer, och vi måste därför själva bestämma vårt “filformat”. 
+#### Exempel:
+```cs
+string[] minArray = { "banan", "äpple", "apelsin" };
+```
+
+### Skriva till textfil
+```cs
+File.WriteAllLines(“fruits.txt", minArray);
+```
+
+### Läsa från textfil
+```cs
+var minArray = File.ReadAllLines(“fruits.txt")
+```
+
+### Kolla om filen finns
+```cs
+File.Exists(“fruits.txt") //Returnerar en bool
+```
+
+### Var hamnar filen?
+- Leta upp ditt Visual Studio-project 
+- Gå in I Mappen med projektnamnet.
+- Leta dig ner enligt de här mapparna: 
+	- \bin\Debug\netX.0
