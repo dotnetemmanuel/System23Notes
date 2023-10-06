@@ -969,3 +969,80 @@ File.Exists(“fruits.txt") //Returnerar en bool
 - Gå in I Mappen med projektnamnet.
 - Leta dig ner enligt de här mapparna: 
 	- \bin\Debug\netX.0
+- 
+
+## Objektorientering (OOP)
+Objektorientering gör det möjligt att hantera "prylar, objekt, saker" som en egen entitet.
+### Vad är objektorienterad programmering?
+- Refererar till språk som använder __objekt__ i programmering
+- Syfta till att implementera verkliga enheter
+- Huvudsakliga syftet är att binda samman data och de funktioner som fungerar på dem så att ingen annan del av koden kan komma åt dessa data förutom just den funktionen.
+- Innebär några viktiga pelare: __arv__, __inkapsling__, __polymorfism__.
+### Glödlampa
+Behöver vi veta allt som ingår i att tända en lampa? (tråd, transformator, osv.)
+Lampan är ett objekt och det enda vi behöver kunna är att trycka på en strömbrytare. Allt annat är vanligtvis gömt.
+### OOP
+Tillåter att paketera samman data och funktionalitet för att ändra dessa data samtidigt som detaljerna döljs undan. Koden blir då __flexibel__, __modulär__ och __abstrakt__.
+### Fördelar med OOP
+- snabbare och enklare att utföra
+- tydlig struktur i programmen
+- Håller koden DRY (Don't repeat Yourself)
+- Möjliggör att skapa återanvändbara...
+### Begrepp
+- Klasser / Classes
+- Fält/attribut / Fields/attributes
+- Egenskaper / Properties
+- Konstruktor / Constructor
+- Åtkomstmodifierare / Access Modifiers
+
+### Klasser och Objekt
+- Klasser beskriver en samling av attribut och metoder
+- Klassen Program
+	- Metoden Main()
+
+- Klassen Fruits
+	- Attribute Type - Objektet Banan, Objektet Apelsin, Objektet Päron
+	- Metoden MakeFruitSallad()
+
+- Klassen Car
+	- Attribut CarBrand - Objektet Volvo, Objektet  Toyota
+	- Metoden StartCar()
+
+### C# och klasser
+Allt i C# är associerat med klasser och objekt tillsammans med dess attribut och metoder. 
+T.Ex: En katt är ett objekt. Vikt, färg, ras är attribut.
+
+### Klasser och attribut
+En klass kan innehålla många fler saker än metoder:
+- Attributes eller Fields
+- Properties
+- Methods
+- Constructor
+
+```Cs
+internal class Fruit
+{
+	//Åtkomsten är public så vi kommer åt den från andra klasser t.ex Program
+	public string type = "Apple";
+	//Här kan man lägga i metoder som man gjort innan.
+}
+```
+
+### Datatyper
+När vi arbetar med klasser och objekt så använder vi istället klassens namn ....
+
+### Använda en klass
+
+```cs
+//Först skapar vi en ny frukt (en instans av Klassen Fruit)
+Fruit f = new Fruit();
+
+//Sedan läser vi en av fruktens variabler (ett attribut som Fruit har)
+string type = f.type;
+
+//Sist skriver vi ut attributet i konsollen
+Console.WriteLine(type);
+
+//Detta skriver ut Apple
+```
+
