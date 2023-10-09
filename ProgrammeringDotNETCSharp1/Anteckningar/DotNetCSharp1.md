@@ -1036,6 +1036,17 @@ En klass är som en objektkonstruktör eller en "ritning" för att skapa objekt.
 	- Ägare
 	- Namn
 	- Märke
+
+```cs
+internal class Person
+{
+	public string name; //Field - fält
+}
+```
+Alla fält kan läsas av alla metoder och att man var som helst kan ändra värdet.
+Inkapsling:
+- betydelsen av inkapsling är att se till att känslig data är dolda för användare. Man måste då deklarera fält/variabler som privata
+- tillhandahålla publika get and set-metoder, via egenskaper, för att komma åt och uppdatera värdet för ett privat fält
 ### Klasser och attribut
 En klass kan innehålla många fler saker än metoder:
 - Attributes eller Fields
@@ -1070,6 +1081,7 @@ Console.WriteLine(type);
 
 //Detta skriver ut Apple
 ```
+
 ### new vs static
 - Hittills har vi använt våra klasser en och en, dvs vi har inte behövt flera “versioner” av samma klass.
 - Då behöver vi inte instansiera, och anger det med nyckelordet static.
@@ -1144,3 +1156,129 @@ public static Fruit CalculateWeight(Fruit fruit)
 	return fruit;
 }
 ```
+
+### Fält och Egenskap
+
+```cs
+internal class Person
+{
+	 private string name; //field, lowerCamelCase;
+	 public string Name //property - engenskap, UpperCamelCase
+	 {
+		 get {return name;} //returnerar värdet på fältet;
+		 set { name = value;} //ger fältet ett värde (value = keyword)
+	 }
+}
+
+//Används såhär:
+Person person = new Person();
+person.Name = "Micke";
+Console.WriteLine(person.Name);
+```
+
+### Constructor
+- En constructor är en speciell metod som används för att initiera objekt
+- Fördelen med en konstruktor är att den körs när ett objekt i en klass skapas.
+- Den kan användas för att ställa in initialvärden för fält.
+- Namnet på constructor-metoden är samma som klassen.
+- Om Klassen heter Person, så heter även konstruktorn Person.
+- Det finns en “osynlig” och tom constructor när man skapar en klass
+
+```cs
+internal class Person 
+{ 
+	private string name; 
+	public string Name 
+	{ get { return name; } 
+	  set { name = value; } 
+	} 
+	public Person() // Tom constructor 
+	{
+	 
+	} 
+}
+```
+
+### Använda en constructor
+```cs
+internal class Person 
+{ 
+	private string name; // Field - Fält 
+	public string Name // Property - Egenskap 
+	{ 
+		get { return name; } // returnerar värdet på fältet 
+		set { name = value; } // ger fältet ett värde 
+	} 
+	public Person(string name) // Constructor 
+	{ 
+		this.name = name; 
+	} 
+}
+
+//Detta anropas sedan med: 
+Person person = new Person("Micke"); // set 
+Console.WriteLine(person.Name); // get
+```
+
+### Metoder i ett objekt
+Det går, som vi tidigare sett, att placera en metod I en klass, men om vi gör ett object av en klass, hur ser det ut då?
+
+```cs
+public string SayHello() // Observera, ingen static 
+{ 
+	string helloText = "Hejsan " + this.name + ", hoppas du mår bra."; 
+	return helloText; 
+} 
+// Används så här: 
+string helloText = person.SayHello(); // Ingen inparameter, objektet vet redan name 
+Console.WriteLine(helloText);
+```
+
+#### Hela exemplet
+
+```cs
+//Program.cs 
+Person person = new Person("Micke");
+Console.WriteLine(person.Name); 
+string helloText = person.SayHello(); 
+Console.WriteLine(helloText);
+
+//Person.cs 
+internal class Person 
+{ 
+	private string name; 
+	public string Name; 
+	{ 
+		get { return name; } 
+		set { name = value; } 
+	} 
+	
+	public Person(string name) 
+	{ 
+		this.name = name; 
+	} 
+	
+	public string SayHello() 
+	{ 
+		string helloText = "Hejsan " + this.name; 
+		return helloText; 
+	} 
+}
+```
+
+### Property / Egenskap - kort version
+
+```cs
+//Istället för allt detta: 
+private string name; // field - Fält public 
+string Name // property - Egenskap 
+{ 
+	get { return name; } // returnerar värdet på fältet 
+	set { name = value; } // ger fältet ett värde } 
+
+//Så skriver vi bara: 
+public string Name { get; set; }
+
+//(I Visual studio finns ett kortkommando: prop \\Tab\\Tab)
+```
+
