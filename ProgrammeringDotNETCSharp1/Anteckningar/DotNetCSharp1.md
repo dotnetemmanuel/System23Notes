@@ -1282,3 +1282,30 @@ public string Name { get; set; }
 //(I Visual studio finns ett kortkommando: prop \\Tab\\Tab)
 ```
 
+### Referens vs värde-datatyper
+- Det finns två typer av datatyper
+	- Value
+		- En datatyp är en värdetyp om den innehåller ett datavärde i sitt eget minnesutrymme. Det betyder att variablerna för dessa datatyper direkt innehåller värden
+		- När du skickar en värdetypsvariabel från en metod till en annan skapar systemet en separat kopia av en variabel i en annan metod. Om värdet ändrades i en metod skulle det inte påverka variabeln i en annan metod.
+		- Exempel: bool, decimal, float, int
+	- Reference
+		- Till skillnad från värdetyper lagrar en referenstyp inte sitt värde direkt. I stället lagras adressen där värdet lagras. Med andra ord innehåller en referenstyp en pekare till en annan minnesplats som innehåller data.
+		- När du skickar en referenstypsvariabel från en metod till en annan skapas ingen ny kopia. I stället skickar den variabelns adress. Så, om vi ändrar värdet på en variabel i en metod, kommer det också att återspeglas i anropsmetoden.
+		- Exempel: Arrays (även om deras element är värdetyper), Class, Delegate, (String).
+#### Reference variable
+När du skickar en referenstypvariabel från en metod till en annan skapas ingen ny kopia. I stället passerar den variabelns adress. Så om vi ändrar värdet för en variabel i en metod kommer det också att återspeglas i anropande metod.
+
+```cs
+static void EnAnnanMetod(Student std2) 
+{ 
+	std2.StudentName = "Steve"; 
+} 
+static void Main(string[] args) 
+{ 
+	Student std1 = new Student(); 
+	std1.StudentName = "Bill"; 
+	EnAnnanMetod(std1); 
+	Console.WriteLine(std1.StudentName); 
+}
+//"Steve" kommer att skrivas ut
+```
