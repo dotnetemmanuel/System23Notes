@@ -982,19 +982,30 @@ Objektorientering gör det möjligt att hantera "prylar, objekt, saker" som en e
 Behöver vi veta allt som ingår i att tända en lampa? (tråd, transformator, osv.)
 Lampan är ett objekt och det enda vi behöver kunna är att trycka på en strömbrytare. Allt annat är vanligtvis gömt.
 ### OOP
-Tillåter att paketera samman data och funktionalitet för att ändra dessa data samtidigt som detaljerna döljs undan. Koden blir då __flexibel__, __modulär__ och __abstrakt__.
+Ett programmeringsparadigm som tillåter att paketera samman data och funktionalitet för att ändra dessa data samtidigt som detaljerna döljs undan (som med glödlampan). Koden blir då __flexibel__, __modulär__ och __abstrakt__. Det gör det särskilt användbar när man skapar större program.
 ### Fördelar med OOP
 - snabbare och enklare att utföra
 - tydlig struktur i programmen
-- Håller koden DRY (Don't repeat Yourself)
-- Möjliggör att skapa återanvändbara...
+- Hjälper till att hålla koden DRY (Don't repeat Yourself) och gör koden lättare att underhålla, ändra och felsöka
+- Möjliggör att skapa återanvändbara applikationer med mindre kod och kortare utvecklingstid
 ### Begrepp
 - Klasser / Classes
 - Fält/attribut / Fields/attributes
 - Egenskaper / Properties
 - Konstruktor / Constructor
 - Åtkomstmodifierare / Access Modifiers
+- Metoder
+### Klasser
+- En klass används i objektorienterad programmering för att beskriva ett eller flera objekt. Den fungerar som en mall för att skapa, eller instansiera, specifika objekt inom ett program
+- Ett sätt att gruppera olika saker
 
+```cs
+public class Customer 
+{ 
+//All kod som beskriver och hanterar en Customer finns här 
+//Fields, properties, methods and events go here... 
+}
+```
 ### Klasser och Objekt
 - Klasser beskriver en samling av attribut och metoder
 - Klassen Program
@@ -1010,8 +1021,21 @@ Tillåter att paketera samman data och funktionalitet för att ändra dessa data
 
 ### C# och klasser
 Allt i C# är associerat med klasser och objekt tillsammans med dess attribut och metoder. 
-T.Ex: En katt är ett objekt. Vikt, färg, ras är attribut.
+T.Ex: en katt är ett objekt. Vikt, färg, ras är attribut.
 
+En klass är som en objektkonstruktör eller en "ritning" för att skapa objekt.
+
+### Attribut - Attributes
+- Alla objekt har någon form av attribut.
+- En bil kan t ex ha följande egenskaper 
+	- Färg
+	- Ålder
+	- Antal hjul
+	- Hel eller trasig
+	- Registreringsskylt
+	- Ägare
+	- Namn
+	- Märke
 ### Klasser och attribut
 En klass kan innehålla många fler saker än metoder:
 - Attributes eller Fields
@@ -1029,7 +1053,8 @@ internal class Fruit
 ```
 
 ### Datatyper
-När vi arbetar med klasser och objekt så använder vi istället klassens namn ....
+Vi har hittills arbetat med primitiva datatyper ◦ int, string, double, ulong, bool, osv.
+När vi arbetar med klasser och objekt så använder vi istället klassens namn som datatyp: Cat, Fruit, Car, osv.
 
 ### Använda en klass
 
@@ -1045,4 +1070,77 @@ Console.WriteLine(type);
 
 //Detta skriver ut Apple
 ```
+### new vs static
+- Hittills har vi använt våra klasser en och en, dvs vi har inte behövt flera “versioner” av samma klass.
+- Då behöver vi inte instansiera, och anger det med nyckelordet static.
+- Men om vi behöver många instanser av ett object, t ex flera bilar eller flera frukter, så måste vi skapa en ny “version” av objektet, d v s instansiera med nyckelordet new.
+- Då kan vi ha en hel parkeringsplats eller en stor fruktskål
 
+### Åtkomst - Access
+- __public__: The type or member can be accessed by any other code in the same assembly or another assembly that references it. 
+- __private__: The type or member can be accessed only by code in the same class or struct.
+- __protected__: The type or member can be accessed only by code in the same class, or in a class that is derived from that class.
+- __internal__: The type or member can be accessed by any code in the same assembly, but not from another assembly.
+- __protected internal__: The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived class in another assembly
+- __private protected__: The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
+
+```cs
+//Fruit.cs
+internal class Fruit
+{
+	public string type = "Apple";
+}
+
+//Program.cs
+internal class Program
+{
+	static void Main(string[] args)
+	{ 
+		Fruit fruit = new Fruit();
+		Console.WriteLine(fruit.type);
+	}
+}
+
+//Sätta ett värde på attributet senare
+//Fruit.cs
+internal class Fruit
+{
+	public string type;
+}
+
+//Program.cs
+internal class Program
+{
+	static void Main(string[] args)
+	{ 
+		Fruit fruit = new Fruit();
+		fruit.type = "Banan";
+		Console.WriteLine(fruit.type);
+	}
+}
+
+```
+
+### Skapa flera objekt
+Det är enkelt att skapa nya objekt:
+```cs
+Fruit fruit1 = new Fruit();
+Fruit fruit2 = new Fruit();
+
+//Eller i en loop
+for(int = 0; i < 10; i++)
+{
+	Fruit fruit = new Fruit();
+}
+
+```
+
+### Klasser och metoder
+Eftersom en class (ett object) är som vilken datatyp som helst, kan vi även använda dem som inparametrar och returvärde i en metod.
+```cs
+public static Fruit CalculateWeight(Fruit fruit)
+{
+	fruit.weight = 0.23;
+	return fruit;
+}
+```
