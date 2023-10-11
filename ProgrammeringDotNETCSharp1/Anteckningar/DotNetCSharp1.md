@@ -1309,3 +1309,31 @@ static void Main(string[] args)
 }
 //"Steve" kommer att skrivas ut
 ```
+# GIT
+## GIT commands
+- Clone
+	- klonar/kopierar och skapar en egen arbetskopia av ett existerande repo.
+- Stage
+	- Förbereder filerna för commit
+- Commit
+	- Uppdaterar filerna i ditt repo och skapar en punkt som det går att återställa ifrån
+- Push origin
+	- Trycker upp filerna till ditt fjärr-repo t.ex till Github
+- Pull
+	- Hämtar hem de senaste ändringarna från fjärr-repo, och mergear det till dina filer.
+- Fetch
+	- Hämtar hem de senaste ändringarna från fjärr-repo men mergear inte.
+
+## Arbetsflöde
+- Skapa repository
+	- Publish
+- Skapa ett VS-project i den mappen
+
+- Arbeta med filerna
+- Gå till Github Desktop
+- Du ser vilka filer som förändrats eller lagts till
+- Skriv in en Commit-kommentar
+- Klicka på Commit to main
+- Klicka Push origin
+- Klart!
+
