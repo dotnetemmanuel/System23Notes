@@ -1309,6 +1309,100 @@ static void Main(string[] args)
 }
 //"Steve" kommer att skrivas ut
 ```
+
+### Inheritance - Arv
+Syftet med arv är att minimera mängden kod, samt skapa struktur I vår kod.
+
+```cs
+class owl 
+{ 
+	public int Weight { get; set; } 
+	public bool Nocturnal { get; set; } 
+	public int Wingspan { get; set; } 
+} 
+
+class dolphin 
+{ 
+	public int Weight { get; set; } 
+	public bool Nocturnal { get; set; } 
+	public int FishPerDay { get; set; } 
+} 
+
+class horse 
+{ 
+	public int Weight { get; set; } 
+	public bool Nocturnal { get; set; } 
+	public int HayPerDay { get; set; } 
+}
+```
+Alla tre djuren har properties för Weight och Nocturnal, samt varsin egen property. Då kan vi samla de gemensamma egenskaperna I en separat klass: Animal, och tala om att Owl, Dolphin och Horse ärver från Animal.
+
+```cs
+class Animal // Basklass 
+{ 
+	public int Weight { get; set; } 
+	public bool Nocturnal { get; set; } 
+} 
+
+class Owl: Animal // Subklass 
+{ 
+	public int Wingspan { get; set; } 
+} 
+
+class Dolphin : Animal // Subklass 
+{ 
+	public int FishPerDay { get; set; } 
+} 
+
+class Horse : Animal // Subklass 
+{ 
+	public int HayPerDay { get; set; } 
+}
+```
+
+#### Metoder: virtual och override
+
+- Subklasser kan innehålla properties, constructors och methods
+- För att kunna använda en metod I en subclass ska den först definieras I basklassen, med nyckleordet virtual
+- Därefter kan vi göra en override I subklassen.
+- En virtuell metod är en metod som sen kan omdefinieras i ärvda subklassen. I C#har en virtuell metod en implementering i en basklass samt även i den ärvda subklassen. Den används när en metods grundläggande funktionalitet är densamma men ibland behövs mer funktionalitet i den härledda klassen.
+
+```cs
+//Basklassen
+public virtual void MyMethod()
+{
+	//här händer det något
+}
+
+//Subklassen
+public override void MyMethod()
+{
+	//här händer det något annat
+}
+```
+
+#### Properties i basklassen
+```cs
+class Animal 
+{ 
+	protected int Weight { get; set; } 
+	protected bool Nocturnal { get; set; }
+	public Animal(int weight, bool nocturnal)
+	{
+		 Weight = weight; 
+		 Nocturnal = nocturnal; 
+	} 
+} 
+	
+class Owl : Animal 
+{ 
+	public int Wingspan { get; set; } 
+	public Owl(int weight, bool isNocturnal, int wingspan) : base(weight, nocturnal) 
+	{ 
+		Wingspan = wingspan; 
+	} 
+}
+```
 # GIT
 ## GIT commands
 - Clone
