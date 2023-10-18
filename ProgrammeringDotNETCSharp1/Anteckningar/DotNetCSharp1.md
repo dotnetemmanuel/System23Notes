@@ -1365,7 +1365,7 @@ class Horse : Animal // Subklass
 - Subklasser kan innehålla properties, constructors och methods
 - För att kunna använda en metod I en subclass ska den först definieras I basklassen, med nyckleordet virtual
 - Därefter kan vi göra en override I subklassen.
-- En virtuell metod är en metod som sen kan omdefinieras i ärvda subklassen. I C#har en virtuell metod en implementering i en basklass samt även i den ärvda subklassen. Den används när en metods grundläggande funktionalitet är densamma men ibland behövs mer funktionalitet i den härledda klassen.
+- En virtuell metod är en metod som sen kan omdefinieras i ärvda subklassen. I C# har en virtuell metod en implementering i en basklass samt även i den ärvda subklassen. Den används när en metods grundläggande funktionalitet är densamma men ibland behövs mer funktionalitet i den härledda klassen.
 
 ```cs
 //Basklassen
@@ -1401,6 +1401,23 @@ class Owl : Animal
 	{ 
 		Wingspan = wingspan; 
 	} 
+}
+```
+
+#### Identifiera och definiera en subklass
+För att ta reda på om vad en instans är för subclass kan man skriva såhär:
+```cs
+if (animal is Horse)
+{
+	Console.WriteLine("Hästar äter hö!");
+}
+```
+
+För att ta reda på om vad en instans är för subclass kan man skriva såhär:
+```cs
+if (a is Horse)
+{
+	Console.WriteLine("Hö per dag: " + ((Horse)a).HayPerDay + "kg);")
 }
 ```
 # GIT

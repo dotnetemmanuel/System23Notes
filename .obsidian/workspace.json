@@ -148,8 +148,19 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "7f8bf1ad21050f4a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -166,8 +177,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0332c41bbc36dc1b",
+  "active": "c2b0c4fa22f6068a",
   "lastOpenFiles": [
+    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_12-OOP3.pdf",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 445141.crdownload",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230925103031.png",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230918133221.png",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230918132942.png",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913101828.png",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913101518.png",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913094717.png.md",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913092820.png",
+    "ProgrammeringDotNETCSharp1/Kursmaterial/Övningsuppgift-Labyrinten.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_10-OOP2.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 517101.crdownload",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_09-OOP1.pdf",
@@ -178,18 +199,10 @@
     "ProgrammeringDotNETCSharp1/Pasted image 20230925103031.png",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_06-C-Sharp4.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 796586.crdownload",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_05-C-Sharp3.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 941846.crdownload",
     "Pasted image 20230918133221.png",
     "Pasted image 20230918132942.png",
     "Pasted image 20230913094717.png.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
-    "ProgrammeringDotNETCSharp1/Övningsuppgift-Labyrinten.pdf",
-    "Pasted image 20230913101828.png",
-    "Pasted image 20230913101518.png",
-    "Pasted image 20230913094717.png",
-    "Pasted image 20230913092820.png",
-    "ProgrammeringDotNETCSharp1/Anteckningar/james-harrison-vpOeXr5wmR4-unsplash.jpg",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
     "ProgrammeringDotNetC#1/ProgrammeringDotNetC#1.md",
@@ -204,7 +217,6 @@
     "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
     "ProgrammeringDotNETC#1/.NET C#1.md",
     "TDD - T.md",
-    "Pasted image 20230905104212.png",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
     "SystemutvecklingAgil/Systemutveckling.md",
     "SystemutvecklingAgil/12regler.md",
