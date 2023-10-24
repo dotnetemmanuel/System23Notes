@@ -978,6 +978,8 @@ Objektorientering gör det möjligt att hantera "prylar, objekt, saker" som en e
 - Syfta till att implementera verkliga enheter
 - Huvudsakliga syftet är att binda samman data och de funktioner som fungerar på dem så att ingen annan del av koden kan komma åt dessa data förutom just den funktionen.
 - Innebär några viktiga pelare: __arv__, __inkapsling__, __polymorfism__.
+![[Pasted image 20231024091219.png]]
+
 ### Glödlampa
 Behöver vi veta allt som ingår i att tända en lampa? (tråd, transformator, osv.)
 Lampan är ett objekt och det enda vi behöver kunna är att trycka på en strömbrytare. Allt annat är vanligtvis gömt.
@@ -1420,6 +1422,48 @@ if (a is Horse)
 	Console.WriteLine("Hö per dag: " + ((Horse)a).HayPerDay + "kg);")
 }
 ```
+
+### Inkapsling - Inheritance
+- Inkapsling, i samband med C#, refererar till ett objekts förmåga att dölja data och beteenden som inte är nödvändiga för användaren. Inkapsling gör det möjligt för en klass, egenskaper, metoder och andra medlemmar att betraktas som en enda enhet eller ett objekt
+- Fördelarna med inkapsling:
+	- Skydd av data från oavsiktlig korruption
+	- Specifikation av tillgängligheten för var och en av medlemmarna i en klass, till koden utanför klassen
+	- Koden blir mer flexibel, utbyggbar och minskad komplexitet
+	- Mindre koppling mellan olika objekt och därmed förbättring av kodunderhållet
+- Inkapsling används för att begränsa åtkomsten till medlemmarna i en klass för att förhindra att användaren av en viss klass manipulerar objekt på sätt som inte är avsedda av designern. Medan inkapsling döljer den interna implementeringen av klassens funktioner utan att påverka systemets övergripande funktion, tillåter den klassen att betjäna en begäran om funktionalitet och lägga till eller ändra sin interna struktur (data eller metoder) för att passa förändrade krav
+- Inkapsling är också känd som information hiding
+
+### Access modifiers 
+- Åtkomstmodifierare är nyckelord som definierar tillgängligheten för en medlem, klass eller datatyp i ett program. Dessa används främst för att begränsa oönskad datamanipulation av externa program eller klasser. 
+- Det ser också till att vi bara ser det vi behöver, på rätt plats
+
+![[Pasted image 20231024092625.png]]
+
+#### Public
+- Public gör att klass/metod/property är tillgänglig precis överallt
+- Det är inte fel att använda public, men man bör bara använda det där det behövs
+- Även andra refererade projekt eller klassbibliotek kan komma åt allt.
+
+#### Internal
+- Begränsar åtkomst från andra projekt/klassbibliotek
+- Fungerar som public, om du bara har ett projekt, utan referenser till andra projekt
+- Om du inte anger åtkomstmodifierare, så är klasser per default internal.
+
+#### Protected
+- Ger tillgång till klass/metod/property i samma klass, och de klasser som ärver från samma klass
+- Ser till att alla klasser som har med varandra att göra har tillgång till varandras klass/metod/property .
+
+#### Private
+- Endast anrop inom samma klass är tillåtet
+
+### Råd
+- Du kan välja två vägar då du kodar:
+	- Sätt ALLTING till private, och ändra till den accessmodifierare som behövs, där det behövs.
+	- Sätt allting till internal/public, och gå sedan igenom koden och refaktorera den.
+		- Ställ frågan: Behöver en annan klass komma åt den här metoden, variabeln, attributet/propertyn?
+	- Såhär I början föreslår jag, om du är osäker, att ändå sätta allt till internal/public, och gradvis övergå till private, under kursen.
+- Markera privata variable/attribute/properties med ett _ I början
+
 # GIT
 ## GIT commands
 - Clone
