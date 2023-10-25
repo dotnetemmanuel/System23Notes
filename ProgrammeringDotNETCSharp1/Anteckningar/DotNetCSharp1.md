@@ -1363,7 +1363,6 @@ class Horse : Animal // Subklass
 ```
 
 #### Metoder: virtual och override
-
 - Subklasser kan innehålla properties, constructors och methods
 - För att kunna använda en metod I en subclass ska den först definieras I basklassen, med nyckleordet virtual
 - Därefter kan vi göra en override I subklassen.
@@ -1463,6 +1462,78 @@ if (a is Horse)
 		- Ställ frågan: Behöver en annan klass komma åt den här metoden, variabeln, attributet/propertyn?
 	- Såhär I början föreslår jag, om du är osäker, att ändå sätta allt till internal/public, och gradvis övergå till private, under kursen.
 - Markera privata variable/attribute/properties med ett _ I början
+
+### Polymorfism - Polymorphism
+- Polymorfism betyder "många former", och det uppstår när vi har många klasser som är relaterade till varandra genom arv.
+- Arv låter oss ärva properties och metoder från annan klass. Polymorfism använder dessa metoder för att utföra olika uppgifter. Detta gör att vi kan utföra en enda åtgärd på olika sätt.
+- Länk till exempel på en basklass som heter Djur som har en metod som kallas animalSound(). Subklasser ac Djur kan vara Grisar, Katter, Hundar, Fåglar - och de har också sitt eget genomförande av ett djurljud (grisen säger oink och katten säger mjau, etc.)
+- Varför och när man ska använda arv och polymorfism?
+	- Det är användbart för __återanvändning av kod__: återanvända properties och metoder för en befintlig klass när du skapar en ny klass.
+
+#### Polymorfism - Overload
+- Man kan ha metoder som har samma namn, så länge antalet inparametrar och/eller datatyperna för inparametrar är olika.
+
+```cs
+public static int Multi(int a, int b)
+{
+	return a*b;
+}
+public static double Multi(double a, double b)
+{
+	return a * b;
+}
+```
+
+#### Metoder: virtual och override
+- Subklasser kan innehålla properties, constructors och methods
+- För att kunna använda en metod I en subclass ska den först definieras I basklassen, med nyckleordet virtual
+- Därefter kan vi göra en override I subklassen.
+- En virtuell metod är en metod som sen kan omdefinieras i ärvda subklassen. I C# har en virtuell metod en implementering i en basklass samt även i den ärvda subklassen. Den används när en metods grundläggande funktionalitet är densamma men ibland behövs mer funktionalitet i den härledda klassen.
+
+```cs
+//Basklassen
+public virtual void MyMethod()
+{
+	//här händer det något
+}
+
+//Subklassen
+public override void MyMethod()
+{
+	//här händer det något annat
+}
+```
+
+#### Properties: virtual och override
+```cs
+internal class BasKlassen 
+{ 
+	public virtual string Name { get; set; }; 
+} 
+internal class SubKlassen 
+{ 
+	public override string Name { get; set; }; 
+}
+```
+
+### Abstraktion - Abstract
+- Dataabstraktion är processen att dölja vissa detaljer och visar endast väsentlig information för användaren.
+- Nyckelordet Abstract används för klasser och metoder:
+- Abstrakt klass: är en begränsad klass som inte kan användas för att skapa objekt (för att få tillgång till den måste den ärvas från en annan klass).
+- Abstrakt metod: kan endast användas i en abstrakt klass, och den har inte något innehåll. Innehållet tillhandahålls istället av subklassen.
+- Ordförklaring: Ett abstrakt är en kort sammanfattning av din forskning. Det är avsett att beskriva ditt arbete utan att gå in i detalj. Sammanfattningar ska vara fristående och koncisa och förklara ditt arbete så kort och tydligt som möjligt .
+- Varför och när man ska använda abstrakta klasser och metoder?
+	- För att uppnå säkerhet - __dölja vissa detaljer och bara visa de viktiga detaljerna i ett objekt__
+
+### Interface
+- Ett annat sätt att uppnå abstraktion i C#, är med Interface.
+- Ett gränssnitt är en helt "abstrakt klass", som endast kan innehålla abstrakta metoder och egenskaper (med tomt innehåll):
+- Det anses vara god praxis att börja med bokstaven ”I" i början av ett gränssnitt, eftersom det gör det lättare för dig själv och andra att komma ihåg att det är ett gränssnitt och inte en klass.
+- Som standard är medlemmar i ett gränssnitt abstrakta och offentliga.
+- För att få tillgång till gränssnittsmetoderna måste gränssnittet "implementeras" av en annan klass.
+- Man kan se ett Interface som en ”ritning” av vad subklasserna måste innehålla.
+- Varför och när ska gränssnitten användas?
+- För att uppnå säkerhet - dölja vissa detaljer och bara visa de viktiga detaljerna i ett objekt (gränssnitt).
 
 # GIT
 ## GIT commands
