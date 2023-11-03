@@ -1535,6 +1535,204 @@ internal class SubKlassen
 - Varför och när ska gränssnitten användas?
 - För att uppnå säkerhet - dölja vissa detaljer och bara visa de viktiga detaljerna i ett objekt (gränssnitt).
 
+### Generics
+- Generisk betyder den allmänna formen, generella
+- i C # betyder generisk  att vi inte är specifika gällande en viss datatyp
+- Generics introducerar begreppet typparametrar till .NET, vilket gör det möjligt att utforma klasser och metoder som skjuter  upp specifikationen för en eller flera typer tills klassen  eller metoden deklareras  och __instansieras__ av klientkod.
+- Genom att till exempel  använda en allmän typparameter  T kan du skriva en enda klass som annan klientkod kan använda  på förhand  utan att veta vilken datatyp som förväntas.
+
+```cs
+class Person<T>
+{
+	public T Age { get; set; }
+	//T är en variabel somkan heta vad som helst, som innehaåller datatypen 
+	//T kan vara t.ex en int, string, object osv. 
+}
+```
+
+#### Exempel klass
+```cs
+//Vanlig klass
+class Person 
+{
+	public int Age { get; set; }
+}
+//Anropas med 
+Person person = new Person(); 
+person.Age = 57;
+
+//Generisk klass
+class Person<T>
+{
+	public T Age { get; set; }
+}
+//Anropas med 
+Person<int> person = new Person<int>();
+person.Age = 57;
+//Eller
+Person<string> person2 = new Person<string>();
+person2.Age = " Gammal";
+
+```
+
+#### Exempel på generisk metod
+
+```cs
+//Vanlig metod
+public void WriteString(string text)
+{
+	Console.WrilteLine(text);
+}
+//Anropas med
+WriteString("Hej hopp");
+
+//Generisk metod
+public void WriteAnything<T>(T anything)
+{
+	Console.WriteLine(anything);
+}
+//Anropas med 
+WriteAnything("Hej generics)");
+WriteAnything(12345);
+m.WriteAnything(29.5);
+m.WriteAnything(person); //Objekt
+//osv. 
+```
+
+### Collections
+- C# kollektioner  är utformade för att lagra, hantera och manipulera liknande data mer effektivt. Datamanipulering omfattar att lägga till, ta bort, söka efter och infoga data i samlingen.
+- Kollektioner implementerar följande  vanliga funktioner:
+	- Lägga till och infoga objekt i en samling
+	- Ta bort objekt från en samling
+	- Hitta, sortera, söka efter objekt
+	- Byta ut objekt 
+	- Kopiera och klona samlingar och objekt
+	- Egenskaperna Capacity och Count för att hitta samlingens kapacitet och antalet objekt i samlingen
+	- .Net stöder två typer av samlingar, generiska och icke- generiska samlingar 
+
+#### Array
+Enklaste formen av kollektion är en array
+```Cs
+int[] numbers = new int[] {345, 71, 13};
+for (int = 0; i < numbers.Length; i++)
+{
+	Console.WriteLine(numbers[i]);
+}
+```
+
+#### Non-Generic collection
+- I icke generiska samlingar kan varje element representera värden av olika typer 
+- Storleken är inte fast
+- Objekt från samlingen kan läggas till eller tas bort vid körning
+
+##### ArrayList
+- Klassen ArrayList är en samling som kan användas för alla datatyper och objekt
+- ArrayList liknar en matris men den kan användas för att lagra värden av olika slag
+- En ArrayList har ingen specifik storlek 
+- Valfritt antal element kan lagras 
+
+```cs
+ArrayList list = new ArrayList(); 
+list.Add(47);
+list.Add("Hej");
+
+//Ta bort
+list.Remove("Hej");
+```
+
+##### HashTable
+- HashTable liknar ArrayList men representerar objekten som en kombination av en nyckel och ett värde 
+- En HashTable sparar posterna  slumpmässigt
+```cs
+HashTable hashTable = new HashTable();
+hashTable.Add("Mindata", "Hej världen");
+hashTable.Add(2, "Två");
+
+//Ta bort
+hashTable.Remove("Mindata");
+```
+
+##### SortedList
+- SortedList är en klass som kombinerar ArrayList och HashTable
+- Representerar data som ett nyckel- och värdepar
+- Ordnar alla objekt i sorterad ordning
+- Nycklarna måste vara av samma typ
+```cs
+SortedList sorted = new SortedList();
+sorted.Add("Post B", "Ett");
+sorted.Add("Post A", "Två");
+//I en foreach loop visas Post A först
+```
+
+##### Stack
+- En stack är en LIFO-struktur (last in, first out)
+- Tänk på stack som en samling objekt där allt du sätter in en hög kommer att placeras högst upp och om du behöver ta bort något kommer det att tas bort från toppen
+- En bunt tallrikar eller en bokstapel är två vanliga exempel på en stapel
+```cs
+STaclk stack = new Stack();
+stack.Push("En text");
+stacl.Push(97);
+
+//Ta bort
+stack.Pop() // Tar bort 97 från stacken
+```
+
+##### Queue
+- En queue i C# representerar en FIFO-samling (first in, first out) med objekt.
+- Ett exempel  på en kö är en rad människor som väntar
+```cs
+Queue queue = new Queue();
+queue.Enqueue("Post 1");
+queue.Enqueue("Psot 2");
+
+//Ta bort
+queue.Dequeue(); //Tar bort "Post 1"
+```
+
+#### Generic collection
+- Generiska kollektioner fungerar med den specifika typen som anges i programmet medan icke-generiska samlingar fungerar på objekttypen
+- Specifik typ (int, string, object, osv.)
+- Matrisstorleken är inte fast
+- Element kan läggas till / tas bort vid körning
+
+##### List
+- List sparar alla poster i ordning
+- Måste ange datatyp
+- Har många funktioner för sortering, mm
+- Kanske den mest vanliga kollektionen
+```cs
+List<string> texts = new List<string>();
+texts.Add("Det ");
+textes.Add("var ");
+texts.Add("en gång");
+
+//Ta bort
+texts.Remove("Det");
+texts.RemoveAt(index);
+```
+
+##### Dictionary
+- Dictionary liknar HashTable och representerar objekten som en kombination av en nyckel och ett värde
+- Kräver att man anger datatyper
+```cs
+Dictionary<string, int> dict = new Dictionary<string, int>();
+dict.Add("Siffra 1", 24);
+dict.Add("Siffra 2" 95);
+
+//Ta bort
+dict.Remove("Siffra 2");
+```
+
+##### SortedList, Stack och Queue
+- Det går att ange datatyp på vissa av de icke generiska kollektionerna
+```cs
+SortedList<string, string> sl = new SortedList<string, string>();
+
+Stack<string> stk = new Stack<string>();
+
+Queue<string> q = new Queue<string>();
+```
+
 # GIT
 ## GIT commands
 - Clone
