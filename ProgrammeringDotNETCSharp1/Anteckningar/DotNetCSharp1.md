@@ -1620,8 +1620,8 @@ for (int = 0; i < numbers.Length; i++)
 }
 ```
 
-#### Non-Generic collection
-- I icke generiska samlingar kan varje element representera värden av olika typer 
+Generic collection
+- I generiska samlingar kan varje element representera värden av olika typer 
 - Storleken är inte fast
 - Objekt från samlingen kan läggas till eller tas bort vid körning
 
@@ -1669,7 +1669,7 @@ sorted.Add("Post A", "Två");
 - Tänk på stack som en samling objekt där allt du sätter in en hög kommer att placeras högst upp och om du behöver ta bort något kommer det att tas bort från toppen
 - En bunt tallrikar eller en bokstapel är två vanliga exempel på en stapel
 ```cs
-STaclk stack = new Stack();
+Stack stack = new Stack();
 stack.Push("En text");
 stacl.Push(97);
 
@@ -1689,8 +1689,8 @@ queue.Enqueue("Psot 2");
 queue.Dequeue(); //Tar bort "Post 1"
 ```
 
-#### Generic collection
-- Generiska kollektioner fungerar med den specifika typen som anges i programmet medan icke-generiska samlingar fungerar på objekttypen
+#### Non-Generic collection
+- Icke generiska kollektioner fungerar med den specifika typen som anges i programmet medan generiska samlingar fungerar på objekttypen
 - Specifik typ (int, string, object, osv.)
 - Matrisstorleken är inte fast
 - Element kan läggas till / tas bort vid körning
