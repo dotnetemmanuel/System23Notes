@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
+                "file": "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 300.5
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
+                "file": "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
+                "file": "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md"
+                "file": "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md"
+                "file": "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md"
               }
             }
           }
@@ -178,6 +178,11 @@
   },
   "active": "c76d45aaa61ddaf7",
   "lastOpenFiles": [
+    "ProgrammeringDotNETCSharp2/Anteckningar/database-transformed.jpeg",
+    "ProgrammeringDotNETCSharp2/Anteckningar/database.jpg",
+    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
+    "ProgrammeringDotNETCSharp1/Anteckningar/Anteckningar.md",
+    "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Inlämningsupgiften-tillägg.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 49892.crdownload",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20231024092625.png",
@@ -186,14 +191,12 @@
     "ProgrammeringDotNETCSharp1/Pasted image 20231024091219.png",
     "Pasted image 20231024091219.png",
     "Untitled.canvas",
-    "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_12-OOP3.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 445141.crdownload",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230925103031.png",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230918133221.png",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230918132942.png",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913101828.png",
-    "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913101518.png",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913094717.png.md",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Övningsuppgift-Labyrinten.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_10-OOP2.pdf",
@@ -201,7 +204,6 @@
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_09-OOP1.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 116731.crdownload",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_07-C-Sharp5.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Ej bekräftad 243309.crdownload",
     "Pasted image 20230913094717.png.md",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",

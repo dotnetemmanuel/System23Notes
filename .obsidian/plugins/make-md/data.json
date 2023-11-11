@@ -45,7 +45,10 @@
       "ProgrammeringDotNetC#1/Context",
       "ProgrammeringDotNetC#1",
       "ProgrammeringDotNetC#1",
-      "ProgrammeringDotNETCSharp1/Anteckningar"
+      "ProgrammeringDotNETCSharp2",
+      "ProgrammeringDotNETCSharp1",
+      "ProgrammeringDotNETCSharp1/Anteckningar",
+      "ProgrammeringDotNETCSharp2/Anteckningar"
     ]
   },
   "expandedSpaces": [
@@ -83,7 +86,7 @@
   "spacesSyncTimeoutSeconds": 10,
   "spacesAutoBackup": true,
   "spacesAutoBackupInterval": 10,
-  "spacesAutoBackupLast": 1699516202513,
+  "spacesAutoBackupLast": 1699736714867,
   "spacesUseAlias": false,
   "precreateVaultSpace": true,
   "fmKeyAlias": "aliases",
