@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 300.5,
+    "collapsed": true
   },
   "right": {
     "id": "c29a307b2be8b792",
@@ -176,10 +177,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c76d45aaa61ddaf7",
+  "active": "c2b0c4fa22f6068a",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "ProgrammeringDotNETCSharp2/ProgrammeringDotNETCSharp2.md",
+    "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
+    "ProgrammeringDotNETCSharp1/ProgrammeringDotNETCSharp1.md",
     "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
+    "Untitled.canvas",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Programmering i .NET C# 2 v.4.pdf",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Unconfirmed 809664.crdownload",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Kurshandledning_Programmering i .NET 2.pdf",
@@ -187,7 +191,6 @@
     "ProgrammeringDotNETCSharp2/Anteckningar/database-transformed.jpeg",
     "ProgrammeringDotNETCSharp2/Anteckningar/database.jpg",
     "ProgrammeringDotNETCSharp1/Anteckningar/Anteckningar.md",
-    "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Inlämningsupgiften-tillägg.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 49892.crdownload",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20231024092625.png",
@@ -222,7 +225,6 @@
     "SystemutvecklingAgil/Systemutveckling.md",
     "SystemutvecklingAgil/12regler.md",
     "Agil utveckling, Scrum, Kanban.md",
-    "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md",
-    "Systemutvecklingens grunder och Agil utveckling/12 regler.md"
+    "Systemutvecklingens grunder och Agil utveckling/Systemutveckling.md"
   ]
 }
