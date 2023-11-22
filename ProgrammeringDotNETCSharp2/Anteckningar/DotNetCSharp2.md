@@ -363,13 +363,12 @@ SELECT * FROM users WHERE username = "Micke"
 ![[Pasted image 20231122174455.png]]
 
 #### Logiska operationer
-
 ```sql
 SELECT * FROM countries
 WHERE country = 'Sweden' AND popualtion > 10000
 
 SELECT * FROM countries
-WHERE country = 'Sweden' or country = 'Norge'
+WHERE country = 'Sweden' OR country = 'Norge'
 
 SELECT * FROM countries 
 WHERE NOT country = 'Sweden'
@@ -377,3 +376,120 @@ WHERE NOT country = 'Sweden'
 SELECT * FROM countries
 WHERE country <> 'Sweden'
 ```
+
+#### IN
+- I exemplet med "OR" ovan då tog vi ut alla rader där country är "Sweden" eller "Norway". Ett smidigare sätt är att använda "in".
+```sql
+SELECT * FROM countries WHERE country IN ('Sweden', 'Norway', 'Denmark')
+```
+
+- Man kan även använda "NOT IN" för att få alla städer från tabellen som inte ligger i de länder man anger.
+```sql
+SELECT * FROM countries WHERE country NOT IN ('Sweden', 'Norway', 'Denmark')
+```
+
+#### BETWEEN
+- Man kan använda BETWEEN för att ange ett spann av värden
+```sql
+SELECT * FROM countries WHERE population BETWEEN 500000 AND 1000000
+
+SELECT * FROM airports WHERE IATA BETWEEN 'AAF' AND 'AAJ'
+```
+
+#### LIKE
+- "LIKE" används när man vill matcha textfält mot ett specifikt mönster
+- T.ex alla textfält som börjar på "B".
+- Uttrycken i tabellen kan kombineras till ett mönster som beskriver data
+```sql
+SELECT * FROM countries WHERE country LIKE 'b%'
+--Alla länder som blrjar på B
+
+SELECT * FROM  airports WHERE IATA LIKE '[acf]_[q-z]'
+--Alla IATA som börjar på a, c eller f och slutar på q till z
+
+SELECT * FROM countries WHERE country LIKE '%land%'
+--All länder som innehåller order land
+```
+
+![[Pasted image 20231122212014.png]]
+#### ORDER BY
+- Man kan välja att sortera resultatet på en eller flera kolumner
+- Om man t.ex vill sortera de rader man tar ut från tabellen "people" på efternamn och i andra hand på förnamn (i de fall personer har samma efternamn kan man skriva)
+```sql
+SELECT * FROM users ORDER BY firstname
+--eller
+SELECT * FROM users ORDER BY firstname DESC
+--eller
+SELECT * FROM users ORDER BY lastname, firstname
+--sorterar först på lastname och sedan på firstname
+```
+
+Efter varje kolumn vi sorterar på kan vi lägga till "ASC" (ascending) eller "DESC" (Descending) för att ange om det ska vara stigande eller fallande ordning. Anger man inget så används "ASC" som default.
+#### DISTINCT
+Vill man bara ha unika värden så kan man använda "DISTINCT"
+```sql
+SELECT DISTINCT lastname FROM users
+ORDER BY lastname
+```
+#### ALIASES
+- Aliases används för att in sin query referera till t.ex kolumner eller tabeller med ett annat namn än de har i databasen
+- Detta kan vara användbart t.ex för att slippa skriva så mycket eller för att man vill att resultatet ska visas med ett annat namn
+```sql
+SELECT id, username AS 'Användarnamn', password AS 'Nyckel' FROM users
+```
+![[Pasted image 20231122212840.png]]
+
+#### CASE WHEN
+- Med konstruktionen case-when kan man välja att visa olika värden i resultatet beroende på villkor man angett
+```sql
+SELECT City,
+	CASE
+		WHEN population < 1500 then 'Village'
+		WHEN population < 50000 then 'Town'
+		ELSE 'City'
+	END
+AS 'Classification'
+FROM USCities
+```
+#### Sätta ihop strängar
+- Ibland vill man lägga till information i tabellposterna
+- Då kan man använda ett "+"
+```sql
+SELECT TOP (1000) [Name] + ' med koden ' + [Code] as 'Färger'
+	, [Red]
+FROM [Colors]
+```
+
+- Formatera siffror och de blir strängar
+```sql
+SELECT TOP (1000) [Name] + ' med koden ' + [Code] as 'Färger'
+	, FORMAT(Red, '000')
+FROM [Colors]
+```
+#### Matematiska uttryck
+- Det går att utföra beräkningar med hjälp av SQL, på de värden som är lagrade i databasen
+```sql
+SELECT TOP (1000) 
+	[TrackId]
+	, [Name]
+	, ([Milliseconds] / 1000) AS 'Seconds'
+	, ([Bytes] * 0.0000009536) AS 'Mb'
+	, ([UnitPrice]) * 12 AS SEK
+FROM [everyloop].[music].[tracks]
+```
+#### FORMAT
+- Tal kan vara bra att formatera på olika sätt
+```sql
+SELECT Productname, FORMAT(UnitPrice, '00.00') FROM company.products
+--Ger t.ex 18.00 om UnitPrice är 18
+SELECT Country, Population, FORMAT(Population, '### ### ###') FROM Countries
+--Ger 2 976 372 om Population är 2976372
+```
+
+SQL är mer än bara SELECT-satser. Man kan göra mycket mer med SQL än att bara plocka ut data från tabeller som vi gjort i exemplen ovan. Några viktiga användningsområden som vi kommer att se på framöver är:
+- Lägga till, uppdatera och ta bort rader i tabeller
+- Skapa och ta bort tabeller och så kallade vyer
+- Plocka ut data på aggregerad nivå
+- Korsreferera data från flera tabeller
+- Skriva funktioner och procedurer med flödeslogik som mer liknar vanlig programmering så som vi är vana vid från t.ex C#
+
