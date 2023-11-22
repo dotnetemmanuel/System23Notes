@@ -279,3 +279,101 @@ Ett verktyg för administratörer och utvecklare av databaser. SSMS är ett graf
 	- Klicka på [New Query]
 	- Skriv in din fråga i fönstret
 	- Klicka på knappen [Execute]
+
+# Utvecklingsmiljön
+- SQL Server
+	- Saknar GUI
+	- Är en process som körs hela tiden på datorn
+	- Kan bara ta emot och svara på frågor/queries
+	- Allt som sparas på SQL-servern stannar där i evighet (tills man tar bort det aktivt)
+
+- SQL Server Management Studio (SSMS)
+	- Erbjuder ett GUI
+	- Är ett program som kommunicerar med olika SQL-servrar
+	- Skickar frågor och visar svar vi får från SQL-servern
+	- De frågor vi skriver kan vi spara om vi vill
+
+# SQL - Structured Query Language
+## Relationsdatabaser
+- En databas är en samling information som är organiserad för att man enkelt ska kunna söka och ändra enskilda delar av informationen
+- En databashanterare (DBMS) är den mjukvara som används för att söka och manipulera data i en specifik databas
+- Det finns olika sorters databaser. Vi kommer att fokusera på den kategori av databaser som kallas relationsdatabaser, som är väldigt vanlig
+- Relationsdatabaser lagrar data i tabellform och ofta är det relationerna mellan olika tabeller som är det mest intressanta. Därav namnet relationsdatabas
+
+## Structured Query Language (SQL)
+- SQL är ett standardiserat programspråk för att hämta och modifiera data i relationsdatabaser (REDMS)
+- Språket utvecklades först av IBM under 70-talet
+- SQL uttalas vanligen bokstav för bokstav, alltså S-Q-L, men ibland hör man det även uttalas som engelskans "sequel"
+- Olika databashanterare (t.ex Oracle, Postgres och MySQL) använder olika dialekter av SQL. Variationerna är dock oftast relativt små
+- I denna och kommande lektioner använder vi T-SQL som är den variant som Microsoft använder i sin SQL-server
+
+## Queries (frågor)
+- För att hämta ut eller ändra information i en relationsdatabas skickar man så kallade "queries" (frågor) till databashanteraren (servern)
+- En query kan vara allt från väldigt enkel ("ge mig all data i tabell xyz") till väldigt komplex (t.ex korsreferera data från flera tabeller med en mängd villkor för exakt vilka data som man vill få ut)
+- I denna lektion tittar vi på några av de vanligaste uttryck man använder i SQL för att plocka ut data från en tabell
+
+## Syntax
+- SQL är inte case-sensitive men det är bra att man anger alla SQL-kommandon med VERSALER så de syns tydligare
+- Tabellnamn kan anges utan hakparenteser, men innehåller de mellanslag eller svenska tecken behöver de omslutas av hakparenteser
+```sql
+SELECT * FROM users 
+--och
+SELECT * FROM [users] 
+--fungerar lika bra
+```
+- SQL behöver inte avslutas med ';' men vid mer komplexa uttryck är det lämpligt att göra det
+- Förslag på grundsyntax:
+```sql
+SELECT * FROM users;
+```
+## CRUD
+- Create
+	- SQL: INSERT
+- Read
+	- SQL: SELECT
+- Update
+	- SQL: UPDATE
+- Delete
+	- SQL: DELETE
+
+### SELECT
+- När vi vill hämta och visa data från en tabell använder vi "SELECT"
+```sql
+SELECT id, username, password FROM users
+```
+![[Pasted image 20231122173417.png]]
+
+- För att ta ut alla kolumner i en tabell kan man skriva
+```sql
+SELECT * FROM tabellnamn
+```
+
+#### TOPX *
+- Man vill i princip aldrig be om all data i en tabell (SELECT /* ) då t.ex tabellen "users" kan innehålla tusentals användare
+- Ett sätt att begränsa antal rader är genom "TOP X" som begränsar resultatet till x rader
+```sql
+SELECT TOP 10 * FROM users
+```
+
+#### WHERE
+- Ett annat sätt att begränsa är att bara be om rader som matchar ett givet villkor. Detta gör man med "WHERE"
+```sql
+SELECT * FROM users WHERE username = "Micke"
+```
+![[Pasted image 20231122174455.png]]
+
+#### Logiska operationer
+
+```sql
+SELECT * FROM countries
+WHERE country = 'Sweden' AND popualtion > 10000
+
+SELECT * FROM countries
+WHERE country = 'Sweden' or country = 'Norge'
+
+SELECT * FROM countries 
+WHERE NOT country = 'Sweden'
+
+SELECT * FROM countries
+WHERE country <> 'Sweden'
+```
