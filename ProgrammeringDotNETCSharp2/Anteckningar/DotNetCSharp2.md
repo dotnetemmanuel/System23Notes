@@ -664,6 +664,83 @@ PRINT @username
 SELECT * FROM users WHERE username = @username
 ```
 
+### Globala variabler
+- Globala variabler är variabler som SQL Server sätter automatiskt men som vi kan läsa och använda oss av.
+![[Pasted image 20231123100418.png]]
+### Tabell-variabel
+- Man kan även lagra en hel tabell i en variabel. Man deklarerar då variabel som datatyp TABLE
+```sql
+DECLARE @product_table TABLE(
+ProductName nvarchar(100),
+UnitPrice float,
+UnitsInStock int
+)
+```
+och kan sedan använda den som en vanlig tabell
+#### Sätt in data i en tabell variabel
+- Man använder INSERT
+```sql
+INSERT INTO @product_table
+	SELECT ProductName,
+	UnitPrice,
+	UnitsInStock
+	FROM company.products
+WHERE SupplierID = 1
+```
+#### Hämta data från en tabell variabel
+- Man använder SELECT
+```sql
+SELECT * FROM @product_table
+```
+
+## Aggregering
+### Aggregerad data
+- Data som är en sammanslagning av flera datapunkter, till exempel ett medeltal eller en totalsumma, kallas aggregerad data. Den vanligaste anledningen till att man vill skapa ett sådant aggregat är för att öka överskådligheten och eller visa statistik.
+- Antag att vi har en tabell med rådata som innehåller ett klockslag för varje gång en bil passerat över en bro. Om vi vill få en överblick över datat kan vi välja att aggregera antal bilar per timme eller kanske per dag. Om det även finns uppgifter om vilket land varje bil är från i rådatat så kan vi välja att aggregera per land.
+### Aggregeringsfunktioner i SQL
+- En aggregeringsfunktion tar en lista med värden. gör en beräkning på dessa och returnerar ett värde (skalär)
+- I SQL finns det ett antal funktioner som används för aggregering. Den kanske mest grundläggande är COUNT() som helt enkelt räknar antalet rader.
+	- SUM()
+	- AVG()
+	- STDEV()
+	- MIN()
+	  MAX()
+	  STRING_AGG()
+#### COUNT()
+- COUNT() tar ett kolumnamn som parameter och räknar alla värden i kolumnen som inte är NULL
+- Om man vill räkna samtliga, även de som är NULL, så skriver man COUNT(\*)
+```sql
+SELECT COUNT(stad) FROM städer WHERE land = 'Sverige'
+--returnerar antalet städer som enligt tabellen städer finns i Sverige
+```
+
+- Man kan ange DISTINCT i COUNT() för att bara räkna unika värden:
+```sql
+SELECT COUNT(DISTINCT land) FROM städer
+--returnerar antalet unika länder från tabellen städer
+```
+### Gruppering av data
+- I aggregeringsexemplen ovan så får vi bara ut ett enda värde: antalet städer i Sverige, samt i andra exemplet antal unika länder i tabellen med städer
+- Oftast vill vi dock gruppera data och få ut aggregatet för varje grupp i tabellform. Kanske vill vi inte bara veta antalet svenska städer som tabellen innehåller, utan vi vill veta antalet städer för varje land
+- Då behöver vi gruppera vårt data per land och sedan räkna antalet städer i varje grupp.
+#### GROUP BY
+- I slutet av vår SELECT-sats kan vi lägga till GROUP BY följt av en eller flera kolumner som vi vill gruppera på
+- Det är endast de kolumner som vi har valt som kan användas för gruppering
+- Övriga måste vara i form av aggregat. Alltså, om vi grupper på land så kan vi direkt ta ut landet som en kolumn eftersom det blir just en grupp per land, men vi vill ta ut antal städer (count) eller en summering av invånare i städerna (sum) så måste vi ange en aggereringsfunktion
+```sql
+SELECT land, COUNT(stad) FROM städer GROUP BY land
+--returner antalet städer för varje land
+```
+### Rådata ⇒ aggregerad data
+Exempel på hur rådata över städer ser ut i aggregerad form om man grupperar på land, räknar städer och summerar invånare
+![[Pasted image 20231123110847.png]]
+### HAVING
+- Precis soma tt man ibland ville ge villkor för vilka rader man vill fp ut, så vill man ibland ge villkor på vilka grupper man vill visa i resultatet. Detta gör man med HAVING. Kanske vill vi gruppera på land, men bara ta ut de grupper som har fler än 10 städer:
+```sql
+SELECT land FROM städer GROUP BY land HAVING COUNT(stad) > 10
+```
+
+☣️Vi kan inte använda WHERE för grupper eftersom det redan används med en annan betydelse. Tänk om vi t.ex vill gruppera på land men bara ta med städer med fler än 100 000 invånare (WHERE) och sedan visa de grupper som har mer än 10 sådana städer (HAVING).
 ## Funktioner
 - SQL-Server har en massa inbyggda funktioner som kan vara användbara
 ```sql
