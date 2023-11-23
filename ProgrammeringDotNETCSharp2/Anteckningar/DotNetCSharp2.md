@@ -627,13 +627,14 @@ CONVERT(nvarchar, @myDatetime, 121)
 #### Vanliga datatyper
 ![[Pasted image 20231123094732.png]]
 
-### Deklarera variabler
+### Variabler
+#### Deklarera variabler
 - För att använda variabler i SQL behöver man först deklarera dem
 ```sql
 --DECLARE <@variablename> (as) <datatype>
 DECLARE @username AS nvarchar(25)
 ```
-### Tilldela värden på variabler
+#### Tilldela värden på variabler
 - Man kan tilldela värden på variabler när man deklarerar dem:
 ```sql
 DECLARE @username AS nvarchar(25) = 'Admin'
@@ -648,15 +649,16 @@ SET @usernme = 'Micke'
 ```sql
 SET @username = (SELECT TOP 1 username FROM users)
 ```
-### Tilldela variabler med SELECT
+#### Tilldela variabler med SELECT
 Istället för SET kan man använda SELECT för att sätta variabler:
 ```sql
 SELECT TOP 1 @name = user, @pass = password FROM users
 ```
-### Referera till värden i variabler
+#### Referera till värden i variabler
 - Man kan använda PRINT för att skriva ett värde till "meddelanden"
 ```sql
 PRINT @username
+--skriver ut "Micke"
 ```
 
 - Man kan även använda variabler i queries
@@ -752,8 +754,6 @@ FLOOR(RAND() * (100-30)) + 30)
 
 En samling av vanliga SQL-funktioner
 [[VanligaFunktioner.sql]]
-
-
 # SSMS
 ## Köra delar av SQL-satsen
 - Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute
@@ -766,4 +766,5 @@ Aktuella databasen visas i ett fönster ovanför Object Explorer. Klicka i rutan
 ```sql
 USE databasename
 ```
-i query fönstret
+i query fönstret.
+
