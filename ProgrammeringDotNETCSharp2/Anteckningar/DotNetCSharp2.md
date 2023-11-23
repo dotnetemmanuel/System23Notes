@@ -264,7 +264,7 @@ Varje databas i SQL Server består av två filer:
 	- Transaktionslogg - håller ordning på transaktioner
 
 Båda behövs för att använda databasen. Om .ldf saknas så skapas den automatiskt
-# SQL Server Management Studio
+# SQL Server Management Studio - intro
 Ett verktyg för administratörer och utvecklare av databaser. SSMS är ett grafiskt verktyg för databashantering
 - Administrerar databaser (skapa, ändra, säkerhetskopiera/återställa)
 - Skapa och ändra E/R diagram
@@ -336,7 +336,16 @@ SELECT * FROM users;
 - Delete
 	- SQL: DELETE
 
-### SELECT
+CRUD är en förkortning som används i de allra flest programspråk som en allmän beskrivning av då man hanterar data.
+- C - Create
+	- Skapa en databaspost eller ett object i C#
+- R - Read
+	- Läsa från en eller flera databasposter eller t.ex loopa igenom en List i C#
+- U - Update
+	- Ändra i en eller flera befintliga poster i en databas eller ändra properties i ett C#-object
+- D - Delete
+	- Ta bort en eller flera poster i en databas eller ta bort ett object ur en List i C#
+## SELECT - Read
 - När vi vill hämta och visa data från en tabell använder vi "SELECT"
 ```sql
 SELECT id, username, password FROM users
@@ -493,3 +502,191 @@ SQL är mer än bara SELECT-satser. Man kan göra mycket mer med SQL än att bar
 - Korsreferera data från flera tabeller
 - Skriva funktioner och procedurer med flödeslogik som mer liknar vanlig programmering så som vi är vana vid från t.ex C#
 
+SQL består av:
+- Data Manipulation Language (DML)
+	- SELECT, INSERT, UPDATE, DELETE
+- Data Definition Language (DDL)
+	- CREATE, DROP, ALTER
+	- GRANT, REVOKE
+
+
+
+## Kopiera databastabell
+- Ibland vill man göra en kopia av en tabell, allra helst då vi övar på SQL:
+```sql
+SELECT * INTO company.categoriesTest FROM company.categories
+
+SELECT CategoryName, Id INTO company.categoriesTest2 FROM company.categories
+
+SELECT CategoryName as Cat, Id as IdNumber INTO company.categoriesTest3 FROM company.categories
+```
+## INSERT - Create
+### INSERT
+```sql
+INSERT INTO company.categoriesTest VALUES(13, 'Candy', 'Candy is the best')
+
+INSERT INTO company.categoriesTest(CategoryName, Id) VALUES('Candy', 16)
+
+INSERT INTO company.categoriesTest(Id, CategoryName, Description) SELECT 25, CategoryName, 'Gamlakategorier: ' + Description FROM company.categoriesTestDB
+```
+
+### Bulk INSERT
+```sql
+INSERT INTO company.categoriesTest(CatgeoryName, Id, Description) VALUES
+('Pizza', 16), 'Description'),
+('Cookies', 17), 'Description'),
+('Veggies', 18), 'Description'),
+('Water', 19), 'Description'),
+```
+## UPDATE
+Kommandot UPDATE:
+```sql
+UPDATE Employees SET LastName = 'Brown' WHERE EmployeeID = 1
+
+UPDATE Employees SET Salary = Salary * 1.5, JobTitle = 'Senior' + JobTitle WHERE DepartmentID = 3
+```
+☣️OBS! Glöm inte WHERE-klausulen, den talar vad som ska ändras. Annars uppdateras hela rader i angivna kolumnerna
+## Jämförelse med NULL
+- Kontrollera om något är NULL
+```sql
+SELECT LastName, ManagerID FROM Employees WHERE ManagerID IS NULL
+
+SELECT LastName, ManagerID FROM Employees WHERE ManagerID IS NOT NULL
+```
+## DELETE
+```sql
+--Ta bort rader från en tabell
+DELETE FROM Employees WHERE EmployeedID = 1
+DELETE FROM Employees WHERE LastName LIKE 'S%'
+
+--Ta bort all rader från en tabell på en gång
+TRUNCATE TABLE Employees
+```
+
+
+## Skapa en helt ny databas
+```sql
+CREATE DATABASE MinEgenDatabas
+--Utför ovanstående
+GO
+
+--Växla till nya databasen
+USE MinEgenDatabas
+```
+## Radera en databas
+```sql
+DROP DATABASE MinEgenDatabas
+GO
+```
+## Skapa en ny tabell i en databas
+```sql
+CREATE TABLE Persons (
+	Id int,
+	LastName varchar(255),
+	FirstName varchar(255),
+	Address varchar(255),
+	City varchar(255)
+)
+```
+
+
+## Datatyper och variabler
+- Det är viktigt att välja rätt datatyp för att:
+	- Den data man vill lagra SKA KUNNA lagras
+	- Att man kan skapa queries som fungerar som det är tänkt
+	- Att spara på prestanda och lagringsutrymme
+### Sträng-datatyper
+![[Pasted image 20231123090551.png]]
+### Numeriska datatyper
+![[Pasted image 20231123090626.png]]
+### Datum och tid
+![[Pasted image 20231123090650.png]]
+### IDENTITY
+IDENTITY är en egenskap man kan välja att sätta på en kolumn av datatyp 'int' (eller flera andra heltals-typer). Databas hanteraren kommer då själv generera värden för denna kolumn enligt en given sekvens (vanligtvis 1, 2, 3, 4,5 osv.) När man sedan sätter in nya rader i tabellen hoppar man helt enkelt över att ange något för IDENTITY-kolumnen som automatiskt får nästa värde i sekvensen.
+```sql
+CREATE TABLE Persons(
+Id int IDENTITY (1, 1), --fungerar också med bara IDENTITY
+LastName nvarchar(255),
+FirstName nvarchar(255)
+)
+```
+### Konvertera mellan datatyper
+- Ibland kan man behöva konvertera en datatyp till en annan. Säg att du vill läsa ut en datetime och t.ex lagra i ett nvarchar-fält (kanske för att du klippte in datumet i en längre text) då kan du använda CONVERT.
+```sql
+CONVERT(nvarchar, @myDatetime, 121)
+```
+
+121 är en formateringskod som anger hur DateTime-värdet ska representeras som en sträng.
+[Convert DateTime to String in a Specified Format in SQL Server](https://www.sqlservertutorial.net/sql-server-system-functions/convert-datetime-to-string/)
+
+### Datatyper
+- Olika datatyper lagras på olika sätt i en databas
+- När man skapar en tabell behöver man därför anger en datatyp för varje kolumn så databashanteraren vet hur informationen ska lagras
+- Olika databaser (mjukvaror) hr olika datatyper
+- De flesta databaser har ett ganska stort antal olika datatyper att välja mellan men oftast är det ett relativt fåtal som är vanligt förekommande
+#### Vanliga datatyper
+![[Pasted image 20231123094732.png]]
+
+### Deklarera variabler
+- För att använda variabler i SQL behöver man först deklarera dem
+```sql
+--DECLARE <@variablename> (as) <datatype>
+DECLARE @username AS nvarchar(25)
+```
+### Tilldela värden på variabler
+- Man kan tilldela värden på variabler när man deklarerar dem:
+```sql
+DECLARE @username AS nvarchar(25) = 'Admin'
+```
+
+- Eller så kan man tilldela eller ändra det senare:
+```sql
+SET @usernme = 'Micke'
+```
+
+- Man kan även sätta ett värde från en tabell till en variabel:
+```sql
+SET @username = (SELECT TOP 1 username FROM users)
+```
+### Tilldela variabler med SELECT
+Istället för SET kan man använda SELECT för att sätta variabler:
+```sql
+SELECT TOP 1 @name = user, @pass = password FROM users
+```
+### Referera till värden i variabler
+- Man kan använda PRINT för att skriva ett värde till "meddelanden"
+```sql
+PRINT @username
+```
+
+- Man kan även använda variabler i queries
+```sql
+SELECT * FROM users WHERE username = @username
+```
+
+## Funktioner
+- SQL-Server har en massa inbyggda funktioner som kan vara användbara
+```sql
+FLOOR(RAND() * (100-30)) + 30)
+```
+- FLOOR = avrunda
+- RAND = Slumptal mellan 0 + 1
+	- Exemplet ovan ger ett slumptal mellan 31 och 99
+
+En samling av vanliga SQL-funktioner
+[[VanligaFunktioner.sql]]
+
+
+# SSMS
+## Köra delar av SQL-satsen
+- Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute
+## Köra flera SQL-satser
+- Det går bra att köra flera SQL-satser efter varandra. Flera SELECT-satser öppnar flera tabellvyer
+## Snabb SELECT
+- Höger klicka på tabellens namn i Object Explorer och välj Select Top 1000 rows
+## Växla mellan databaser
+Aktuella databasen visas i ett fönster ovanför Object Explorer. Klicka i rutan och välj en annan databas för att växla. Det går även att skriva 
+```sql
+USE databasename
+```
+i query fönstret

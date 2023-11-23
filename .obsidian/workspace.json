@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "567e1a05f47175d2",
+        "id": "314dba2d60cf3d68",
         "type": "tabs",
         "children": [
           {
-            "id": "c76d45aaa61ddaf7",
+            "id": "b35576d0a32a6987",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -177,20 +177,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c76d45aaa61ddaf7",
+  "active": "b35576d0a32a6987",
   "lastOpenFiles": [
+    "Pasted image 20231123094732.png",
+    "[Convert.md",
+    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
+    "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner/VanligaFunktioner.sql",
+    "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123090650.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123090626.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123090551.png",
+    "Pasted image 20231123090650.png",
+    "Pasted image 20231123090626.png",
+    "Pasted image 20231123090551.png",
+    "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner.zip",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231122212840.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231122212014.png",
     "Pasted image 20231122212840.png",
     "Pasted image 20231122212014.png",
-    "ProgrammeringDotNETCSharp2/Pasted image 20231122174455.png",
-    "ProgrammeringDotNETCSharp2/Pasted image 20231122173417.png",
-    "Pasted image 20231122174455.png",
-    "Pasted image 20231122173417.png",
-    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231114111659.png",
-    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
-    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231114123008.png",
-    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231114121602.png",
-    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231114111803.png",
-    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231114111457.png",
     "ProgrammeringDotNETCSharp2/ProgrammeringDotNETCSharp2.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/ProgrammeringDotNETCSharp1.md",
@@ -203,10 +207,7 @@
     "ProgrammeringDotNETCSharp1/Kursmaterial/Inlämningsupgiften-tillägg.pdf",
     "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 49892.crdownload",
     "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_12-OOP3.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Unconfirmed 445141.crdownload",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913094717.png.md",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/Övningsuppgift-Labyrinten.pdf",
-    "ProgrammeringDotNETCSharp1/Kursmaterial/NET1_10-OOP2.pdf",
     "Pasted image 20230913094717.png.md",
     "ProgrammeringDotNETCSharp1/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/.Net CSharp.md",
@@ -224,7 +225,6 @@
     "TDD - T.md",
     "SystemutvecklingAgil/Anteckningar/12regler.md",
     "SystemutvecklingAgil/Systemutveckling.md",
-    "SystemutvecklingAgil/12regler.md",
-    "Agil utveckling, Scrum, Kanban.md"
+    "SystemutvecklingAgil/12regler.md"
   ]
 }
