@@ -679,7 +679,7 @@ UnitsInStock int
 )
 ```
 och kan sedan använda den som en vanlig tabell
-#### Sätt in data i en tabell variabel
+#### Sätt in data i en tabellvariabel
 - Man använder INSERT
 ```sql
 INSERT INTO @product_table
@@ -689,7 +689,7 @@ INSERT INTO @product_table
 	FROM company.products
 WHERE SupplierID = 1
 ```
-#### Hämta data från en tabell variabel
+#### Hämta data från en tabellvariabel
 - Man använder SELECT
 ```sql
 SELECT * FROM @product_table
