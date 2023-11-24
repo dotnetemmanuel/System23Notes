@@ -603,6 +603,7 @@ CREATE TABLE Persons (
 ![[Pasted image 20231123090650.png]]
 ### IDENTITY
 IDENTITY är en egenskap man kan välja att sätta på en kolumn av datatyp 'int' (eller flera andra heltals-typer). Databas hanteraren kommer då själv generera värden för denna kolumn enligt en given sekvens (vanligtvis 1, 2, 3, 4,5 osv.) När man sedan sätter in nya rader i tabellen hoppar man helt enkelt över att ange något för IDENTITY-kolumnen som automatiskt får nästa värde i sekvensen.
+**Create Persons Table**
 ```sql
 CREATE TABLE Persons(
 Id int IDENTITY (1, 1), --fungerar också med bara IDENTITY
@@ -610,11 +611,24 @@ LastName nvarchar(255),
 FirstName nvarchar(255)
 )
 ```
+#SQL-Table #IDENTITY-Command #Database-Creation #Data-Retrieval #SQL-Syntax
+
+Creates a new table called Persons with two columns: IDENTITY, lastName and firstName.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
 ### Konvertera mellan datatyper
 - Ibland kan man behöva konvertera en datatyp till en annan. Säg att du vill läsa ut en datetime och t.ex lagra i ett nvarchar-fält (kanske för att du klippte in datumet i en längre text) då kan du använda CONVERT.
+**Datetime Conversion**
 ```sql
 CONVERT(nvarchar, @myDatetime, 121)
 ```
+#SQL-Conversion #Nvarchar-Data-Type #Date-Formatting #Datetime-Numbering #SQL-Syntax
+
+This code creates a new column named "nvarchar" with the value 121 and assigns it to an instance of "@myDatetime".
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
 
 121 är en formateringskod som anger hur DateTime-värdet ska representeras som en sträng.
 [Convert DateTime to String in a Specified Format in SQL Server](https://www.sqlservertutorial.net/sql-server-system-functions/convert-datetime-to-string/)

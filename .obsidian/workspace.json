@@ -174,11 +174,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "pieces-for-developers:Pieces For Developers": false
     }
   },
-  "active": "b35576d0a32a6987",
+  "active": "3f22530cc5202b38",
   "lastOpenFiles": [
+    "piecesdb.json",
+    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
     "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123100418.png",
     "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123094732.png",
     "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123110847.png",
@@ -186,14 +189,12 @@
     "Pasted image 20231123100418.png",
     "Pasted image 20231123094732.png",
     "[Convert.md",
-    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
     "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner/VanligaFunktioner.sql",
     "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner",
     "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123090650.png",
     "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123090626.png",
     "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231123090551.png",
     "Pasted image 20231123090650.png",
-    "Pasted image 20231123090626.png",
     "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner.zip",
     "ProgrammeringDotNETCSharp2/ProgrammeringDotNETCSharp2.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
