@@ -768,6 +768,96 @@ FLOOR(RAND() * (100-30)) + 30)
 
 En samling av vanliga SQL-funktioner
 [[VanligaFunktioner.sql]]
+## JOIN
+### Relationer
+- Hittills har vi bara skrivit queries som hämtar data från en tabell åt gången. Det vanliga i relationsdatabaser är dock att man har flera tabeller där data i tabell A har en relation till data i tabell B.
+- Att man delar upp data i flera tabeller beror på att man inte vill ha flera kopior av samma data
+	- Det tar onödig plats
+	- För att man inte ska behöva uppdatera samma data på flera ställen (och därmed löpa en risk att det finns motsägelser i datat)
+#### Böcker och författare i samma tabell
+- En databas över böcker och dess författare skulle kunna se ut så här:
+![[Pasted image 20231128200637.png]]
+- Vi behöver då lagra Henning Mankells namn och födelsedatum i flera fält, och i detta har det dessutom, smugit in ett fel. Vi har alltså upprepade och motsägelsefulla uppgifter i vår databas.
+#### Böcker och författare i olika tabeller
+- VI kan istället ha olika tabeller för böcker och författare
+![[Pasted image 20231128200836.png]]
+- Nu behövs inte upprepade uppgifter om Mankells födelsedatum ,och eftersom varje bok har ett __FörfattareID__ som pekar ut vilken författare som skrivit boken så kan man ändå få ut den informationen
+### Primary keys och Foreign keys
+- Med SQL-kommandot `Join` kan vi länka ihop data från två eller fler tabeller så länge dessa har något gemensamt fält som talar om hur data från de olika tabellerna är relaterade till varandra
+- Eftersom alla författare i tabellen ovan har ett unikt Id, en så kallad primärnyckel, __primary key__, så kan vi spara det värdet i en kolumn i boktabellen för att koppla varje bok till en specifik författare. Kolumnen __FörfattareID__ som pekar ut en rad i en annan tabell brukar kallas för __foreign key__
+- Vi har tidigare sett att Primary key unikt identifierar en rad. Foreign key är en ann tabells Primary key.
+### Länka ihop data via query
+- Antag att vi har  två tabeller enligt 
+![[Pasted image 20231128201453.png]]
+- Relationen mellan de två tabellerna kan ses genom __LandID__
+	- Således är Oslo kopplat till Norge och Köpenhamn till Danmark
+	- Sverige har inte någon koppling till stad
+	- Helsingborg har inte någon koppling till land
+- Låt oss se hur vi kan länka ihop informationen i SQL genom att använda olika typer av `join`
+
+#### Cross join
+- Alla i första tabellen x alla i andra tabellen
+- Det blir fort stort
+- Används i princip aldrig
+![[Pasted image 20231128201751.png]]
+#### Inner join (Join)
+![[Pasted image 20231128201828.png]]
+- Sverige har inga städer
+- Helsingborg har inget land
+- Ingen av dem kommer med
+- The `INNER JOIN` keywords selects records that have matching values i __both__ tables
+![[Pasted image 20231128201943.png]]
+#### Full join (Outer Join)
+![[Pasted image 20231128202015.png]]
+- Sverige kommer med, med `NULL` som stad
+- Helsingborg kommer med, med `NULL` som land
+- The `FULL OUTER JOIN` keyword returns all records when there is a match in left (table1) or right (table2) table records.
+![[Pasted image 20231128202206.png]]
+#### Left join
+![[Pasted image 20231128202232.png]]
+- Sverige kommer med, med `NULL` som stad
+- Helsingborg kommer inte med
+- The `LEFT JOIN` keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match
+![[Pasted image 20231128202426.png]]
+#### Right join
+![[Pasted image 20231128202501.png]]
+- Helsingborg kommer med, med `NULL` som land
+- Sverige kommer inte med
+- The `RIGHT JOIN` keyword returns all records from the right table (table2), and the matching records from the left table (table1. The result is 0 form the left side, if there is not match)
+![[Pasted image 20231128202635.png]]
+
+#### Exempel
+**Joining Land ID**
+```sql
+SELECT * FROM [länder] l
+JOIN [städer] s ON s.LandId = l.Id
+```
+#SQL-Query #Data-Retrieval #Join-Statement #Land-ID #Database-Management
+
+This SQL query selects all data from a table called "länder" and joins them with the __LandId__ column, where l. Id is set to an ID of each record in the Table's land
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+- Använd `ON` för att ange vilka kolumner man ska "joina" på
+- När vi bara skriver `JOIN` så är det samma som `INNER JOIN`
+#### Alla `JOIN`s med exempel
+![[Pasted image 20231128203105.png]]
+### Typer av relationer: en-till-många
+- Exemplet med länder och städer är en __en-till-många__ relation:
+	- Varje land kan ha __flera__ städer 
+	- Varje stad ligger i __ett__ land
+![[Pasted image 20231128203247.png]]
+
+### Typer av relationer: många-till-många
+- Mellan Student och Kurs har vi ett __många-till-många__ förhållande
+	- En student läser __flera__ kurser
+	- En kurs har __flera__ studenter
+![[Pasted image 20231128203410.png]]
+	- Detta kan vi inte hantera i relationsmodellen
+- Vi måste ta till en __junction table__
+![[Pasted image 20231128203509.png]]
+- Med tabellen StudentKurs knyter vi ihop Student med Kurs
 # SSMS
 ## Köra delar av SQL-satsen
 - Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute
