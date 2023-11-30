@@ -858,6 +858,306 @@ This SQL query selects all data from a table called "länder" and joins them wit
 - Vi måste ta till en __junction table__
 ![[Pasted image 20231128203509.png]]
 - Med tabellen StudentKurs knyter vi ihop Student med Kurs
+
+## Databasdesign
+### Designprocessen
+En väl strukturerad databas:
+- Sparar disk genom att inte dubbellagra data
+- Bibehåller datas korrekthet och integritet
+- Ger meningsfull åtkomst till data
+### Designprocessens faser
+1. Kravanalys
+	- Identifiera vad databasen skall användas till
+2. Organisera data i tabeller
+3. Ange primärnycklar
+4. Analysera relationer
+5. Normalisera tabellerna
+6. Fylla tabeller med testdata
+### Kravanalys: vad är syftet med databasen?
+- Samla in data
+	- Intervjua kommande användare
+	- Analysera befintliga formulär
+	- Analysera befintliga system
+### Identifiera entiteter
+- Entiteter (tabeller) representerar objekt i den verkliga världen
+	- Oftast är de substantiv i specifikationen
+	- T.ex:
+		> Vi behöver ett system som lagrar information om __studenter__, som läser olika __kurser__. Kurserna hålls i olika __städer__. När student registrerar sig samlar vi in följande information: namn, student ID nummer, foto och datum.
+
+- Entiteter: Student, Kurs, Stad
+	- Eller bättre, på engelska: Student, Course, City
+### Identifiera kolumner
+- Kolumner i tabeller är egenskaper hos entiteterna
+	- De har namn och typ
+- Till Exempel kan studenter ha:
+	- Namn (text)
+	- Id-nummer (tal eller text)
+	- Foto (binärdata)
+	- Inskrivningsdatum (datum)
+- Kolumner är förtydliganden av entiteterna i kravtexten, till exempel:
+> Vi behöver ett system som lagrar information om studenter, som läser olika kurser. Kurserna hålls i olika städer. När student registrerar sig samlar vi in följande information: __namn__, __student ID nummer__, __foto__ och __datum__.
+- Studenter har följande karakteristiker:
+	- Namn, student ID nummer, foto, inskrivningsdatum, och en lista av kurser där de deltar
+### Kravanalys: bryt ner delarna
+- Ofta används ett Data Dictionary för att hålla ordning
+- Bryter ned stora element till små
+	- Adress => Gatuadress + Postnummer + Ort + Land
+- När detta är gjort  är det dags att börja planera den egentliga databasen
+
+### Struktur: databasens byggblock
+- Skapa en visuell representation av databasen
+- Skapa tabeller utifrån våra informationsdelar
+![[Pasted image 20231130111736.png]]
+### Tilldela datatyper
+- Det är viktigt att alla data har rätt typ
+	- Det går att ändra senare, men det är enklast att få det rätt från början
+- Några vanliga datatyper:
+	- char - text med fast längd
+	- varchar - text av varierande längd
+	- text - stora textblock
+	- int - heltal
+	- float, double - flyttal (tal med decimaler)
+	- blob - binärdata
+### Entiteter i ett ER-diagram
+- Normalt används en symbol i form av en textbox
+![[Pasted image 20231130112021.png]]
+### Primärnycklar
+- Primärnycklar behöver vara
+	- Unika 
+	- Oföränderliga
+	- Alltid ha ett värde (icke-NULL)
+#### Primärnyckel - hur väljer man?
+- Lägg alltid en extra kolumn för primärnyckeln
+	- Använd inte en existerande kolumn, även om värdena är unika (t.ex personnummer)
+		- Avgörs från fall till fall
+	- Helst vara ett heltal
+	- Bör deklareras som primärnyckel
+	- Använd `IDENTITY` för att få auto-inkrement
+	- Lägg primärnyckeln som första kolumn
+### Identifiera relationer (relationships)
+- Relationer/förhållanden är beroenden mellan entiteter
+> Vi behöver ett system som lagrar information om __studenter__, som läser _olika_ __kurser__. _Kurserna_ hålls i olika __städer__. När student registrerar sig samlar vi in följande information: __namn__, __student ID nummer__, __foto__ och __datum__.
+- "Studenter läser kurser" - många-till-många förhållande 
+- "Kurser hålls i olika städer" - många-till-en (eller många-till-många) förhållande
+### Skapa relationer mellan entiteter
+- Det finns olika sorters relationer
+- Kallas __kardinalitet
+	- en-till-en
+	- en-till-många
+	- många-till-många
+#### Vanliga symboler för kardinalitet
+- Ring: "noll" ![[Pasted image 20231130112940.png]]
+- Streck: "ett" ![[Pasted image 20231130113005.png]]
+- Kråkfot: "många" ![[Pasted image 20231130113026.png]]
+#### Symboler för kardinalitet
+![[Pasted image 20231130113114.png]]
+### Relationer: en-till-en
+- För varje post i tabellA finns en post i tabellB
+![[Pasted image 20231130113203.png]]
+- Vanligen är det bättre att slå ihop detta till en tabell
+### Relationer: en-till-många
+- En rad i tabellA hör ihop med många rader i tabellB
+	- En beställare kan ha flera ordrar
+	- En kund kan ha lånat flera böcker på biblioteket
+	- Ett parti kan ha många presidentkandidater
+	![[Pasted image 20231130113403.png]]
+- Implementering:
+- Ta PK från "en"-tabellen och lägg den som FK-fält i "många"-tabellen
+### Relationer många-till-många
+- En rad i tabellA hör ihop med många rader i tabellB
+__OCH__
+- En rad i tabellB hör ihop med många rader i tabellA
+	- En student läser många kurser
+	- En kurs blir läst av många studenter
+	![[Pasted image 20231130113655.png]]
+- __Detta kan vi inte hantera i relationsdatabas
+- En många-till-många relation måste lösas upp
+- Två en-till-många
+- Vi skapar en upplösningstabell (junction table)
+	![[Pasted image 20231130113831.png]]
+- Upplösningstabellen kan ha extra data. Avgörs individuellt från fall till fall.
+### Obligatoriskt eller inte?
+- Vi behöver också se på båda sidorna i en relation
+- Måste det finns några poster?
+	- Ett land måste finnas för att ha en FN-representant
+	- Det omvända är inte sant
+	![[Pasted image 20231130114130.png]]
+	
+### Normalisering
+- __Normalisering__ är en process som används för att avlägsna fel i en datamodell
+- Syftet med normalisering är att minimera redundans (dubletter) och andra anomalier i en databas
+- Beskriver ett antal __normalformer__ som består av en uppsättning regler som beskriver hur en tabellstruktur ska och inte ska utformas
+[Normalisering, Wikipedia][https://sv.wikipedia.org/wiki/Normalform_(databaser)]
+#### Första normalformen (1NF)
+1. Det måste finnas en __primärnyckel__ i varje tabell
+2. Varje kolumnvärde måste vara odelbar (högst __ett värde__ per ruta)
+3. Dessutom får kolumnerna inte upprepas
+	![[Pasted image 20231130114858.png]]
+##### 1NF - Varje attribut måste vara odelbart
+![[Pasted image 20231130114954.png]]
+##### 1NF - Högst ett värde per ruta
+![[Pasted image 20231130115044.png]]
+
+ ##### 1NF - Dela upp tabellen
+ ![[Pasted image 20231130115157.png]]
+ #### Andra normalformen (2NF)
+ - Alla attribut (kolumner) beror helt och enbart på primärnyckeln
+ - Attribut beror på primärnyckeln direkt
+	 - Inte indirekt via något annat attribut
+ - Till exempel "Ålder" beror på "Födelsedatum", vilket i sin tur beror på "StudentId" => bryter mot 2NF
+![[Pasted image 20231130115542.png]]
+##### Dela upp tabellen
+![[Pasted image 20231130115630.png]]
+#### Tredje normalformen (3NF)
+- Definition: 2NF samt att inget icke-nyckelattribut får vara funktionellt beroende av något annat icke-nyckelattribut
+	=> __Attributen får inte vara beroende av någonting annat än nyckeln. (_Nothing but the key_)
+![[Pasted image 20231130124451.png]]
+##### Dela upp tabellen
+![[Pasted image 20231130124525.png]]
+#### Boyce-Codd Normalform (BCNF)
+- Relationen måste vara i den tredje normalformen
+__OCH__
+- Alla funktionella beroenden måste ha en _supernyckel_ på den vänstra sidan.
+![[Pasted image 20231130124711.png]]
+##### Dela upp tabellen
+![[Pasted image 20231130124741.png]]
+
+#### Normalisering - Sammanfattning
+> "Each attribute must represent a fact about 
+> the key,
+> the whole key,
+> and nothing but the key,
+> so help me Codd"
+
+- Alla relationer knyts ihop av nycklar, som vanligen är ett unikt Id
+- Ingen data ska finnas på mer än en plats
+- All data ska vara uppdelad i separata delar
+- Målet är att få en databas att:
+	- Inte innehålla upprepningar
+	- Vara minnessnål
+	- Innehålla korrekta värden
+	- Uppfylla kravsspecifikationen
+	- Hållas så enkelt som möjligt
+	- Vara säker
+		- Regler för datas integritet
+### Regler för datas integritet
+- NOT NULL - ett fält måste ha ett värde
+- Referensintegritet - en FK i en tabell måste motsvaras av PK i en annan tabell
+	- Det går inte att ta bort poster i barntabell som pekar på sig
+		- Kan inte ta bort order som har orderrader
+- Diverse affärsregler
+	- Pris måste vara > 0
+	- Mötestid måste vara under kontorstid
+### Data-integritet
+- SQL för att styra datas integritet
+	- `NOT NULL`
+		- värdet får inte vara NULL
+	- `IDENTITY`
+		- Räknar upp Id med 1 automatiskt
+	- `PRIMARY KEY`
+		- Anger att det är en unik identifierare som inte får vara NULL, och måste vara unik
+	- `CONSTRAINT`, `FOREIGN KEY` och `REFERENCES`
+		- Anger relationerna mellan tabellerna och ser till att det inte går att ta bort saker som relaterar till data
+	- `UNIQUE`
+		- En kolumn som inte får innehålla dubletter
+#### `NOT NULL`
+**Create Cities Table**
+```sql
+CREATE TABLE Cities
+(
+	Id INT IDENTITY,
+	CityName varchar(255) NOT NULL
+)
+
+//Detta kommer inte gå att köra:
+INSERT INTO Cities(CityName) VALUES ('Stockholm'),(NULL))
+```
+#SQL-Insertion #Primary-Key #Database-Creation #Data-Retrieval #Unique-Identifier
+
+Creates a table called "Cities" with an ID, city name, and insert it into the Cities database.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+#### `IDENTITY`
+**Create Cities Table**
+```sql
+CREATE TABLE [Cities](
+	[Id] INT IDENTITY,
+	[CityName] varchar(255)
+)
+```
+#SQL-Schema #Cities-Table #ID-Entity #City-Name #varchar-Type
+
+Creates a new table called "Cities" with an ID, city name, and length of 255.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+#### `PRIMARY KEY`
+**Creating Cities Table**
+```sql
+CREATE TABLE [Cities](
+	[Id] INT IDENTITY,
+	[CityName] varchar(255),
+	PRIMARY KEY ([Id])
+)
+
+//Fungerarockså:
+CREATE TABLE [Cities](
+	[Id] INT IDENTITY PRIMARY KEY,
+	[CityName] varchar(255)
+)
+```
+#SQL-Table-Creation #Primary-Key #ID-Value #City-Name #PRIMARY-KEY
+
+Creates a table with two columns: Id, CityName, and Cities. The ID is stored in the primary key of an existing table to be used for creating cities
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+#### `CONSTRAINT`, `FOREIGN KEY` och `REFERENCES`
+- En `CONSTRAINT` är en regel eller begränsning
+- Används för att tala om beroenden och relationer mellan tabeller
+- Syntax:
+`CONSTRAINT[Egetpåhittatnamn]`
+	`FOREIGNKEY ([KolumnenI tabellensomanger relationen])`
+		`REFERENCES[Den andratabellen]([Den andratabellenskolumn])`
+**Create Parking Houses Table**
+```sql
+CREATE TABLE [ParkingHouses](
+	[Id] INT IDENTITY,
+	[HouseName] Varchar(255),
+	[CityId] INT,
+	PRIMARYKEY ([Id])
+
+CONSTRAINT [FK_ParkingHouses.CityId]
+	FOREIGNKEY ([CityId])
+		REFERENCES[Cities]([Id])
+)
+```
+#SQL-Table-Creation #Primary-Key-Constraints #Fk_ParkingHouses-Database #City-ID #Varchar-Data-Type
+
+Creates a table called "ParkingHouses" with an ID, HouseName, and CityId. It also adds primary key to the Primary Key for Cities (Cities).
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+#### `UNIQUE`
+- Ibland vill man att vissa värden i en kolumn INTE har dubletter
+- Exempel på data som borde vara unika:
+	- Personnummer
+	- Registreringsskyltar
+	- Hästnamn på ATG
+
+- Exempel på saker som borde vara unika men inte är det:
+	- Författarnamn
+	- Filmtitlar
+```sql
+CREATE TABLE Cars
+(
+	Id INT IDENTITY,
+	Plate varchar(255)UNIQUE,
+	Make varchar(255)
+)
+```
 # SSMS
 ## Köra delar av SQL-satsen
 - Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute
