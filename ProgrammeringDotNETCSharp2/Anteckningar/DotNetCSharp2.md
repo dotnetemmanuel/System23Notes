@@ -1150,6 +1150,7 @@ Creates a table called "ParkingHouses" with an ID, HouseName, and CityId. It als
 - Exempel på saker som borde vara unika men inte är det:
 	- Författarnamn
 	- Filmtitlar
+**Creating Cars Table**
 ```sql
 CREATE TABLE Cars
 (
@@ -1158,6 +1159,12 @@ CREATE TABLE Cars
 	Make varchar(255)
 )
 ```
+#SQL #Table-Creation #Primary-Key #Unique-Value #Database-Schema
+
+Creates a new table called "Cars" with two columns: IDENTITY, Plate, Unique, Make.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
 # SSMS
 ## Köra delar av SQL-satsen
 - Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute
