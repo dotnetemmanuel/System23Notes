@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "314dba2d60cf3d68",
+        "id": "04dc9b6cef9c5d4e",
         "type": "tabs",
         "children": [
           {
-            "id": "b35576d0a32a6987",
+            "id": "e6844868661bf9f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -158,9 +158,17 @@
                 "file": "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md"
               }
             }
+          },
+          {
+            "id": "e074ad847abacdf5",
+            "type": "leaf",
+            "state": {
+              "type": "pieces-snippet-list",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -178,35 +186,37 @@
       "pieces-for-developers:Pieces For Developers": false
     }
   },
-  "active": "b35576d0a32a6987",
+  "active": "e6844868661bf9f6",
   "lastOpenFiles": [
-    "Pasted image 20231130124741.png",
-    "Pasted image 20231130124711.png",
-    "Pasted image 20231130124525.png",
-    "Pasted image 20231130124451.png",
-    "Pasted image 20231130115630.png",
-    "Pasted image 20231130115542.png",
-    "Pasted image 20231130115157.png",
-    "Pasted image 20231130115138.png",
-    "Pasted image 20231130115044.png",
-    "Pasted image 20231130114954.png",
-    "Pasted image 20231130114858.png",
+    "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/NET2_10-ORM.pdf",
+    "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Unconfirmed 923411.crdownload",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Anteckningar.md",
+    "ProgrammeringDotNETCSharp2/ProgrammeringDotNETCSharp2.md",
+    "Pasted image 20230905100533.png.md",
+    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128201751.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128201828.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128201943.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128202015.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128202206.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128202232.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128202426.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128202501.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128202635.png",
+    "ProgrammeringDotNETCSharp2/Anteckningar/Pasted image 20231128203105.png",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Övningsuppgifter - Relationsdata- Med Bilder.pdf",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Unconfirmed 858428.crdownload",
     "piecesdb.json",
-    "ProgrammeringDotNETCSharp2/Anteckningar/DotNetCSharp2.md",
     "[Convert.md",
     "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner/VanligaFunktioner.sql",
     "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner",
     "ProgrammeringDotNETCSharp2/Kursmaterial/VanligaFunktioner.zip",
-    "ProgrammeringDotNETCSharp2/ProgrammeringDotNETCSharp2.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md",
     "ProgrammeringDotNETCSharp1/ProgrammeringDotNETCSharp1.md",
     "Untitled.canvas",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Programmering i .NET C# 2 v.4.pdf",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Unconfirmed 809664.crdownload",
     "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Kurshandledning_Programmering i .NET 2.pdf",
-    "ProgrammeringDotNETCSharp2/Kursmaterial/FöreläsningarOchDokument/Unconfirmed 703909.crdownload",
     "ProgrammeringDotNETCSharp1/Anteckningar/Anteckningar.md",
     "ProgrammeringDotNETCSharp1/Anteckningar/Pasted image 20230913094717.png.md",
     "Pasted image 20230913094717.png.md",
@@ -224,8 +234,6 @@
     "SystemutvecklingAgil/Anteckningar/Systemutveckling.md",
     "ProgrammeringDotNETC#1/.NET C#1.md",
     "TDD - T.md",
-    "SystemutvecklingAgil/Anteckningar/12regler.md",
-    "SystemutvecklingAgil/Systemutveckling.md",
-    "SystemutvecklingAgil/12regler.md"
+    "SystemutvecklingAgil/Anteckningar/12regler.md"
   ]
 }

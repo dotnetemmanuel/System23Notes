@@ -36,7 +36,6 @@
   "deleteFileOption": "trash",
   "expandedFolders": {
     "System23Notes": [
-      "SystemutvecklingAgil/Anteckningar",
       "ProgrammeringDotNetC#1",
       "ProgrammeringDotNetC#1/Anteckningar",
       "ProgrammeringDotNetC#1/Anteckningar",
@@ -46,8 +45,9 @@
       "ProgrammeringDotNetC#1",
       "ProgrammeringDotNetC#1",
       "ProgrammeringDotNETCSharp1/Anteckningar",
-      "ProgrammeringDotNETCSharp2/Anteckningar",
-      "ProgrammeringDotNETCSharp2"
+      "ProgrammeringDotNETCSharp2",
+      "ProgrammeringDotNETCSharp2",
+      "ProgrammeringDotNETCSharp2/Anteckningar"
     ]
   },
   "expandedSpaces": [
@@ -85,7 +85,7 @@
   "spacesSyncTimeoutSeconds": 10,
   "spacesAutoBackup": true,
   "spacesAutoBackupInterval": 10,
-  "spacesAutoBackupLast": 1701344862453,
+  "spacesAutoBackupLast": 1701676128867,
   "spacesUseAlias": false,
   "precreateVaultSpace": true,
   "fmKeyAlias": "aliases",

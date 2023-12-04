@@ -2,6 +2,8 @@
   "cssTheme": "monokai",
   "accentColor": "",
   "theme": "obsidian",
-  "baseFontSize": 14,
-  "textFontFamily": "Cascadia Code"
+  "baseFontSize": 16,
+  "textFontFamily": "Cascadia Code",
+  "monospaceFontFamily": "Cascadia Code",
+  "baseFontSizeAction": true
 }
