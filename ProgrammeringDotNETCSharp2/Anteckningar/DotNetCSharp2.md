@@ -1165,6 +1165,294 @@ Creates a new table called "Cars" with two columns: IDENTITY, Plate, Unique, Mak
 
 **Links:**
 - [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+## Object Relational Mapping - ORM
+### ADO - ActiveX Data Objects
+- ADO är ett programmeringgränssnitt för att komma åt data i en databas
+	- Äldre teknik som fortfarande används
+	- Microsoft
+- Det vanliga sättet att komma åt en databas inifrån en ASP-sida är att:
+	- Skapa en ADO-anslutning till en databas
+	- Öppna databasanslutningen
+	- Extrahera de data du behöver från postmängden
+	- Stäng postmängden
+	- Stäng anslutningen
+#### ADO - ansluta till en databas
+- Connection string: `static string connString = "data source = .\\SQLEXPRESS; initial catalog = <DBName>; persist security info = True; Integrated Security = True;";
+- SQL: `var sql = "SELECT * FROM Cars";`
+- Ansluta till databasen:
+		**Open SqlConnection**
+```cs
+var connection = new SqlConnection(connString);
+connection.Open();
+```
+#SqlConnection #Connection-String #Open-Method #Python-SDK #Database-Access
+
+This code opens a connection to a specified string using the SqlConnection class. It then closes it and creates an instance of its own method called "Open" when successful.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+- Manipulera databasen
+		**SQL Command Reader.**
+```cs
+var command = new SqlCommand(sql, connection)
+var reader = command.ExecuteReader()
+```
+#SqlCommand-class #Connection-object #ExecuteReader-method #Data-retrieval #Python-programming
+
+This code creates a new SqlCommand object that uses the given SQL and connection. It then executes an input stream for each command, which can be used to read data from one of them in parallel using another function called "reader".
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+- Läsa svaret från databasen: `reader.Read();`
+#### ADO - Connection string
+`static string connString = "data source = .\\SQLEXPRESS; initial catalog = <DBName>; persist security info = True; Integrated Security = True;";
+`
+- data source = databasserven
+- initial catalog = databasens namn
+- persist security info = komma ihåg lösenordet
+- integrated security = Windows-login
+
+#### ADO - läsa från databasen
+##### Paket
+- Nuget packages
+	- färdiga kod-paket skrivna av både Microsoft och andra utvecklare
+![[Pasted image 20231211150800.png]]
+#### ADO - C\#
+- Databasfält kan vara NULL, vilket C# inte gillar
+- För att markera att ett värde FÅR vara NULL så anger vi det med ett '?'-tecken vid datatypen
+`public int? ParkingSlotsId { get; set; }`
+- Korrekt hantering av instanser av t.ex databaskopplingen
+**Using SqlConnection**
+```cs
+using (var connection = new SqlConnection(connString))
+{
+	// Kod som använder connection
+}
+```
+#SqlConnection #Connection-String #Java-SDK #Database-Access #Data-Retrieval
+
+Creates a new connection to the given string, allowing it to be used as an argument. It also sets up and closes connections for use in SQL mode.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+#### Slutsats
+- ADO:
+	- gammalt
+	- krångligt
+	- mer och mer ovanligt
+	- koppla databasen med object sker manuellt
+Lösningen: Object Relational Mapping
+
+### Vad är ORM?
+- __Object Relational Mapping__ (ORM) är ett verktyg för att koppla tabeller i en databas till klasser och objekt i sin kod
+- På det sättet blir det bättre att manipulera databasen när man programmerar en applikation
+- Istället för att skriva SQL-frågor för att hämta ut data från databasen, använder man sig istället av sitt vanliga programmeringsspråk för att fråga databasen
+- Oftast krävs det att man mappar ut tabeller i databasen till klasser och objekt i koden
+- Dessutom gör man det möjligt i koden att öppna upp en anslutning till databasen så att man manipulerar data
+
+![[Pasted image 20231211145606.png]]
+
+Enkelt uttryckt är ORM ett sätt att koppla ihop vår vanliga C#-kod med en databas.
+![[Pasted image 20231211145647.png]]
+
+#### Fördelar och nackdelar
+- Fördelar
+	- Minskar utvecklingstiden - eliminerar behovet av repetitiv SQL-kod
+	- Minskar utvecklingskostnaderna
+	- Övervinner leverantörsspecifika SQL-skillnader - ORM vet hur man skriver leverantörsspecifik SQL så att du inte behöver
+	- Du kan koda i välbekant C#
+- Nackdelar
+	- Förlust av utvecklarproduktivitet medan de lär sig att programmera med ORM
+	- Utvecklare förlorar förståelsen för vad koden faktiskt gör - utvecklaren har mer kontroll med SQL
+	- ORM har en tendens att vara långsam
+	- ORM klarar SQL-frågor för komplexa frågor sämre
+#### Olika ORM ramverk
+- Dapper:
+	- Ett mikro ORM som fokuserar på prestanda, kan kombineras ihop med andra ORM
+	- Anses vara den snabbaste ORM på marknaden för .NET
+	- Den är skapad av StackOverflow och den är ett öppet källkodsprojekt
+	- Dapper saknar många funktioner som andra ORM har
+	- Det viktigaste med Dapper är prestandan, den är väldig snabb på att hämta ut data från databasen
+	- Eftersom den saknar funktioner som andra ORM har så rekommenderas det att använda Dapper i en applikation där man främst endast hämtar ut data från en databas
+
+- Entity Framework:
+	- Entity Framework (EF) är Microsofts ORM för :NET som släpptes för första gången 2008
+	- Tidigare hade EF bara stöd för Microsofts egna databaser som Microsoft SQL Server. Numera finns det paket som kan installeras som ger stöd för många andra typer av databaser
+	- Väldigt mycket händer under huven med Entity Framework. Den skapar konfigurationer, mappar ut tabeller till objekt med mera genom att autogenerera kod med hjälp av några knapptryckningar. Detta gör att en utvecklare sparar mer tid och gör det även lättare för en utvecklare att använda sig av ORM då en inte behöver lika stor kunskap om hur allting fungerar
+	- EF får dock en del kritik från utvecklare just på grund av att EF skapar kod automatiskt. Man får mindre kontroll på sin egen kod då man måste förlita sig på kod som skapas av en maskin.
+	- Det blir till exempel svårare att debugga koden om man själv inte har skrivit den eller kan förstå sig på den
+
+#### Dapper
+![[Pasted image 20231211150857.png]]
+Med Dapper ersätts den gråmarkerade koden från Dapper med koden nedan:
+`products = connection.Query<Product>(sql)`
+##### Paket - Dapper
+![[Pasted image 20231211151039.png]]
+Lägg till även detta dör du vill använda Dapper: `using Dapper;`
+
+#### Entity Framework
+- Ett ramverk för att skapa, läsa och skriva till databaser
+- Istället för att skriva SQL så kan vi koda direkt i C#
+- Det vanligaste sättet att skapa databasen är med Code-first
+	- vi skapar alla klasser som vanligt och låter sedan .NET skapa databasen åt oss
+- De fyra saker vi vanligen kan göra med en databas kallas för CRUD
+##### Database first med Entity Framework
+- Ofta finns database redan, och vi vill kunna använda den i vår egen applikation
+- Vi vill då få tabellerna och dess kolumner att bli tillgängliga
+- Detta gör vi med en sk _scaffolding_ - byggnaddsställning
+	- Detta finns inbyggt i EF, och utförs med ett enkelt commando i Packet Manager Console
+
+###### Package Manager Console
+- Package Manager Console i Visual Studio använder PowerShell-kommandon för att interagera med NuGet-paket. Du kan använda konsolen när det inte finns något sätt att utföra en åtgärd via Package Manager-användargränssnittet. Du kan också använda .NET CLI - eller NuGet CLI-kommandon i konsolen
+	- enkelt förklarat, en kommando-prompt inbyggt i Visual Studio
+
+Paket att installera för att arbeta med Entity Framework:
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.EntityFrameworkCore.SqlServer
+
+##### DbContext och Model
+- En DbContext-instans representerar en session med databasen och kan användas för att fråga och spara instanser av dina entiteter
+- DbCOntext-objektet innehåller hela databasen och den kan vi använda i vår kod
+- Model är ett annat namn på de klasser vi använder för att beskriva vår verklighet, t.ex städer, bilar eller personer
+
+##### Skapa DbContext och Models
+- När vi ska skapa en DbContext och hämta modellerna/tabellerna som finns i databasen så använder vi funktioner `Scaffold-DbContext`, som vi kör i PMC. Den har några inparametrar:
+`Scaffold-DbContext "Server=.\SQLExpress;Database=<DatabaseName>;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models`
+	- `Server` = vilken server vi vill "scaffolda" ifrån och hur vi ska logga in
+	- `Trusted_Connection` = Windows-login
+	- `Microsoft.EntityFrameworkCore.SqlServer` = databastyp
+	- `-OutputDir Models` = mappen där klasserna sparas i projektet
+##### Använda databasen
+- Ansluta till databasen: `var db = new ParkingContext();`
+	- I databasen finns nu en instans av hela databasen, men bara kopplingen till databasen, inte data.
+
+- Hämta innehållet i en tabell: `var carList = db.Cars();`
+	- I carList finns nu en kollektion av alla bilar
+
+- Loopa genom alla bilar
+		**Car Make and Plate Output.**
+```cs
+foreach (var car in carList)
+{
+	Console.WriteLine(car.Make + "\t" + car.Color + "\t" + car.Plate);
+}
+```
+#CSharp-Loop #Console-Output #Car-List #Make-String #Color-String
+
+This code prints a list of cars with their Make, Color, and Plate colors.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+##### using
+- Genom att använda `using` så ser vi till att .NET tar hand om alla stängningar och att variabler, anslutningar och listor hanteras rätt, när de inte behövs längre (garbage collector)
+**Printing Cars with ParkingContext**
+```cs
+using (var db = new ParkingContext())
+{
+	var carList = db.Cars();
+	foreach(var car in carList)
+	{
+		Console.WriteLine(car.Make + "\t" + car.Color + "\t" + car.Plate);
+	}
+}
+```
+#ParkingContext #Cars-List #Console-WriteLine #Make-String #Color-String
+
+This code creates a list of car objects and prints them to the console. It then displays their Make, Color, and Plate values in an environment variable called "db".
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+##### EF CRUD
+- Create
+		- `carList.Add(newCar);`
+		- `db.SaveChanges();`
+- Read
+```cs
+foreach(var car in carList)
+	{
+		Console.WriteLine(car.Make + "\t" + car.Color + "\t" + car.Plate);
+	}
+```
+- Update
+	- `parkingCar.ParkingSlotsId = 23;`
+	- `db.SaveChanges();`
+
+- Delete
+	- `db.Cars.Remove(scrapCar)`
+	- `db.SaveChanges();`
+
+##### Code first
+- Med code first skapar vi våra klasser som vanligt och låter sedan Entity Framework bygga databaserna åt oss
+- Bygg applikationen som vanligt med de klasser/models du behöver
+- När du behöver en databas för din applikation så gör du en migration, att flytta
+
+###### Skapa klass
+**Product Class with Price and Id**
+```cs
+classProduct
+{
+	public int Id { get; set; }
+	public string Name { get; set; }
+	public double Price { get; set; }
+}
+```
+#Class-Product #Id-Property #Name-Property #Price-Property #Object-Oriented-Programming
+
+Defines a class product with properties such as ID, name, and price. It also includes methods to get information about an object's id/name pair in the "classProduct" structure using reflection.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+
+###### Skapa DbContext klassen
+**DbContext with SqlServer and Connection.**
+```cs
+class <ClasseName>Context : DbContext
+{
+  public DbSet<<ClassName>> <TableName> { get; set; }
+
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+	   optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=<DatabaseName>;Trusted_Connection=True;TrustServerCertificate=True;");
+  }
+}
+```
+#ClasseName #DbContext #DbSet #SqlServer #Database-Name
+
+This is a DbContext class that uses SQLServer to configure the database and trust server certificate.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+###### Skapa databastabell
+I Package Manager Console:
+- `add-migration ValfriBeskrivning //inga mellanslag`
+	- En mapp skapas som håller reda på hur databasen ska skapas
+- `update-database`
+
+## LINQ
+- I kursen ska vi prata om mer avancerade programtekniska saker så som LINQ
+- Men för att kunna göra lite vettiga urval behöver vi lite smakprov på detta redan nu
+- I den här kursen använder vi ett handfull LINQ-uttryck för urval
+- Behöver vi göra mer avancerade saker kan vi göra det med SQL via Dapper
+
+- LINQ exempel för att plocka ut en viss bil:
+**Find Single Car by ID**
+```cs
+var theCar = (from c in db.Cars
+			 where c.Id == 5
+			 select c).SingleOrDefault)
+```
+#SQL-Query #Data-Retrieval #Database-Operations #Conditional-Statements #SingleOrDefault-Function
+
+This code retrieves a single car from the Cars table where an ID is equal to 5 and returns it as a SingleOrDefault.
+
+**Links:**
+- [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
 # SSMS
 ## Köra delar av SQL-satsen
 - Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute

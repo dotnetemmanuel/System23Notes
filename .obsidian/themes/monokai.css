@@ -33,6 +33,7 @@
   --text-title-h3: var(--purple);
   --text-title-h4: var(--yellow);
   --text-title-h5: var(--orange);
+  --text-title-h5: var(--blue);
   --text-link: var(--yellow);
   --text-a: var(--purple);
   --text-a-hover: var(--light0);
