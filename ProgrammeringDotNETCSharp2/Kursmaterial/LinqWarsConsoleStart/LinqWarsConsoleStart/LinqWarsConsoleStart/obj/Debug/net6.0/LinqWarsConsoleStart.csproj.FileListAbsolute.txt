@@ -1,0 +1,15 @@
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\bin\Debug\net6.0\LinqWarsConsoleStart.exe
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\bin\Debug\net6.0\LinqWarsConsoleStart.deps.json
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\bin\Debug\net6.0\LinqWarsConsoleStart.runtimeconfig.json
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\bin\Debug\net6.0\LinqWarsConsoleStart.dll
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\bin\Debug\net6.0\LinqWarsConsoleStart.pdb
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.csproj.AssemblyReference.cache
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.AssemblyInfoInputs.cache
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.AssemblyInfo.cs
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.csproj.CoreCompileInputs.cache
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.dll
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\refint\LinqWarsConsoleStart.dll
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.pdb
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\LinqWarsConsoleStart.genruntimeconfig.cache
+C:\Users\prima\OneDrive\Zocom\Nyköping\Net 2\Lektion 10\Kod\LinqWarsConsoleStart\LinqWarsConsoleStart\obj\Debug\net6.0\ref\LinqWarsConsoleStart.dll
