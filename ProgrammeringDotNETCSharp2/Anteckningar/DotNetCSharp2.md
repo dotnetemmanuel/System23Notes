@@ -1435,10 +1435,14 @@ I Package Manager Console:
 - `update-database`
 
 ## LINQ
-- I kursen ska vi prata om mer avancerade programtekniska saker så som LINQ
-- Men för att kunna göra lite vettiga urval behöver vi lite smakprov på detta redan nu
-- I den här kursen använder vi ett handfull LINQ-uttryck för urval
-- Behöver vi göra mer avancerade saker kan vi göra det med SQL via Dapper
+- Language Integrated Query
+	- Ett språk för att fråga om data, som är integrerat I C#
+	- SQL gör samma sak, men då saknar vi Intellisense I Visual Studio
+	- Nyckelord i .NET-ramverket som används för att bland annat hämta, filtrera och sortera kollektioner.
+	- Kollektionerna kan vara t.ex:
+		- Databas-tabeller (DBSet)
+		- Listor
+		- Arrayer
 
 - LINQ exempel för att plocka ut en viss bil:
 **Find Single Car by ID**
@@ -1453,6 +1457,141 @@ This code retrieves a single car from the Cars table where an ID is equal to 5 a
 
 **Links:**
 - [DotNetCSharp1](<ProgrammeringDotNETCSharp1/Anteckningar/DotNetCSharp1.md>)
+### Två olika syntaxer
+- LINQ kan skrivas på två sätt:
+	- Query syntax (tydligare men längre)
+	- Method syntax (kortare och vanligast)
+#### Query syntax
+- Det lite längre (men kanske tydligare?) sättet att skriva saker på
+	- Börjar med order `from`
+	- Slutar med ordet `select` eller en `group by`
+- Exempel:
+**Selecting a person by age**
+```cs
+var result = from person in people
+where
+	person.Age > 18
+select
+	person;
+```
+#SQL-query #Data-filtering #Database-selection #Person-table #Age-condition
+
+This code snippet selects the age of a person in an array where it is greater than 18.
+![[Pasted image 20240107202834.png]]
+#### Method / lambda syntax
+- Det kortare och vanligaste sättet att skriva LINQ queries på
+- Exempel:
+**Sort and print Dogs from a Sorted Array**
+```cs
+var sortedDogs = dogs.OrderByDescending(x => x.Age);
+foreach (var dog in sortedDogs)
+{
+	Console.WriteLine(string.Format("Dog {0} is {1} years old.", dog.Name, dog.
+	Age));
+}
+```
+#OrderByDescending-function #Loop-iteration #Console-output #String-formatting #Dog-name
+
+This code snippet sorts a list of dogs based on their age. It then prints the name and age of each dog in an array called "sortedDogs".
+
+- Exempel:
+
+**Whereing age of a person in an array.**
+```cs
+var result = people.Where(person => person.Age > 18);
+```
+#Data-Retrieval #Where-Method #Person-Object #Age-Condition
+
+This code snippet filters out people where the age of a person is greater than 18 and returns them as an object.
+![[Pasted image 20240107203225.png]]
+### Filtering
+`Where` (supervanlig) och `OfType`
+- Filtering är en operation för att begränsa ett resultat där vi endast tillåter element som __uppfyller ett villkor__.
+- Exempel:
+**Finding the length of 3 words in a string.**
+```cs
+string[] words = {“One”, “ring”, “to”, “rule”, “them”, “all”}; var result = words.Where(word => word.Length > 3);
+//ring, rule, them
+```
+#Array-of-strings #Where-method #Length-parameter #Ring-and-to-words #Rule-or-them
+
+The code snippet creates an array of strings and then checks if each word is greater than 3. It returns the result as a list, where all words are not empty or equal to 4 in order by filtering out any remaining characters from them
+### var
+- För att slippa hålla reda på vilken datatyp som returneras av ett uttryck, så använder vi var istället för den korrekta datatypen.
+- Håll musen över variabeln, så ser du vilken datatyp du har fått
+`var result = people.Where(person => person.Name == “Bosse”);`
+I 'result' har vi en `IEnumerable<Person>`, en slags enkel variant av en lista. För att göra en `IEnumerable` till en vanlig lista, lägg till `.ToList()`
+`var result = people.Where(person => person.Name == “Bosse”).ToList();`
+or
+`var result = myWordArray.Where(word => word != “attans”).ToArray();`
+### SortBy
+- Vi kan sortera våra resultat på valfritt sätt:
+**OrderBy Numbers in a List**
+```cs
+List<int> numbers = new List<int> { 1, 14, 12, 1100, 99 };
+var result = numbers.OrderBy(number => number);
+```
+#List #Order-by #Data-Structures #JavaScript-List #Sorting-Algorithm
+
+The code snippet creates a list of integers and sorts them in ascending order. It then returns the result as an ordered list.
+### Gruppering
+- Det går att gruppera precis på samma sätt som med SQL, med metoden `GroupBy`
+- Exempel
+**Print even numbers and group values from a list.**
+```cs
+List<int> numbers = new List<int> { 1, 14, 12, 99, 23, 44, 95, 32 };
+var evenOddGroups = numbers.GroupBy(number => number % 2);
+
+foreach (var group in evenOddGroups)
+{
+	Console.WriteLine("Grupp: " + group.Key);
+	foreach (var value in group)
+	{
+		Console.WriteLine(value);
+	}
+}
+```
+#List #Group-by #Console-WriteLine #Grupp:-Printing-the-value-of-an-even-Odd-group #Array-manipulation
+
+This code snippet creates a list of integers and then iterates through the evenOddGroups to print each group. It also prints all values in that group, including their key/value pair (Grupp) for each value or an array
+### Antal rader
+- I SQL heter det t.ex `TOP 3` för att visa de tre översta värdena
+- I LINQ heter det `Take(3)`;
+- Exempel:
+**OrderBy and Take 3 elements from an array.**
+```cs
+int[] array = new int[7] { 1, 3, 5, 2, 8, 6, 4 };
+int[] topThree = array.OrderByDescending(i=> i)
+.Take(3)
+.ToArray();
+```
+#Array-manipulation #Sorting-algorithm #Order-by-descending #Take-method #Toarray-method
+
+The code snippet creates an array of integers and then sorts it by 3 in descending order. It then returns the top three arrays as a new array, which are sorted based on their ordering criteria.
+### JOIN
+**Joining Person and Pet Names**
+```cs
+var result = from person in people
+join pet in pets on person.FirstName equals pet.Owner
+select new { OwnerName = person.FirstName, PetName = pet.Name };
+
+//För att använda objektet, skriv följande
+result.OwnerName 
+//och 
+result.PetName
+
+
+```
+#SQL-query #Join-operation #Owner-name #Pet-name #Select-statement
+
+This code snippet selects the owner and pet names from two tables, "people" and "pets", where each person has a first name equal to it. The result is then stored in an object called "result".The
+### Bara en post
+- Om du bara förväntar dig att få EN post från din LINQ Query, använd då `SingleOrDefautl();`
+```cs
+Car theCar = (fro, c in db.Cars)
+where c.Id == 5
+select c.SingleOrDefault();
+```
 # SSMS
 ## Köra delar av SQL-satsen
 - Ett enkelt sätt att köra bara visa rader i en SQL-sats är att markera raden och klicka på Execute
